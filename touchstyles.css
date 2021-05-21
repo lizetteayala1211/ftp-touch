@@ -190,7 +190,7 @@ a {
 	overflow-y: scroll;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+/*	justify-content: center;*/
 	align-items: center;
 	border-right: 2px solid black;
 }
@@ -205,7 +205,7 @@ a {
 	justify-content: flex-start;
 	align-items: center;
 	align-content: center;
-	margin-top: 60px;
+	margin-top: 30px;
 	margin-bottom: 60px;
 }
 
@@ -322,6 +322,7 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	scroll-behavior: smooth;
 }
 
 #auto-right-content-container {
@@ -329,15 +330,21 @@ a {
 	width: 97%;
 	margin: 5px;	
 /*	background-color: red;*/
+	scroll-behavior: smooth;
 }
 
 #auto-right-copy-section {
 	height: 200%;
 	width: 100%;
 /*	background-color: green;*/
-	border: 1px solid white;
+/*	border: 1px solid white;*/
 /*	cursor: pointer;*/
 	margin-bottom: 30px;
+	scroll-behavior: smooth;
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 /* marquee content */
@@ -517,11 +524,13 @@ a {
 	border-top: 2px solid rgba(220, 211, 192);	
 }
 
+/*	draggable audio css	*/
+
 #draggable-two {
 	position: relative;
-	left: 250px;
-	bottom: 10px;
-	height: 12%;
+	left: 10vw;
+	top: -5vh;
+	height: 18%;
 	width: 50%;
 	background-color: black;
 	cursor: pointer;
@@ -529,10 +538,63 @@ a {
 
 #draggable-three {
 	position: relative;
-	left: 250px;
+	left: 10vw;
 	bottom: 10px;
-	height: 12%;
-	width: 50%;
+	height: 18%;
+	width: 58%;
+	background-color: black;
+	cursor: pointer;
+}
+
+#draggable-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	margin-top: -32vh;
+	margin-bottom: -30vh;
+}
+
+#draggable-four {
+	position: relative;
+/*	left: 250px;*/
+	bottom: 10px;
+	height: 18%;
+	width: 45%;
+	background-color: black;
+	cursor: pointer;
+	margin-right: 15px;
+}
+
+#draggable-five {
+	position: relative;
+/*	left: 250px;*/
+	bottom: 10px;
+	height: 18%;
+	width: 45%;
+	background-color: black;
+	cursor: pointer;
+}
+
+#draggable-six {
+	position: relative;
+	left: 10vw;
+	top: 5vh;
+	height: 18%;
+	width: 58%;
+	background-color: black;
+	cursor: pointer;
+}
+
+#draggable-seven {
+	position: relative;
+	left: 10vw;
+	top: -10vh;
+	height: 18%;
+	width: 58%;
 	background-color: black;
 	cursor: pointer;
 }
@@ -555,27 +617,20 @@ a {
 	flex-direction: row;
 }
 
-/*	image slider css */
+/*	image slider (1) css */
 
 #image-slider-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	align-self: center;
-	align-content: center;
 	height: 90%;
-/*	background-color: green;*/
 }
 
 .slider {
 	position:relative;
 	overflow:hidden;
 	margin:0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	align-self: center;
-	align-content: center;	
+/*	cursor: pointer;*/
 }
 
 .slider ul {
@@ -587,21 +642,16 @@ a {
 	width:100%;
 	overflow:hidden;
 	left:0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	align-self: center;
-	align-content: center;
 }
 		
 .slider ul li {
 	position:absolute;
 	display:block;
-/*	float:left;*/
+	float:left;
 	margin:0;
 	padding:0;
-	width:370px;
-	height:375px;
+	width: 540px;
+	height: 575px;
 /*	background:#F7B733;*/
 	text-align:center;
 	transition: ease-out 0.4s;
@@ -613,6 +663,7 @@ a {
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: contain;
+  	cursor: pointer;
 }
 		
 .slider ul li span {
@@ -622,70 +673,163 @@ a {
 .slider ul li.active {
 	left: 0;
 }
+
+
+.active.fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.5);
+}
 		
 .slider ul li.slider2 {
 /*	background: #4ABDAC;*/
-	background-image: url('assets/photos/elliot/ejbrown0036-min.jpg');
+	background-image: url('assets/photos/naima/Morning After the Hospital-2-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: contain;
 }
+
+.slider2.fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.5);	
+}
+
+
 		
 .slider ul li.slider3 {
 /*	background: #B82601;*/
-	background-image: url('assets/photos/elliot/ejbrown0039-min.jpg');
+	background-image: url('assets/photos/lacey/Lacey-Lennon-1-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: contain;
+}
+
+.slider3.fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.5);	
 }
 		
 .slider ul li.slider4 {
 /*	background: #8FC33A;*/
-	background-image: url('assets/photos/elliot/ejbrown0041-min.jpg');
+	background-image: url('assets/photos/naima/Inhala, Villa Victoria-2-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: contain;
+}
+
+.slider4.fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.5);	
 }
 		
 .slider ul li.slider5 {
 /*	background: #F7882F;*/
-	background-image: url('assets/photos/elliot/ejbrown0053-min.jpg');
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: contain;
-}
-		
-.slider ul li.slider6 {
-	background-image: url('assets/photos/elliot/ejbrown0054-min.jpg');
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: contain;
-}
-		
-.slider ul li.slider7 {
-/*	background: #F81B84;*/
-	background-image: url('assets/photos/elliot/ejbrown0055-min.jpg');
+	background-image: url('assets/photos/naima/Côte d_Azur, 2018-2-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: contain;
 }
 
-.slider ul li.slider8 {
-/*	background: #F81B84;*/
-	background-image: url('assets/photos/elliot/ejbrown0056-min.jpg');
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: contain;
+.slider5.fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.5);	
 }
 
-.slider ul li.slider9 {
-/*	background: #F81B84;*/
-	background-image: url('assets/photos/elliot/ejbrown0057-min.jpg');
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: contain;
+/*	image info slider (1) css */
+
+#image-slider-nav-info {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+  height: 40%;
+  width: 100%;
+  background-color: yellow;
 }
-		
+
+#image-slider-nav-info ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+/*  height: 50px;*/
+  list-style: none;
+}
+
+#image-slider-nav-info ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  text-align: center;
+/*  line-height: 300px;*/
+}
+
+#image-slider-nav-name-container {
+	height: 15%;
+	width: auto;
+/*	background-color: blue;*/
+	border-bottom: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+#image-slider-nav-name {
+	font-size: 2vh;
+/*	margin-right: 55px;*/
+}
+
+#image-slider-image-info-container {
+	height: 50%;
+	width: 100%;
+/*	background-color: blue;*/
+/*	border-bottom: 2px solid black;*/
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+#image-slider-img-info {
+	font-size: 2vh;
+	margin-right: 45px;	
+	font-family: Baskerville-Italic-03;
+}
+
 /*controls*/
 
 .controls {
@@ -703,8 +847,8 @@ a {
   	background-image: url('assets/icons/divider.png');
   	background-repeat: no-repeat;
   	background-position: center;
-  	background-size: 30%;
-  	padding-top: 5px;		
+  	background-size: 20%;
+  	padding-bottom: 5px;		
 }
 
 #control-divider {
@@ -759,45 +903,6 @@ a {
 .slider:hover .controls .control_prev:hover, .slider:hover .controls .control_next:hover {
 	opacity:1;
 	-webkit-transition:all 0.2s ease;
-}
-
-#image-slider-nav-info {
-	height: 40%;
-	width: 100%;
-/*	background-color: blue;*/
-}
-
-#image-slider-nav-name-container {
-	height: 15%;
-	width: 75%;
-/*	background-color: blue;*/
-	border-bottom: 2px solid black;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-}
-
-#image-slider-nav-name {
-	font-size: 2vh;
-/*	margin-right: 55px;*/
-}
-
-#image-slider-image-info-container {
-	height: 50%;
-	width: 100%;
-/*	background-color: blue;*/
-/*	border-bottom: 2px solid black;*/
-	display: flex;
-/*	justify-content: center;
-	align-content: center;
-	align-items: center;*/
-}
-
-#image-slider-img-info {
-	font-size: 2vh;
-	margin-right: 45px;	
-	font-family: Baskerville-Italic-03;
 }
 
 /* video content container */
@@ -876,7 +981,7 @@ video#jimmy {
 }
 
 #written-content-container {
-	height: 100vh;
+/*	height: 100vh;*/
 	width: 100%;
 /*	background-color: red;*/
 	display: flex;
@@ -1051,204 +1156,6 @@ video#jimmy {
     flex-direction: row;
 }
 
-/*	image slider (2) css */
-
-#image-slider-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 90%;
-}
-
-.slider {
-	position:relative;
-	overflow:hidden;
-	margin:0;
-}
-
-.slider ul {
-	position:relative;
-	margin:0;
-	padding:0;
-	height:100%;
-	list-style:none;
-	width:100%;
-	overflow:hidden;
-	left:0;
-}
-		
-.slider ul li {
-	position:absolute;
-	display:block;
-	float:left;
-	margin:0;
-	padding:0;
-	width: 540px;
-	height: 575px;
-/*	background:#F7B733;*/
-	text-align:center;
-	transition: ease-out 0.4s;
-	color: #fff;
-	font-size: 22px;
-	font-family: monospace;
-	display: flex;
-	background-image: url('assets/photos/elliot/ejbrown0048_optimized.png');
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: contain;
-}
-		
-.slider ul li span {
-	margin:auto;
-}
-		
-.slider ul li.active {
-	left: 0;
-}
-		
-.slider ul li.slider2 {
-/*	background: #4ABDAC;*/
-	background-image: url('assets/photos/elliot/ejbrown0036-min.jpg');
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: contain;
-}
-		
-.slider ul li.slider3 {
-/*	background: #B82601;*/
-	background-image: url('assets/photos/elliot/ejbrown0039-min.jpg');
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: contain;
-}
-		
-.slider ul li.slider4 {
-/*	background: #8FC33A;*/
-	background-image: url('assets/photos/elliot/ejbrown0041-min.jpg');
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: contain;
-}
-		
-.slider ul li.slider5 {
-/*	background: #F7882F;*/
-	background-image: url('assets/photos/elliot/ejbrown0053-min.jpg');
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: contain;
-}
-		
-.slider ul li.slider6 {
-	background-image: url('assets/photos/elliot/ejbrown0054-min.jpg');
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: contain;
-}
-		
-.slider ul li.slider7 {
-/*	background: #F81B84;*/
-	background-image: url('assets/photos/elliot/ejbrown0055-min.jpg');
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: contain;
-}
-
-.slider ul li.slider8 {
-/*	background: #F81B84;*/
-	background-image: url('assets/photos/elliot/ejbrown0056-min.jpg');
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: contain;
-}
-
-.slider ul li.slider9 {
-/*	background: #F81B84;*/
-	background-image: url('assets/photos/elliot/ejbrown0057-min.jpg');
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: contain;
-}
-		
-/*controls*/
-
-.controls {
-	-webkit-transition:all 0.5s ease;
-	opacity: 1;
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-}
-
-.control-divider-container {
-	width: 20%;
-	height: 100%;
-/*	background-color: red;*/
-  	background-image: url('assets/icons/divider.png');
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: 20%;
-  	padding-bottom: 5px;		
-}
-
-#control-divider {
-	height: 100%;
-	width: 100%;
-  	background-image: url('assets/icons/divider.png');
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: contain;		
-}
-
-.control_prev, .control_next {
-/*	position:absolute;
-	top: 40%;*/
-	z-index:999;
-	display: flex;
-/*	padding:20px;*/
-	width: 40%;
-	height: 100%;
-/*	background:rgba(51, 51, 51, 0.33);*/
-	color:#fff;
-	text-decoration:none;
-	font-weight:600;
-	font-size:18px;
-	opacity:1;
-	cursor:pointer;
-}
-
-.slider:hover .controls {
-	-webkit-transition:all 0.5s ease;
-	opacity: 1;
-}
-
-.slider:hover .controls .control_prev, .slider:hover .controls .control_next {
-	opacity:0.8
-}
-
-.control_prev {
-  	background-image: url('assets/icons/left-arrow.png');
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: contain;	
-}
-
-.control_next {
-  	background-image: url('assets/icons/right-arrow.png');
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: contain;	
-}
-
-.slider:hover .controls .control_prev:hover, .slider:hover .controls .control_next:hover {
-	opacity:1;
-	-webkit-transition:all 0.2s ease;
-}
-
-#image-slider-nav-info.two {
-    height: 40%;
-    width: 40%;
-    /* background-color: blue;*/
-}
 
 #image-slider-nav-name-container.two {
 	height: 30%;
@@ -1259,28 +1166,6 @@ video#jimmy {
 	justify-content: center;
 	align-content: center;
 	align-items: center;
-}
-
-#image-slider-nav-name {
-	font-size: 2vh;
-	margin-right: 25px;
-}
-
-#image-slider-image-info-container {
-	height: 70%;
-	width: 100%;
-/*	background-color: blue;*/
-/*	border-bottom: 2px solid black;*/
-	display: flex;
-/*	justify-content: center;
-	align-content: center;
-	align-items: center;*/
-}
-
-#image-slider-img-info {
-	font-size: 2vh;
-	margin-right: 45px;	
-	font-family: Baskerville-Italic-03;
 }
 
 #written-copy-top.two {
@@ -1325,12 +1210,77 @@ video#jimmy {
 	bottom: 40px;
 }
 
+#auto-right-copy-section.written.sable {
+/*	background-color: green;*/
+}
+
+#written-copy-container.four {
+/*	background-color: blue;*/
+}
+
+#written-copy-container-top.four {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: flex-start;
+    align-items: flex-start;
+	font-size: 5vh;
+	margin-left: 0px;
+	margin-bottom: 0;
+/*	background-color: red;*/
+}
+
+#written-copy-top.four {
+	font-family: NeueHaasGrotesk;
+	margin-left: 30px;
+/*	background-color: yellow;*/
+}
+
+#written-copy-top.four2 {
+	font-family: NeueHaasGrotesk;
+	font-style: italic;
+	margin-left: 35vw;
+	position: relative;
+	bottom: 50px;
+/*	background-color: yellow;*/
+}
+
+#stanza-container.four {
+	height: auto;
+	width: 100%;
+/*	background-color: blue;*/
+	position: relative;
+	bottom: 80px;
+}
+
+#stanza-italics {
+	font-family: Baskerville-Italic-03;
+}
+
+#stanza-center {
+	display: flex;
+	text-align: center;
+	margin-left: 40px;
+}
+
+#stanza-asterick {
+	margin-left: 25vw;
+}
+
+#stanza-left-margin {
+	margin-left: 40px;
+}
+
+#written-copy-container.three {
+/*	background-color: blue;*/
+}
+
 #written-copy-container-top.three {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
-	align-content: none !important;
-    align-items: none !important;
+	justify-content: flex-start;
+	align-content: flex-start;
+    align-items: flex-start;
 	font-size: 5vh;
 	margin-left: 0px;
 	margin-bottom: 0;
@@ -1339,16 +1289,17 @@ video#jimmy {
 
 #written-copy-top.three {
 	font-family: NeueHaasGrotesk;
-	margin-right: 65px;
-/*	background-color: blue;*/
+	margin-left: 30px;
+/*	background-color: yellow;*/
 }
 
 #written-copy-top.three2 {
 	font-family: NeueHaasGrotesk;
 	font-style: italic;
-	margin-left: 240px;
+	margin-left: 35vw;
 	position: relative;
 	bottom: 50px;
+/*	background-color: yellow;*/
 }
 
 #written-copy-bottom.three {
@@ -1548,7 +1499,7 @@ video#paul {
 #single-image-container.large {
 	height: 90%;
 	width: 90%;
-	background-color: blue;	
+/*	background-color: blue;	*/
 	background-image: url('assets/photos/naima/DeVonn in Brooklyn, 2018-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1558,7 +1509,7 @@ video#paul {
 #single-image-container.large.two {
 	height: 90%;
 	width: 90%;
-	background-color: blue;	
+/*	background-color: blue;	*/
 	background-image: url('assets/photos/naima/Gay Head in October,2020-2-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1568,12 +1519,76 @@ video#paul {
 #single-image-container.large.three {
 	height: 90%;
 	width: 90%;
-	background-color: blue;	
+/*	background-color: blue;	*/
 	background-image: url('assets/photos/naima/A plunge, A twist, A slap, 2020-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: 100%;
 }
+
+#single-image-copy-top.long {
+	width: 38%;
+}
+
+#single-image-container.large.four {
+	height: 90%;
+	width: 90%;
+/*	background-color: blue;	*/
+	background-image: url('assets/photos/elliot/ejbrown0041-min.jpg');
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: contain;
+}
+
+#auto-right-copy-section.end {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	height: 35%;
+	width: 100%;
+/*	background-color: green;*/
+/*	margin-top: -40px;*/
+}
+
+/*	scroll to top css  */
+
+#scroll-to-top-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	height: 100%;
+	width: 25%;
+/*	background-color: green;*/
+	cursor: pointer;
+}
+
+#scroll-to-top-arrow {
+	height: 60%;
+	width: 50%;
+/*	background-color: yellow;*/
+	background-image: url('assets/icons/backtotop.png');
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: contain;	
+}
+
+#scroll-to-top-copy {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	text-align: center;	
+	height: 40%;
+	width: 100%;	
+/*	background-color: red;*/
+	font-family: Wremena-Light;
+	font-size: 4vh;
+}
+
 
 
 
