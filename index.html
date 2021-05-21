@@ -9,28 +9,9 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/unslider/2.0.3/js/unslider-min.js"></script>
 
   <script defer src="touchscript.js"></script>
-
-<!--   <script src="assets/js/timeonsitetracker.js"></script> -->
-
-      <script type="text/javascript">
-        var Tos;
-        (function(d, s, id, file) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.onload = function() {
-                var config = {};
-                if (TimeOnSiteTracker) {
-                    Tos = new TimeOnSiteTracker(config);
-                }
-            };
-            js.src = file;fjs.parentNode.insertBefore(js, fjs);
-        } (document, 'script', 'TimeOnSiteTracker', 'assets/js/timeonsitetracker.min.js'));
-
-    </script>
 
 </head>	
 
@@ -57,7 +38,7 @@
 		<div id="auto-left-content-container">
 			<div id="auto-left-copy-section">  
 				<div id="auto-left-top-copy-container">
-					<div id="auto-left-name"> 1. L'Rain — </div>
+					<a href="#draggable-seven" id="anchor"> <div id="auto-left-name"> L'Rain — </div> </a>
 				</div>
 				<div id="auto-left-bottom-copy-container">
 					<div id="auto-left-info-container"> Heavy, but not in wait </div>
@@ -66,7 +47,7 @@
 			</div>
 			<div id="auto-left-copy-section" class="right"> 
 				<div id="auto-left-top-copy-container" class="right">
-					<div id="auto-left-name"> 2. Billy-Ray Belcourt — </div>
+					<a href="#billy-ray" id="anchor"> <div id="auto-left-name"> Billy-Ray Belcourt — </div> </a>
 				</div>
 				<div id="auto-left-bottom-copy-container" class="right">
 					<div id="auto-left-info-container" class="order-first"> Love and Heartbreak and The Cree Word </div>
@@ -75,7 +56,7 @@
 			</div>
 			<div id="auto-left-copy-section"> 
 				<div id="auto-left-top-copy-container">
-					<div id="auto-left-name"> 3. Elliot Jerome Brown Jr. — </div>
+					<a href="#elliot-brown-jr" id="anchor"><div id="auto-left-name"> Elliot Jerome Brown Jr. — </div> </a>
 				</div>
 				<div id="auto-left-bottom-copy-container">
 					<div id="auto-left-info-container"> Lorem ipsum </div>
@@ -84,7 +65,7 @@
 			</div>
 			<div id="auto-left-copy-section">  
 				<div id="auto-left-top-copy-container" class="right">
-					<div id="auto-left-name"> 4. Naima Green — </div>
+					<a href="#naima-green" id="anchor"> <div id="auto-left-name"> Naima Green — </div> </a>
 				</div>
 				<div id="auto-left-bottom-copy-container" class="right">
 					<div id="auto-left-info-container" class="order-first"> Lorem ipsum </div>
@@ -93,7 +74,8 @@
 			</div>
 			<div id="auto-left-copy-section"> 
 				<div id="auto-left-top-copy-container">
-					<div id="auto-left-name"> 5. Katherine Hubbard — </div>
+					<a href="#katherine-hubbard" id="anchor"><div id="auto-left-name"> Katherine Hubbard — </div></a>
+				</div>
 				</div>
 				<div id="auto-left-bottom-copy-container">
 					<div id="auto-left-info-container"> Cyclops and Slashes </div>
@@ -102,7 +84,7 @@
 			</div>
 			<div id="auto-left-copy-section"> 
 				<div id="auto-left-top-copy-container" class="right margin">
-					<div id="auto-left-name"> 6. Lacey Lennon — </div>
+					<a href="#lacey-lennon" id="anchor"> <div id="auto-left-name"> Lacey Lennon — </div> </a>
 				</div>
 				<div id="auto-left-bottom-copy-container" class="right">
 					<div id="auto-left-info-container" class="order-first"> Lorem ipsum  </div>
@@ -111,7 +93,7 @@
 			</div>
 			<div id="auto-left-copy-section"> 
 				<div id="auto-left-top-copy-container">
-					<div id="auto-left-name"> 7. Shala Miller/Freddie June — </div>
+					<a href="#draggable-five" id="anchor"><div id="auto-left-name"> Shala Miller/Freddie June — </div></a>
 				</div>
 				<div id="auto-left-bottom-copy-container">
 					<div id="auto-left-info-container"> Lorem ipsum  </div>
@@ -120,7 +102,7 @@
 			</div>
 			<div id="auto-left-copy-section" class="right"> 
 				<div id="auto-left-top-copy-container" class="right">
-					<div id="auto-left-name"> 8. Paul Pfeiffer — </div>
+					<a href="#paul-pfeiffer" id="anchor"> <div id="auto-left-name"> Paul Pfeiffer — </div> </a>
 				</div>
 				<div id="auto-left-bottom-copy-container" class="right">
 					<div id="auto-left-info-container" class="order-first"> Caryatid (Pacquiao)  </div>
@@ -129,7 +111,7 @@
 			</div>
 			<div id="auto-left-copy-section">  
 				<div id="auto-left-top-copy-container">
-					<div id="auto-left-name"> 9. Jimmy Robert — </div>
+					<a href="#jimmy-robert" id="anchor"><div id="auto-left-name"> Jimmy Robert — </div></a>
 				</div>
 				<div id="auto-left-bottom-copy-container">
 					<div id="auto-left-info-container"> Primeira Licao </div>
@@ -138,7 +120,7 @@
 			</div>
 			<div id="auto-left-copy-section" class="right"> 
 				<div id="auto-left-top-copy-container" class="right">
-					<div id="auto-left-name"> 10. Richard Siken — </div>
+					<a href="#richard-siken" id="anchor"><div id="auto-left-name"> Richard Siken — </div></a>
 				</div>
 				<div id="auto-left-bottom-copy-container" class="right">
 					<div id="auto-left-info-container" class="order-first"> Silken Crush </div>
@@ -147,7 +129,7 @@
 			</div>
 			<div id="auto-left-copy-section">  
 				<div id="auto-left-top-copy-container">
-					<div id="auto-left-name"> 11. Sable Elyse Smith — </div>
+					<a href="#sable-elyse-smith" id="anchor"> <div id="auto-left-name"> Sable Elyse Smith — </div> </a>
 				</div>
 				<div id="auto-left-bottom-copy-container">
 					<div id="auto-left-info-container"> Quiet As Its Kept </div>
@@ -156,7 +138,7 @@
 			</div>
 			<div id="auto-left-copy-section" class="right bottom"> 
 				<div id="auto-left-top-copy-container" class="right">
-					<div id="auto-left-name"> 12. Jonah Yano — </div>
+					<a href="#draggable-two" id="anchor"><div id="auto-left-name"> Jonah Yano — </div></a>
 				</div>
 				<div id="auto-left-bottom-copy-container" class="right">
 					<div id="auto-left-info-container" class="order-first"> Strawberry! </div>
@@ -165,60 +147,33 @@
 			</div>			
 		</div>	
 	</div>
+
 	<div id="auto-right">
 		<div id="auto-right-content-container"> 
 			<div id="auto-right-copy-section">  
 				<div id="image-slider-content-container">
+					<a id="elliot-brown-jr"></a>
 					<div id="image-slider-content-container-top">
 						<div id="image-slider-container">
 							<div class="slider" id="asad">
-								<ul>
+								<ul id="image-slider-ul">
 									<li class="active"><span></span></li> 
 									<li class="slider2"><span></span></li>
 									<li class="slider3"><span></span></li> 
 									<li class="slider4"><span></span></li>
 									<li class="slider5"><span></span></li> 
-									<li class="slider6"><span></span></li> 
+									<!-- <li class="slider6"><span></span></li> 
 									<li class="slider7"><span></span></li>
 									<li class="slider8"><span></span></li>
-									<li class="slider9"><span></span></li> 
+									<li class="slider9"><span></span></li>  -->
 								</ul>
 							</div>
 						</div>
 
-<!--   <script>
-  $( function() {
-    $( "#draggable" ).draggable();
-  } );
-  </script> -->
-
-<!--   <script type="text/javascript">
-  	$('body').scroll(function() { 
-    $('#draggable').css('top', $(this).scrollTop());
-});
-  </script> -->
-
-  <audio>
-  <source src="assets/audio/Swiss-Shala-Edit.mp3" type="audio/mpeg" id="first-audio">
+  <audio id="first-audio">
+  <source src="assets/audio/Swiss-Shala-Edit.mp3" type="audio/mpeg">
   Your browser does not support the audio tag.
 </audio>
-
-
-<script>
-
-// $( document ).ready(function() {
-//     var movie = document.getElementById('first-audio');
-
-// document.getElementById("audio-player-play").addEventListener("click", function(){
-//     movie.play();
-// });
-
-var audioUrl = 'http://www.realmofdarkness.net/audio/vg/sf/sf2/perfect.mp3';
-
-// SIMPLE EXEMPLE
-$('#audio-player-play').click( () => new Audio(audioUrl).play() ); // that will do the trick !!
-
-</script>
 
 
 						<div id="image-slider-nav-container">
@@ -227,12 +182,20 @@ $('#audio-player-play').click( () => new Audio(audioUrl).play() ); // that will 
 									<div id="audio-player-controls-container">
 										<div id="audio-player-stop" ></div>
 										<div id="audio-player-divide"></div>
-										<div id="audio-player-play"></div>
+										<div id="audio-player-play" onclick="playSound();"></div>
 									</div>
 									<div id="audio-player-title"> Desperate Jazz by Freddie June </div>
 								</div>
 								<div id="audio-player-bottom-container"></div>
 							</div>
+
+<script>
+function playSound() {
+  var sound = document.getElementById("first-audio");
+  sound.play();
+
+</script>
+
 							<div id="image-slider-controls-container">
 								<div class="controls">
 									<div class="control control_prev"></div>
@@ -243,6 +206,9 @@ $('#audio-player-play').click( () => new Audio(audioUrl).play() ); // that will 
 								</div>
 							</div>
 							<div id="image-slider-nav-info">
+								<ul>
+								<li> 
+								<div id="image-slider-nav-info-1">
 								<div id="image-slider-nav-name-container">
 									<p id="image-slider-nav-name"> Elliott Jerome Brown Jr. </p>
 								</div>
@@ -253,7 +219,12 @@ $('#audio-player-play').click( () => new Audio(audioUrl).play() ); // that will 
 									16h x 12w in <br>
 									ejbrown0048 </p>
 								</div>
-							</div>
+								</div>									
+								</li>
+								<li>SLIDE 2</li>
+								<li>SLIDE 3</li>
+								</ul>
+						</div>
 						</div>
 					</div>
 					<div id="image-slider-content-container-bottom">
@@ -266,6 +237,7 @@ $('#audio-player-play').click( () => new Audio(audioUrl).play() ); // that will 
 				</div>
 			</div>
 			<div id="auto-right-copy-section" class="video"> 
+				<a id="jimmy-robert"></a>
 				<div id="video-content-container">
 					<div id="video-container">
 						<video id="jimmy" src="assets/videos/jimmy/PRIMEIRA LICAO_Exp 3.mp4" playsinline="" controls="" controlslist="nodownload" oncontextmenu="return false;" autoplay="" muted="" loop=""></video>
@@ -282,7 +254,8 @@ $('#audio-player-play').click( () => new Audio(audioUrl).play() ); // that will 
 					</div>
 				</div>
 			</div>
-			<div id="auto-right-copy-section" class="written richard"> 
+			<div id="auto-right-copy-section" class="written richard">
+				<a id="richard-siken"></a> 
 				<div id="written-content-container">
 					<div id="written-copy-container">
 						<div id="written-copy-container-top">
@@ -511,15 +484,14 @@ $('#audio-player-play').click( () => new Audio(audioUrl).play() ); // that will 
 						</p>
 					</div>
 				</div>
-
-
 				</div>
 			</div>
+
 			<div id="auto-right-copy-section" class="elliott-second">  
 				<div id="image-slider-content-container" class="two">
 					<div id="image-slider-content-container-top" class="two">
 						<div id="image-slider-container" class="two">
-							<div class="slider two" id="asad">
+<!-- 							<div class="slider two" id="asad">
 								<ul>
 									<li class="active2"><span></span></li> 
 									<li class="slider2 2"><span></span></li>
@@ -531,7 +503,7 @@ $('#audio-player-play').click( () => new Audio(audioUrl).play() ); // that will 
 									<li class="slider8 2"><span></span></li>
 									<li class="slider9 2"><span></span></li> 
 								</ul>
-							</div>
+							</div> -->
 						</div>
 						<div id="image-slider-nav-container" class="two">
 							<div id="image-slider-controls-container" class="two">
@@ -567,7 +539,8 @@ $('#audio-player-play').click( () => new Audio(audioUrl).play() ); // that will 
 				</div>
 			</div>
 			<div id="auto-right-copy-section" class="written"> 
-				<div id="written-content-container">
+				<a id="katherine-hubbard"></a>
+				<div id="written-content-container" class="first-written">
 					<div id="written-copy-container">
 						<div id="written-copy-container-top">
 							<p id="written-copy-top" class="two"> Cyclops and Slashes </p>
@@ -587,9 +560,181 @@ $('#audio-player-play').click( () => new Audio(audioUrl).play() ); // that will 
 				</div> 
 				</div>
 			</div>
-			<div id="auto-right-copy-section" class="written"> 
+			<div id="auto-right-copy-section" class="written sable"> 
+				<a id="sable-elyse-smith"></a>
 				<div id="written-content-container">
-					<div id="written-copy-container">
+					<div id="written-copy-container" class="four">
+						<div id="written-copy-container-top" class="four">
+							<p id="written-copy-top" class="four"> Quiet As Its Kept </p>
+							<p id="written-copy-top" class="four2"> Sable Elyse Smith </p>
+						</div>						
+					</div>
+				</div> 
+				<div id="stanza-container" class="four"> 
+					<div id="stanza-copy"> 
+						<p id="stanza-copy-p"> 
+							A crime can change the construction of a face.
+							<br><br>
+							Can move the jaw because after, it cannot find its way back to unclenching. Can move flesh around. Can
+							spread at first like tiny cracks in the worn paint of a wall. Can shift shadows and color around until, like the membrane from beneath an eggshell or one of those cheap ass paper-thin beauty mask it just sort of falls away. The face you were familiar with for 15 years just vanishes overnight. The next time you lay eyes on him it is the definition of fright. A slow alarm tingling at the balls of your feet. It’s a kind of perfume, nude terror signally towards everything dim and quiet in sight.
+							<br><br>
+							Prison can shape you into the bowels of possibility. And the act threads an aura around you. Or it did him.
+							Silhouetted sound wave. He has touched you before ever approaching. Each time he shows up, he is himself in drag. Himself as junkie. Himself as broken. Himself as punisher.
+							<br><br>
+							I’d known his face for the 4000 plus days of our adolescent years. It was my sophomore year when the geography grew and stretched between us. My mother picked up and drove us three-days away from the home we once occupied, to now straddle a sorry collection of favors across couches, and one twin mattress on a floor. Stretches of land and grey and color and one Patti Labelle cassette tape ringing in our ears. We have so much practice siting in silence.
+							<br><br>
+							He was one of those family members you played house with. He and I being the oldest, we each were the head of our own houses. He playing a single dad and me a single mom. The younger siblings splitting up between us, a casual declaration of who their favorite person was. Which means the teams of this game never changed. I think we both gave the siblings new names or at least I did. I find that I might have always been obsessed with naming things. And I’m discovering now the root of it. What I will also say is that at this point: there, dividing a play room into two, in the subterranean level of a split-level home, just at the crook of a cul-de-sac, I knew nothing.
+							<br><br>
+							I knew my mother or father would drive me over there every day. I knew that winding through the neighborhood you could see pastel siding holding the houses together. Each like some Easter themed bandage. It’s not that I perceived a wound present. It was just like the neighborhood itself was so careful, would be so preemptive. Would be ready for anything. The neighborhood itself had a name. Some enclave, a word which would come later but seems appropriate to pin now.
+							<br><br>
+							You would turn off the main road into the community and feel welcomed. See children riding around on bikes. And this is the stuff of TV and I’m told, sometimes this is the stuff of real life as well. Inhabitants in the neighborhood knew and spoke to each other. Somehow intertwined their lives in ways that still remain mysterious to me. And then we would get to this house on the end. A joy for me.
+							<br><br>
+							In my own home, I was the only one for me to play with. It was a comfortable and anticipated routine to be a part of this small clan of little and then slightly bigger people. I was a child who wasn’t really allowed to have friends. “Your family are your friends.” And then my mother: “I’m not your little friend.” “We are not friends,” but the description of what she was sounded like bits and pieces of what I heard about god, both good and bad. I think I was lucky enough to have escaped that whole religious thing that people go through in their life. Yet, somehow there was a gospel pinning each of us to the other, and the unpinning has taken a lifetime.
+							<br><br>
+							I think a slow violence has ping ponged through each of our bodies without having ever been spoken. You could smell absence frying in the fish grease upstairs while the whispers moved. Teenage confessions came over telephone lines that I myself knew nothing of what to do with. I just let them linger hot and patient until a smile cracked open the silence. Or that god/mom walked in and told me to get off the phone in the first place. Now I get overwhelmed at the thought of any single mother out there, just out there being. Having to be. Isn’t life the toughest thing any fucking person has ever dreamed up.
+							<br><br>
+							<span id="stanza-asterick"> * </span>
+							<br><br>
+							I’m looking up at his face again. We are both in our 30s now and a tiny war erupts inside just being in his presence. I know how to be silent. How to ignore. We all trained in this for years here. The silence has acted like both scalpel and tweezers slicing open and pulling out what it doesn’t want. Always missing the root, I’d imagine. But here what was discarded has attached itself to his face. And like a piece of metal it heats up and he begins to spread. What is hidden behind some angular sharpness is left open to witness. I think it’s actually like looking into the birth canal. I think that hell is a place amongst the living. I think that breath is the continued blow of the battered. What I mean is I am gasping for air here. I do not want to face anyone.
+							<br><br>
+							I don’t quite know what changed him. Or when the change happened even. I know whispers. I know the boldness of speaking into the distance, towards a face which can’t look back at you. We were landline babies, before FaceTime and video calls. I know a story about his friend’s sister dressing him up like a <span id="stanza-italics">girl,</span> once or so. And I listened to this story like any other story. Like a regular recount of some favorite television show. The framework of sexuality had not entered my logic yet. What I heard recounted to me was a game. And then I heard joy or pleasure. They each use the other to describe themselves. Yet somehow, I know they are different. And then the day simply went on.
+							<br><br><br><br><br><br>
+							Maybe it is a pathology to make lists.
+							<br><br><br><br><br><br>
+							And yet, here is an index of what I know:
+							<br><br><br><br><br><br>
+							I know there were many nights when he came home late. Like far beyond a normal hour. A black boy in high school trying to be a man in a suburban margin, so he dated a white girl. One who had no edges to her. No features, just a slate of face and hair and body. The kind of white girl who does date a black football player but not the type who dates the star. Just any nigga on the bench to be honest. He didn’t play a position where one quantifies if you are good or bad. He played. A lot. Was always in the game, but in the game just as some necessary piece of the action. Games, they are things we are told to do. He was told to do, or there was nothing else for him to do.
+							<br><br><br><br><br><br>
+							To win is to feel powerful.
+							<br><br><br><br><br><br>
+							I was even forced to play games once. So far away from him and this. I do not have a father anymore and so some man tried to shape himself into a figure. I am going to tell you now I don’t know what to do with these pieces. I don’t know what to make of who I knew before the call, before we left.
+							<br><br>
+							I know that pain and winning are said to go hand and hand. And fear and exertion, a type of high. In a locker room, where bodies are gathered close together. Where heat has been emitting. Where the legs move a little further apart to adopt a stance, a firm position—though still insecure, head slightly bowed stepping closer to the center of the room. The arms gradually moving up and out until they find a body on either side and wrap themselves around it. Exposed ribs now gluing themselves to others and though it is actually just limbs thrown on top or pressed against other limbs; the tension is so, that it feels like a linking. A clicking into place can just be a hand on the back when its tuned just right. The light is always harsh in these spaces, it flickers about like zapping flies. The boys are in various states of dress and undress. The voice of the father comes on, a kick drum of commands and incitement. <span id="stanza-italics"> Coach/daddy, preacher/daddy.</span> He heaves his chest and out comes, what the boys in front of him are told is, encouragement, discipline... What the yell does is tunes the body up before the words register. What the yell does is places something in the left side of the gut. <span id="stanza-italics"> GET OUT THERE BOYS. WE’RE GOING TO FUCKING DEVOUR THEM. </span> I’ve been told that then they slip into a rhythmic rocking. A swaying back and forth arms sweaty across backs and shoulders and necks. Bass and thirst passing between them. Little conduits. Little boys. Little bodies offered up to this game. It’s simply a game. And this is manhood and this is respect and this is discipline and this is winning.
+							<br><br><br><br><br><br>
+							You can have this four times a week or how close we have all been to an understanding of capable...
+							<br><br><br><br><br><br>
+							I’m not sure in which places we actually learn love. Me and my therapist have been walking through all the rooms.
+							<br><br><br><br><br><br>
+							My last relationship, to her: I am not capable of going on...
+							<br><br><br><br><br><br>
+							And in the news: No one knew what he was capable of...
+							<br><br><br><br><br><br>
+							<span id="stanza-center"> <span id="stanza-italics"> ...having the ability, fitness, or quality necessary to do or achieve, Sufficiently able, having power or capacity, qualified to grasp, lay hold, take, catch, undertake, take in, hold, </span> </span>
+							<br><br><br><br>
+							<span id="stanza-center"> <span id="stanza-italics"> To. be. large. enough. for. </span> </span>
+							<br><br><br><br><br><br>
+							To draw an outline of a shape that is larger than life and fill it up so that its easier for him to step into, to make a suit. <span id="stanza-italics"> Coach/daddy </span> voice booming. Vibration moving the heart rate up in notches. <span id="stanza-italics"> Do you hear yourself and who are you? </span> Can he separate from the parts he is playing? 6’4 shell with an escape hatch in the back of the head. <span id="stanza-italics"> Do you hear yourself? </span>
+							<br><br><br><br><br><br>
+							<span id="stanza-left-margin"> Or how close we have all been to an understanding of capable... </span>
+							<br><br><br>
+							<span id="stanza-asterick"> * </span>
+							<br><br><br>
+							On a drive across country I try to imagine what he sees. I have heard the news and being in a car triggers the thought. You see, no one knows he’s even left the state, until a phone call and then a mug shot comes through. No one even knows why he would be in this new state. And has no clue how he would know anyone there. The only thing we know is that he is now a crack addict or so the police report would suggest. And so, you do not get confused this is happening sometime after prison. After his 15 years.
+							<br><br><br>
+							<span id="stanza-asterick"> * </span>
+							<br><br><br>
+							I’m not sure in which places we actually learn love. Or who can do the undoing. Or if it is outside of our control. Or how to untie when childhood is all about learning how to thread the knot. And putting things in place, and where it fits and inside the lines. I think these primary colored pictures are more complex and dimmer then we want them to be. I think it’s hard to believe that we weren’t protected enough. And just how glass little bodies are.
+							<br><br>
+							I witnessed my mother pick herself up off blood stained floors and so I know when the time comes how to glue myself right back together again. <span id="stanza-italics"> Humpty fucking Dumpty was weak. 
+							</span>
+							<br><br>
+							I just want to know what happened to him. Maybe I’m forced to realize that monsters might not be born but are made and incubated and that standing shoulder to shoulder sometimes you feel warmth. Which is to say sometimes you feel no sign at all. But you see I had already been prey by that time. Though it would take 19 years before I ever spoke it to someone. And then another 10 years to speak it again. To make myself clear, any language about what happened to me had not been formed, I’m not sure I ever even conjured the memory back then.
+							<br><br><br>
+							<span id="stanza-asterick"> * </span>
+							<br><br><br>
+							My encounters with sexuality came on slow. My own curiosities muted or rather their sound was drowned out by the loud screaming of young boy’s desires grabbing at me, with wet mouths and thoughts not formed. And I felt myself getting quiet inside. The imprint or graze of genitals just a kind of mechanical expectation that moved at a pace and in locations my own desires were not able to find nor catch up to. In a slate blue bathroom stall, with a boy in High School, my brain could register kissing while my desire ran through the hallways trying to find me. Trying to make sure I was not alone, and panting rapidly with its hands on its knees. All I had was his penis in my hand and fear draped around my neck like a herringbone chain. I didn’t know how to not be where I was. I didn’t know that “no” was a thing deployed. Or that you could just take your time. I didn’t know that meeting a boy in the hallway, under the guise of a bathroom break from Spanish class ended with a dick erect. I didn’t know that little boys walk the hallways trying to find sex. Yes, I heard the word sex thrown around all over campus at lunch time and that such and such was having it. But words unpinned from the experiences they describe have no teeth, when you are 15 in the world. I understand now I was not grown. And in that bathroom, my hallway friend and I were playing a game we had not caught up to. There was no difference between being friends and being in proximity to an opportunity to have sex it seems. Who else out there thought this was the definition of high school? Who else woke up today and just got scared for their unborn, unconceived, unimagined little girl. Who else is out there?
+							<br><br>
+							I’ll tell you a secret, I’m still trying to get grown right now. I’ve uncovered. Ok, my therapist has uncovered that even now I allow people to pick me. I’m still trying to understand exactly how “no” can be a thing deployed. No, that’s a lie. I’m just not giving my desire time to come find me. I’m just moving. I’m always moving. I have not stopped once. These words are moving across this page and so I do not have to sit with a single one of them. I see you too, you know.
+							<br><br>
+							I want you. I think I want you to want me. You have been so many different people and I don’t blame any of you. You weren’t capable either. I guess I learned that a body was a thing slowly and quietly passed around and secrecy was precision training in my home.
+							<br><br>
+							There was that time behind the car in the garage at my great-grandmothers house. Both the neighborhood boy’s sister and I were 6 years old. There was Mike’s bedroom under a black light with his mother in the kitchen. There were hallways and the back of school buses with jackets over laps. Bathroom stalls and locker rooms. There was drunk after prom at Malcom’s house with his much older cousin and in the morning after, some senior who was also sleeping on the floor. All in silence I was guided up and into a bathroom, a corner, some secluded shadow. They didn’t tell me not to speak they just knew I was without a voice and made my mouth their vessel. A slow dance ventriloquism. Opening and closing and terrified. And from six to high school I had not lost my virginity yet. Just a series of passed around moments. I have formed and found words from the top of this page until now. But have not found the word rape yet.
+							<br><br>
+							At 13 I sat frozen on the edge of a bed once. I was in a two story townhouse, with three bedrooms and no real furniture throughout. In the living room downstairs just a big over stuffed black leather sofa and a huge flatscreen on the wall, with various video game consoles spread about on the floor below. I was on the edge of a bed in one bedroom with two grown men. My mother’s boyfriend and his friend. They were both smoking weed and either playing video games or watching tv. The boyfriend left after a while and I was just in the room sitting on the edge of a bed with this other man laid across it. The bedspread was white and waffle patterned. It was soft and textured in the palm of my hand. The ceiling fan was running and the door was open. Che-che-che-che-che the sound paraded around the parameter of the room. Which was bright and illuminated by two windows flanking either side of the television. This man started stroking my hair in a long slow motion. He told me “you’re so pretty.” My hair was pressed and maybe reached down to the middle of my back but when he got to the end, the last strands of hair slipping out of his fingers. He didn’t even hesitate. His hand continued slowly down the middle of my back and sort of buoyed off the waistband of my jeans, catching the small of my back, a crescent of ass– before fizzling out over the seat of my jeans. My body grew hot inside and startled sweat into pouring profusely from every surface. Ten minutes later I got up to go find the boyfriend to call my mother. I did not have a cell phone. I called her and ask her to come pick me up. She said where are you? Because she did not know.
+							<br><br>
+							She knew he had picked me up from our house to go to the mall. She had called me and told me he was going to take me shopping. She told me to go with him. Why did he leave me in that room alone with that man? I didn’t say anything to my mother about it, but every single inch of me screamed inside the moment he started touching me, the moment he spoke to me. The fear was so immense it took days for that terror to lift itself up from my skin, shed all its tiny connections and fall down around my ankles. Then the days just carried on, the same blue.
+							<br><br>
+							Sometimes it seems like men pass women around like handshakes. And here I am, calling my own child self: woman. Knowing that language fucking matters. Knowing that I cannot untie the knot.
+							<br><br>
+							<span id="stanza-italics"> I want you. </span> I’m waving around out here like cling wrap. The static can be anything in the world, anywhere. If I’m lucky maybe it will get blown back across my face, a reverse inflating as I try to suck air in. I want her to slip her fingers inside and resuscitate me. Lay two lips down atop mine and get stuck there. I see you too, you know. Looking.
+							<br><br>
+							It can sometimes be easy to pack your family up into a box and seal it. I think that’s no mystery. The problem is you still have to cart this box around with you. You have to take it where you go. You have to find a place for it in your closet. You have to have a fucking closet for it. And every once in a while, someone you let in your house will hold it up to their ear and shake it. And not always for the right reason. For some people the sound of your shit will be both entertaining and practical. If it’s loud enough they don’t have to hear their own. If it’s tragic enough they won’t have to skip one beat from chaos and they get stronger biting you instead of biting themselves every night. Every stilted body propped up against this backdrop is a life on fire.
+							<br><br>
+							<br><br><br>
+							<span id="stanza-asterick"> * </span>
+							<br><br><br>
+							He came home from prison missing a tooth. To <span id="stanza-italics"> come home </span> is a common phrase but actually he did not come home. What was a home long ago, shattered. It was not just not a home for him. It wasn’t a home for any of them. I don’t think. I can’t see how. On the contrary I never had a home. What I mean is if someone ask me to describe my childhood home. Well I’d have nothing. I’d go blank or probably my mind would hop around. Do I come back to the place with the blue carpet. Or the place that was mostly vertical. Or the apartments facing the interior courtyard. Where do I go? I guess where <span id="stanza-italics"> I </span> go is not the point. Where does he go?
+							<br><br>
+							But he came home. Sometimes it seems like prison is a disappearance. I mean I’ve known so many people in and out and how and what yet it’s still written in my body that when one enters they don’t return. And ideologically I know why that is but I don’t know how to shake that feeling. Or rather don’t know why my mind and body aren’t talking so well. Or don’t really seem to be on speaking terms.
+							<br><br>
+							Every single person who has fanned out around him: cousin, brother, mother, aunty, uncle, cousin, brother, grandmother, has been given an artifact. Semicircle brushing our lives against each other. The patinas building across this unclean surface. He has returned and we have been given a small packaged space. A fucking hole in his head. And each of us can imagine exactly how it got there. I’ll just say it, we can partake in the violence.
+							<br><br>
+							I remember one time in his junior year, so I was a sophomore, his forearm had been ripped open during a football game. I think like a three-inch gash that exposed a white material, blood, a bloated skin that would eventually cake and crust over and a dark purpling around it. This might be the opposite of what everyone else thinks but the body seems so artificial when a wound is exposed. Obviously, I know it’s real. I guess what I mean is that seeing the insides now reversed, now outside is surreal. So foreign because I guess the only place, we witness this is in our entertainment. But in the physical presence of a real wound, one is not entertained. You see how much and how easily the physical body can be broken. And so you learn these pictures of vulnerability like flash cards over and over again. His broke arm; mom bleeding from mouth, fire ants splintering up leg, mom bleeding from eye, tears caked across face, stings from a slap, thread-thin cuts from belt lashes against thighs, blood on the television screen. In your head you see just how worn down the body can get. But no one has told you about the mind.
+							<br><br><br><br><br><br>
+							No one had mentioned how the neatness of this tiny space in his mouth could bring such a satisfaction. It contains no blood, no gore. Yet it is perfection.
+							<br><br><br><br><br><br>
+							It’s a weird sensation in the mouth to say you know a murderer. Or maybe the sensation is not in the mouth it’s in between you and the person you’re saying it to. It’s on their face. It’s in what you assume they are saying to themselves about you, upon hearing it. You have to understand that we sit next to people who have done all kinds of things all the time. Your coworker may beat the shit out of his wife and everyone may know it. What do you do? You sit there. You may laugh involuntarily and listen to your friend telling you about traveling to South American solely to have sex with sex workers and that his wife doesn’t know, and that the women have papers and you watch the smile spread like a wild fire across his face. And you listen to the love he has for his wife spill out of his mouth coated with the same saliva as the secret. What do you do? You sit there. You listen to his plan to somehow make money off of his travels by buying property in that country, but then there is a sentence about a guy who <span id="stanza-italics"> gets the girls. </span> And you wonder what the fuck that means. And for you that makes it sound less like sex work and more like agency has been removed. Like something scary. His smoothed tone lullaby of the excursion just another version of those handshakes exchanged. Bodies passed around like beers. Like those hallway games. Like never learning the difference. I’m telling you we’ve all sat next to him.
+							<br><br>
+							And if you’ve grown up in a place that has a high rate of violence well then you know someone who has committed it. And the definition of murderer is someone who has taken a life. And so I know some murderers. Although the dictionary defines murder as “the unlawful premeditated killing of one human being by another.” And so, it is preparing you for the <span id="stanza-italics"> fact </span> that it can be lawful and that the killing has to be done by a human being; leaving a system off the hook; leaving an institution off the hook.
+							<br><br><br>
+							<span id="stanza-asterick"> * </span>
+							<br><br><br>
+							I hear the laughter in the wind all around us and I want to harness it. Say it is ours too and have nobody look twice at me. I didn’t want the world to build this suffocating life around him. He didn’t deserve it. But now he cannot escape it. He wadded up his hurt in wet rags and stuffed it down his own throat. How foolish some would say. It’s both gut wrenching and hard not to look at him. I don’t want to look any more. And yet the wind keeps blowing. Keeps picking up bits and piece of everybody and carrying them under my nose. They are not exactly like smelling salts but they jolt me into something. They remind me of a thing I barely missed. They teach me that time travel is not as it’s portrayed on television. They show that fate is a thing closer to the skin then we think. And skin breaks.
+							<br><br>
+							I guess your childhood is inevitable but after that there is power. There is fate and determination and thoughts and will and imagination and dreaming and circumstance and timing. And you take part.
+							<br><br>
+							I’ve wondered so long about the things they say or rather the questions they ask about nature and nurture and why there are either/ors, and how I fit in that. Always comparing myself against the other. This one came from a good family. Was my family that bad??
+							<br><br>
+							Afraid to come lay this box at your feet that you didn’t ask for. But you asked for me. And then I think, she knows me without a list of hurt and broken memories. She knows what it feels like when I laugh. And somehow in my worry or fear I didn’t think to write about the laughter. Am standing fully in happiness in this moment, so many dimensions away from all of that and yet it never donned on me to write about the laughter or the butterflies, or the sweat beneath sheets and sunlight. The sweet smell of her body next to mine, or the evening light. I guess because those are the things I want to keep and moving this pen pressing these keys is putting it somewhere else. Nonstop tapping it into another space. I think it’s saying it all in one breath, or like without taking a single breath I mean. Shedding the skin and then looking at it, and then turning your back on it, and then walking away. You are the snake, coming out of a canal that is your own size and shape. Two yous and the shed thing can’t bite you. You are the snake. I never saw it that way before.
+							<br><br>
+							There are too many words we use that have no real meaning anymore. Like we’ve exhausted them. Say them like clockwork. Like involuntarily switching on the light as soon as you walk into the bathroom. They don’t even make a sound when they drop to the floor. They have no goddamn weight. The words are silent spilling out of the mouth, floating around your house, hitting the floor. It’s like you say them and then no one really knows they happened. Like of course we smile, we perk up, we look into each other’s eyes. And then no one really knows what the other one means.
+							<br><br><br><br>
+							<span id="stanza-left-margin"> I want to tell you, I understand now. </span>
+							<br><br><br><br>
+							What I’m trying to say is that I love you and I want to hear a loud crash once the word finally reaches the floor. I want us to realize that it is still in the room with us. That it is not going anywhere. Like an ice cube it will melt and coat the ground beneath our feet, permeant everything so that we are always standing on something that is the same.
+							<br><br><br>
+							<span id="stanza-asterick"> * </span>
+							<br><br><br>
+							And I guess it’s this page. I needed a witness more than I thought or more then I could admit. I had to tell someone about him. I guess he was my first real friend.
+							<br><br><br><br>
+							And for so long I’ve been sitting up here watching people ignore and avoid. Wondering why in the beginning they don’t just teach you that talking and naming, learning to speak is such a difficult thing. That no one congratulates or celebrates us for saying a name or learning a word because the whole entire world will cease to do that once you grow up. Will turn their backs when you open your mouth and pray some non-prayer that you never open your mouth at them again. They only want your nonwords and your shape. No one wants to take all of you. They will beg please with their eyes and their silence and their devastating inability to stand— for you only to attach fake things to them. Those one syllable things, the two syllable things that modify. Just modify. Please. Do not disclose.
+							<br><br>
+							<span id="stanza-left-margin"> I don’t want to be one of those people </span>
+							<br><br><br>
+							<span id="stanza-asterick"> * </span>
+							<br><br><br>
+							<span id="stanza-italics"> Coach/daddy </span> slaps the asses of all his players and players slap ass back round and round laughing and calling each other faggot. It’s a game. <span id="stanza-italics"> Coach/daddy </span> also host parties at his house. Testosterone flows, peak adolescence, balance tips. Young white girls find themselves stewing in their father’s racism. Find themselves opening up their bodies like their mothers. Find themselves searching for an escape hatch but calling it an amusement park. Find that their bodies intuitively know what to do with those black bodies. Find they feel alive. <span id="stanza-italics"> Coach/daddy </span> might be their daddy. To win is to feel powerful.
+							<br><br>
+							The black boys begin the games again. Run to the back yard of coach’s house, daddy’s house. The grass has a spring to it. Intoxicated and virile the boys glide across its crisp wetness. Outside of them, you’d just hear the scuttle of water across each blade. They don’t even realize when they are trampling over things and so they can’t feel the foot on their necks either. Pornography teaches them, to apply a strong grip to a neck and screaming and looking away and yelling and a reprimand and a slap and the eyes rolling so far away because they are looking to get outta there, is all a part of the game. The back yard has a harsh flood light that pops on at the detection of their presence. They don’t notice. These are boys whose bodies have been under the watchful technology of detection from birth. <span id="stanza-italics"> Coach/daddy </span> sings to them about spot lights and flashing lights and their big bodies moving them toward fame, moving them upfield. <span id="stanza-italics"> Coach/daddy </span> often yells get out there on that field boys. To win is to feel powerful.
+							<br><br>
+							In this house it seems like all the lights are off. This is what he told me. And it makes sense for young people to want to grope around in the dark together, fingers running across other hands up and down a banister—but it’s the grown man who turned the lights off. Who slaps ass and makes cock jokes and in the same breathe threatens to let another boy beat the living shit out of some other boys. Men, and all the ways they fix their mouths to say excrement. To push it out in speech and on to someone else. To hold humiliation and homoeroticism close to the bare chest. To feel the heat of it all. To watch those boys, jump up and down in the spotlight, and see the dew collect. <span id="stanza-italics"> Who is looking out for them? </span>
+							<br><br>
+							These parties were frequent. Something whispered, and running along the edge of lockers in high school hallways. He was in regular attendance at these parties.
+							<br><br>
+							He and I ran atop parallel experiences. All us little ones trying to escape back to neutral ground—places called school and your aunties house—and acting upon each other what we didn’t even know was done to us, nor really by whom. Or rather the whom could be complicated. Sleep walkers you might call us, walking amongst the adult world as objects and then the world of the child. Pass me around and around and around.
+							<br><br><br><br><br><br><br><br><br><br><br><br>
+							<span id="stanza-left-margin"> I went outside and filmed the rain last night. </span>
+							<br><br><br><br><br><br><br><br><br><br><br><br>
+							<span id="stanza-left-margin"> What do you want me to tell you? </span>
+							<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+							<span id="stanza-left-margin"> He did it. </span>
+							<br><br><br><br><br><br><br><br><br><br><br><br>
+							<span id="stanza-left-margin"> He murdered a child. </span>
+							<br><br><br><br><br><br><br><br><br><br><br><br>
+							<span id="stanza-left-margin"> I cup my hands around my mouth and scream, hoping a sound comes out. </span>
+							<br><br><br><br><br><br><br><br><br><br><br><br>
+							<span id="stanza-left-margin"> I went outside and filmed the rain last night. </span>
+							<br><br><br><br><br><br><br><br><br><br><br><br>
+							I took the clothes pins off my shoulders and fell off the line. I am no longer there hanging. I put the pins back in the box called family and drove it down to some salt water coast. Walked up to the edge, let the tide roll across my feet and welcome me. I thought about her. The moment her lips played the tune. The moment the track got stuck on </span id="stanza-italics"> I love You. </span> I’ve climbed out of the box. Unfastened myself. Nudged the box into the water and let it recede and return, as the moon pulled water closer to us. Closer to the earth. I sat on the edge of this world for hours. One foot on sand and another digging through across the threshold. One ankle was wrapped in embrace by the grip of lukewarm sand. It was tiny but it was a birth. I moved forward.
+							<br><br>
+						</p>
+					</div>
+				</div>
+			</div>	
+			<div id="auto-right-copy-section" class="written"> 
+				<a id="billy-ray"></a>
+				<div id="written-content-container">
+					<div id="written-copy-container" class="three">
 						<div id="written-copy-container-top" class="three">
 							<p id="written-copy-top" class="three"> Love and Heartbreak are Fuck Buddies </p>
 							<p id="written-copy-top" class="three2"> Billy-Ray Belcourt </p>
@@ -610,24 +755,23 @@ $('#audio-player-play').click( () => new Audio(audioUrl).play() ); // that will 
 				</div> 
 				</div>
 			</div>
-  <script>
-  $( function() {
-    $( "#draggable-two" ).draggable();
-  } );
-  </script>			
-			<div id="auto-right-copy-section" class="video two"> 
-				<div id="draggable-two">
+			<div id="auto-right-copy-section">  </div>	
 
+			<div id="draggable-container">	
+				<div id="draggable-two">
 								<div id="audio-player-top-container">
 									<div id="audio-player-controls-container">
 										<div id="audio-player-stop" ></div>
 										<div id="audio-player-divide"></div>
 										<div id="audio-player-play"></div>
 									</div>
-									<div id="audio-player-title"> Desperate Jazz by Freddie June </div>
+									<div id="audio-player-title"> Strawberry! by Jonah Yano </div>
 								</div>
 								<div id="audio-player-bottom-container"></div>	
 				</div>
+			</div>	
+			<div id="auto-right-copy-section" class="video two">
+			<a id="paul-pfeiffer"></a> 
 				<div id="video-content-container" class="video two">
 					<div id="video-container" class="video two">
 						<video id="paul" src="assets/videos/paul/Caryatid (Pacquiao) (2015)-video loop.mp4" playsinline="" controls="" controlslist="nodownload" oncontextmenu="return false;" autoplay="" muted="" loop=""></video>
@@ -647,6 +791,8 @@ $('#audio-player-play').click( () => new Audio(audioUrl).play() ); // that will 
 						</div>						
 					</div>
 				</div>
+			</div>
+			<div id="draggable-container">
 				<div id="draggable-three">
 
 								<div id="audio-player-top-container">
@@ -655,12 +801,38 @@ $('#audio-player-play').click( () => new Audio(audioUrl).play() ); // that will 
 										<div id="audio-player-divide"></div>
 										<div id="audio-player-play"></div>
 									</div>
-									<div id="audio-player-title"> Desperate Jazz by Freddie June </div>
+									<div id="audio-player-title"> The ways Your Hair Looks on Most Days by Freddie June </div>
+								</div>
+								<div id="audio-player-bottom-container"></div>	
+				</div>			
+			</div>			
+			<div id="auto-right-copy-section">  </div>
+			<div id="draggable-container">
+				<div id="draggable-four">
+
+								<div id="audio-player-top-container">
+									<div id="audio-player-controls-container">
+										<div id="audio-player-stop" ></div>
+										<div id="audio-player-divide"></div>
+										<div id="audio-player-play"></div>
+									</div>
+									<div id="audio-player-title"> Ray J by Freddie June </div>
 								</div>
 								<div id="audio-player-bottom-container"></div>	
 				</div>
+				<div id="draggable-five">
 
-			</div>
+								<div id="audio-player-top-container">
+									<div id="audio-player-controls-container">
+										<div id="audio-player-stop" ></div>
+										<div id="audio-player-divide"></div>
+										<div id="audio-player-play"></div>
+									</div>
+									<div id="audio-player-title"> Sticky Romance by Freddie June </div>
+								</div>
+								<div id="audio-player-bottom-container"></div>	
+				</div>	
+			</div>								
 			<div id="auto-right-copy-section" class="written"> 
 				<div id="written-content-container">
 					<div id="written-copy-container">
@@ -686,9 +858,24 @@ $('#audio-player-play').click( () => new Audio(audioUrl).play() ); // that will 
 					</div>
 				</div> 
 				</div>
-			</div>			
+			</div>
+			<div id="draggable-container">
+				<div id="draggable-six">
+
+								<div id="audio-player-top-container">
+									<div id="audio-player-controls-container">
+										<div id="audio-player-stop" ></div>
+										<div id="audio-player-divide"></div>
+										<div id="audio-player-play"></div>
+									</div>
+									<div id="audio-player-title"> Kinky Jazz by Freddie June </div>
+								</div>
+								<div id="audio-player-bottom-container"></div>	
+				</div>
+			</div>					
 			<div id="auto-right-copy-section" class="single-image"> 
 			<div id="single-image-content-container">
+				<a id="lacey-lennon"></a>
 				<div id="single-image-container"></div>
 				<div id="single-image-title-copy"> Untitled (Merce), 2017 </div>
 				<div id="single-image-copy-container">
@@ -709,6 +896,7 @@ $('#audio-player-play').click( () => new Audio(audioUrl).play() ); // that will 
 			</div>
 			<div id="auto-right-copy-section" class="single-image"> 
 			<div id="single-image-content-container" class="large">
+				<a id="naima-green"></a>
 				<div id="single-image-container" class="large"></div>
 				<div id="single-image-copy-container">
 					<div id="single-image-copy-top"> Naima Green </div>
@@ -716,7 +904,15 @@ $('#audio-player-play').click( () => new Audio(audioUrl).play() ); // that will 
 				</div>
 			</div> 
 			</div>						
-			<div id="auto-right-copy-section">  </div>
+			<div id="auto-right-copy-section" class="single-image"> 
+			<div id="single-image-content-container" class="large">
+				<div id="single-image-container" class="large four"></div>
+				<div id="single-image-copy-container">
+					<div id="single-image-copy-top" class="long"> Elliot Jerome Brown Jr. </div>
+					<div id="single-image-copy-bottom"> Sweeping the bricks to the edge of a door too heavy to hold its own., 2019 </div>
+				</div>
+			</div> 
+			</div>
 			<div id="auto-right-copy-section" class="single-image"> 
 			<div id="single-image-content-container" class="large">
 				<div id="single-image-container" class="large two"></div>
@@ -734,8 +930,27 @@ $('#audio-player-play').click( () => new Audio(audioUrl).play() ); // that will 
 					<div id="single-image-copy-bottom"> A plunge, A twist, A slap, 2020 </div>
 				</div>
 			</div> 
-			</div>						
-			<div id="auto-right-copy-section">  </div>			
+			</div>
+			<div id="draggable-container"> 
+				<div id="draggable-seven">
+
+								<div id="audio-player-top-container">
+									<div id="audio-player-controls-container">
+										<div id="audio-player-stop" ></div>
+										<div id="audio-player-divide"></div>
+										<div id="audio-player-play"></div>
+									</div>
+									<div id="audio-player-title"> L’Rain Heavy... </div>
+								</div>
+								<div id="audio-player-bottom-container"></div>	
+				</div>
+			</div>									
+			<div id="auto-right-copy-section" class="end"> 
+				<div id="scroll-to-top-container">
+					<div id="scroll-to-top-arrow"></div>
+					<div id="scroll-to-top-copy"> BACK TO TOP </div>
+				</div>		
+			</div>			
 		</div>	
 	</div>
 </section>
