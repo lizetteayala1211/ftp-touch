@@ -162,10 +162,6 @@
 									<li class="slider3"><span></span></li> 
 									<li class="slider4"><span></span></li>
 									<li class="slider5"><span></span></li> 
-									<!-- <li class="slider6"><span></span></li> 
-									<li class="slider7"><span></span></li>
-									<li class="slider8"><span></span></li>
-									<li class="slider9"><span></span></li>  -->
 								</ul>
 							</div>
 						</div>
@@ -180,21 +176,14 @@
 							<div id="draggable">
 								<div id="audio-player-top-container">
 									<div id="audio-player-controls-container">
-										<div id="audio-player-stop" ></div>
+										<div id="audio-player-stop" onclick="pause()"></div>
 										<div id="audio-player-divide"></div>
-										<div id="audio-player-play" onclick="playSound();"></div>
+										<div id="audio-player-play" onclick="play()"></div>
 									</div>
 									<div id="audio-player-title"> Desperate Jazz by Freddie June </div>
 								</div>
 								<div id="audio-player-bottom-container"></div>
 							</div>
-
-<script>
-function playSound() {
-  var sound = document.getElementById("first-audio");
-  sound.play();
-
-</script>
 
 							<div id="image-slider-controls-container">
 								<div class="controls">
@@ -207,13 +196,57 @@ function playSound() {
 							</div>
 							<div id="image-slider-nav-info">
 								<ul>
-								<li> 
+								<li>  
+								<div id="image-slider-nav-info-1">
+								<div id="image-slider-nav-name-container">
+									<p id="image-slider-nav-name"> Naima Green </p>
+								</div>
+								<div id="image-slider-image-info-container">
+									<p id="image-slider-img-info">
+									Inhala (bubba’s first time camping), 2019 <br>
+								</div>
+								</div>
+								</li>
+								<li>
+								<div id="image-slider-nav-info-1">
+								<div id="image-slider-nav-name-container">
+									<p id="image-slider-nav-name"> Naima Green </p>
+								</div>
+								<div id="image-slider-image-info-container">
+									<p id="image-slider-img-info">
+									Côte d'Azur, 2018 <br>
+								</div>
+								</div>	
+								</li>
+								<li>
+								<div id="image-slider-nav-info-1">
+								<div id="image-slider-nav-name-container">
+									<p id="image-slider-nav-name"> Lacey Lennon </p>
+								</div>
+								<div id="image-slider-image-info-container">
+									<p id="image-slider-img-info">
+									Untitled (Lisa), 2017. <br>
+								</div>
+								</div>									
+								</li>
+								<li>
+								<div id="image-slider-nav-info-1">
+								<div id="image-slider-nav-name-container">
+									<p id="image-slider-nav-name"> Naima Green </p>
+								</div>
+								<div id="image-slider-image-info-container">
+									<p id="image-slider-img-info">
+									Morning After the Hospital in Dar, 2017 <br>
+								</div>
+								</div>				
+								</li>
+								<li>
 								<div id="image-slider-nav-info-1">
 								<div id="image-slider-nav-name-container">
 									<p id="image-slider-nav-name"> Elliott Jerome Brown Jr. </p>
 								</div>
 								<div id="image-slider-image-info-container">
-									<p id="image-slider-img-info"> Elliott Jerome Brown Jr. <br>
+									<p id="image-slider-img-info"> 
 									Slow want, 2020 <br>
 									Archival inkjet print <br>
 									16h x 12w in <br>
@@ -221,8 +254,6 @@ function playSound() {
 								</div>
 								</div>									
 								</li>
-								<li>SLIDE 2</li>
-								<li>SLIDE 3</li>
 								</ul>
 						</div>
 						</div>
@@ -487,46 +518,94 @@ function playSound() {
 				</div>
 			</div>
 
-			<div id="auto-right-copy-section" class="elliott-second">  
+<!-- 			<div id="auto-right-copy-section" class="elliott-second">  
 				<div id="image-slider-content-container" class="two">
 					<div id="image-slider-content-container-top" class="two">
 						<div id="image-slider-container" class="two">
-<!-- 							<div class="slider two" id="asad">
-								<ul>
-									<li class="active2"><span></span></li> 
-									<li class="slider2 2"><span></span></li>
-									<li class="slider3 2"><span></span></li> 
-									<li class="slider4 2"><span></span></li>
-									<li class="slider5 2"><span></span></li> 
-									<li class="slider6 2"><span></span></li> 
-									<li class="slider7 2"><span></span></li>
-									<li class="slider8 2"><span></span></li>
-									<li class="slider9 2"><span></span></li> 
+							<div class="slider" id="two">
+								<ul id="image-slider-ul-second" class="two">
+									<li class="active" id="two"><span></span></li> 
+									<li class="slider2" id="two"><span></span></li>
+									<li class="slider3" id="two"><span></span></li> 
+									<li class="slider4" id="two"><span></span></li>
+									<li class="slider5" id="two"><span></span></li> 
 								</ul>
-							</div> -->
+							</div>
 						</div>
-						<div id="image-slider-nav-container" class="two">
-							<div id="image-slider-controls-container" class="two">
-								<div class="controls 2">
-									<div class="control control_prev 2"></div>
-									<div class="control-divider-containe 2r">
-										<div class="control-divider 2"></div>
+
+
+						<div id="image-slider-nav-container">
+							<div id="image-slider-controls-container">
+								<div class="controls">
+									<div class="control control_prev"></div>
+									<div class="control-divider-container">
+										<div class="control-divider"></div>
 									</div>
-									<div class="control control_next 2"></div>
+									<div class="control control_next"></div>
 								</div>
 							</div>
-							<div id="image-slider-nav-info" class="two">
-								<div id="image-slider-nav-name-container" class="two">
-									<p id="image-slider-nav-name" class="two"> Elliott Jerome Brown Jr. </p>
+							<div id="image-slider-nav-info">
+								<ul>
+								<li>  
+								<div id="image-slider-nav-info-1">
+								<div id="image-slider-nav-name-container">
+									<p id="image-slider-nav-name"> Naima Green </p>
 								</div>
-								<div id="image-slider-image-info-container" class="two">
-									<p id="image-slider-img-info" class="two"> Elliott Jerome Brown Jr. <br>
+								<div id="image-slider-image-info-container">
+									<p id="image-slider-img-info">
+									Inhala (bubba’s first time camping), 2019 <br>
+								</div>
+								</div>
+								</li>
+								<li>
+								<div id="image-slider-nav-info-1">
+								<div id="image-slider-nav-name-container">
+									<p id="image-slider-nav-name"> Naima Green </p>
+								</div>
+								<div id="image-slider-image-info-container">
+									<p id="image-slider-img-info">
+									Côte d'Azur, 2018 <br>
+								</div>
+								</div>	
+								</li>
+								<li>
+								<div id="image-slider-nav-info-1">
+								<div id="image-slider-nav-name-container">
+									<p id="image-slider-nav-name"> Lacey Lennon </p>
+								</div>
+								<div id="image-slider-image-info-container">
+									<p id="image-slider-img-info">
+									Untitled (Lisa), 2017. <br>
+								</div>
+								</div>									
+								</li>
+								<li>
+								<div id="image-slider-nav-info-1">
+								<div id="image-slider-nav-name-container">
+									<p id="image-slider-nav-name"> Naima Green </p>
+								</div>
+								<div id="image-slider-image-info-container">
+									<p id="image-slider-img-info">
+									Morning After the Hospital in Dar, 2017 <br>
+								</div>
+								</div>				
+								</li>
+								<li>
+								<div id="image-slider-nav-info-1">
+								<div id="image-slider-nav-name-container">
+									<p id="image-slider-nav-name"> Elliott Jerome Brown Jr. </p>
+								</div>
+								<div id="image-slider-image-info-container">
+									<p id="image-slider-img-info"> 
 									Slow want, 2020 <br>
 									Archival inkjet print <br>
 									16h x 12w in <br>
 									ejbrown0048 </p>
 								</div>
-							</div>
+								</div>									
+								</li>
+								</ul>
+						</div>
 						</div>
 					</div>
 					<div id="image-slider-content-container-bottom">
@@ -537,8 +616,9 @@ function playSound() {
 						</div>
 					</div>
 				</div>
-			</div>
-			<div id="auto-right-copy-section" class="written"> 
+			</div> -->
+
+			<div id="auto-right-copy-section" class="written-two"> 
 				<a id="katherine-hubbard"></a>
 				<div id="written-content-container" class="first-written">
 					<div id="written-copy-container">
@@ -731,7 +811,7 @@ function playSound() {
 					</div>
 				</div>
 			</div>	
-			<div id="auto-right-copy-section" class="written"> 
+			<div id="auto-right-copy-section" class="written-billy"> 
 				<a id="billy-ray"></a>
 				<div id="written-content-container">
 					<div id="written-copy-container" class="three">
@@ -755,15 +835,21 @@ function playSound() {
 				</div> 
 				</div>
 			</div>
-			<div id="auto-right-copy-section">  </div>	
+
+<!-- 			<div id="auto-right-copy-section">  </div>	 -->
+
+<audio id="second-audio">
+  <source src="assets/audio/Jonah Yano - strawberry!.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
 
 			<div id="draggable-container">	
 				<div id="draggable-two">
 								<div id="audio-player-top-container">
 									<div id="audio-player-controls-container">
-										<div id="audio-player-stop" ></div>
+										<div id="audio-player-stop" onclick="pause2()"></div>
 										<div id="audio-player-divide"></div>
-										<div id="audio-player-play"></div>
+										<div id="audio-player-play" onclick="play2()"></div>
 									</div>
 									<div id="audio-player-title"> Strawberry! by Jonah Yano </div>
 								</div>
@@ -792,14 +878,20 @@ function playSound() {
 					</div>
 				</div>
 			</div>
+
+<audio id="third-audio">
+  <source src="assets/audio/Swiss-Shala-Edit.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
 			<div id="draggable-container">
 				<div id="draggable-three">
 
 								<div id="audio-player-top-container">
 									<div id="audio-player-controls-container">
-										<div id="audio-player-stop" ></div>
+										<div id="audio-player-stop" onclick="pause3()"></div>
 										<div id="audio-player-divide"></div>
-										<div id="audio-player-play"></div>
+										<div id="audio-player-play" onclick="play3()"></div>
 									</div>
 									<div id="audio-player-title"> The ways Your Hair Looks on Most Days by Freddie June </div>
 								</div>
@@ -807,33 +899,45 @@ function playSound() {
 				</div>			
 			</div>			
 			<div id="auto-right-copy-section">  </div>
+
+<audio id="fourth-audio">
+  <source src="assets/audio/Swiss-Shala-Edit.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
 			<div id="draggable-container">
 				<div id="draggable-four">
 
 								<div id="audio-player-top-container">
 									<div id="audio-player-controls-container">
-										<div id="audio-player-stop" ></div>
+										<div id="audio-player-stop" onclick="pause4()"></div>
 										<div id="audio-player-divide"></div>
-										<div id="audio-player-play"></div>
+										<div id="audio-player-play" onclick="play4()"></div>
 									</div>
 									<div id="audio-player-title"> Ray J by Freddie June </div>
 								</div>
 								<div id="audio-player-bottom-container"></div>	
 				</div>
+
+<audio id="fifth-audio">
+  <source src="assets/audio/Swiss-Shala-Edit.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
 				<div id="draggable-five">
 
 								<div id="audio-player-top-container">
 									<div id="audio-player-controls-container">
-										<div id="audio-player-stop" ></div>
+										<div id="audio-player-stop" onclick="pause5()"></div>
 										<div id="audio-player-divide"></div>
-										<div id="audio-player-play"></div>
+										<div id="audio-player-play" onclick="play5()"></div>
 									</div>
 									<div id="audio-player-title"> Sticky Romance by Freddie June </div>
 								</div>
 								<div id="audio-player-bottom-container"></div>	
 				</div>	
 			</div>								
-			<div id="auto-right-copy-section" class="written"> 
+			<div id="auto-right-copy-section" class="written-billy-two"> 
 				<div id="written-content-container">
 					<div id="written-copy-container">
 						<div id="written-copy-container-top" class="three">
@@ -859,14 +963,20 @@ function playSound() {
 				</div> 
 				</div>
 			</div>
+
+<audio id="sixth-audio">
+  <source src="assets/audio/Swiss-Shala-Edit.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
 			<div id="draggable-container">
 				<div id="draggable-six">
 
 								<div id="audio-player-top-container">
 									<div id="audio-player-controls-container">
-										<div id="audio-player-stop" ></div>
+										<div id="audio-player-stop" onclick="pause6()"></div>
 										<div id="audio-player-divide"></div>
-										<div id="audio-player-play"></div>
+										<div id="audio-player-play" onclick="play6()"></div>
 									</div>
 									<div id="audio-player-title"> Kinky Jazz by Freddie June </div>
 								</div>
@@ -906,7 +1016,7 @@ function playSound() {
 			</div>						
 			<div id="auto-right-copy-section" class="single-image"> 
 			<div id="single-image-content-container" class="large">
-				<div id="single-image-container" class="large four"></div>
+				<div id="single-image-container" class="large-four"></div>
 				<div id="single-image-copy-container">
 					<div id="single-image-copy-top" class="long"> Elliot Jerome Brown Jr. </div>
 					<div id="single-image-copy-bottom"> Sweeping the bricks to the edge of a door too heavy to hold its own., 2019 </div>
@@ -924,21 +1034,27 @@ function playSound() {
 			</div>
 			<div id="auto-right-copy-section" class="single-image"> 
 			<div id="single-image-content-container" class="large">
-				<div id="single-image-container" class="large three"></div>
+				<div id="single-image-container" class="large-three"></div>
 				<div id="single-image-copy-container">
 					<div id="single-image-copy-top"> Naima Green </div>
 					<div id="single-image-copy-bottom"> A plunge, A twist, A slap, 2020 </div>
 				</div>
 			</div> 
 			</div>
+
+<audio id="seventh-audio">
+  <source src="assets/audio/L'Rain - L'Rain (Deluxe Edition) - 01 Heavy (But Not in Wait).mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
 			<div id="draggable-container"> 
 				<div id="draggable-seven">
 
 								<div id="audio-player-top-container">
 									<div id="audio-player-controls-container">
-										<div id="audio-player-stop" ></div>
+										<div id="audio-player-stop" onclick="pause7()"></div>
 										<div id="audio-player-divide"></div>
-										<div id="audio-player-play"></div>
+										<div id="audio-player-play" onclick="play7()"></div>
 									</div>
 									<div id="audio-player-title"> L’Rain Heavy... </div>
 								</div>
