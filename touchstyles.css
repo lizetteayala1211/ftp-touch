@@ -476,6 +476,7 @@ a {
 	height: 70%;
 	width: 100%;
 /*	background-color: yellow;*/	
+	cursor: pointer;
 }
 
 #audio-player-stop {
@@ -683,7 +684,7 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(0, 0, 0, 0.7);
 }
 		
 .slider ul li.slider2 {
@@ -702,7 +703,7 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-  background-color:rgba(0, 0, 0, 0.5);	
+  background-color:rgba(0, 0, 0, 0.7);	
 }
 
 
@@ -723,7 +724,7 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-  background-color:rgba(0, 0, 0, 0.5);	
+  background-color:rgba(0, 0, 0, 0.7);	
 }
 		
 .slider ul li.slider4 {
@@ -742,7 +743,7 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-  background-color:rgba(0, 0, 0, 0.5);	
+  background-color:rgba(0, 0, 0, 0.7);	
 }
 		
 .slider ul li.slider5 {
@@ -761,7 +762,7 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-  background-color:rgba(0, 0, 0, 0.5);	
+  background-color:rgba(0, 0, 0, 0.7);	
 }
 
 /*	image info slider (1) css */
@@ -770,18 +771,20 @@ a {
   position: relative;
   overflow: hidden;
   margin: 20px auto 0 auto;
-  border-radius: 4px;
-  height: 40%;
+/*  border-radius: 4px;*/
+  height: 50%;
   width: 100%;
-  background-color: yellow;
+  background-color: transparent;
 }
 
 #image-slider-nav-info ul {
   position: relative;
   margin: 0;
   padding: 0;
-/*  height: 50px;*/
+  height: 100px;
+  width: auto !important;
   list-style: none;
+  margin-left: 0px !important;
 }
 
 #image-slider-nav-info ul li {
@@ -791,10 +794,10 @@ a {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
-  background: #ccc;
+  height: 140%;
+  background: transparent;
   text-align: center;
-/*  line-height: 300px;*/
+/*  line-height: 100px;*/
 }
 
 #image-slider-nav-name-container {
@@ -803,9 +806,10 @@ a {
 /*	background-color: blue;*/
 	border-bottom: 2px solid black;
 	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: flex-start;
+/*	margin-right: 80px;*/
 }
 
 #image-slider-nav-name {
@@ -819,14 +823,15 @@ a {
 /*	background-color: blue;*/
 /*	border-bottom: 2px solid black;*/
 	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: flex-start;
+	text-align: left;	
 }
 
 #image-slider-img-info {
 	font-size: 2vh;
-	margin-right: 45px;	
+/*	margin-right: 100px;	*/
 	font-family: Baskerville-Italic-03;
 }
 
@@ -972,11 +977,47 @@ video#jimmy {
 /*	writing portion css */
 
 #auto-right-copy-section.written {
-	height: 100%;
+	height: 1505%;
 	width: 100%;
-	overflow-y: scroll;
+	overflow-y: hidden;
 /*	background-color: green;*/
-/*	border: 1px solid white;*/
+	border-bottom: 1px solid black;
+	cursor: pointer;
+}
+
+#auto-right-copy-section.written-two {
+	height: 345%;
+	width: 100%;
+	overflow-y: hidden;
+/*	background-color: green;*/
+	border-bottom: 1px solid black;
+	cursor: pointer;
+}
+
+#auto-right-copy-section.written.sable {
+	height: 2455%;
+	width: 100%;
+	overflow-y: hidden;
+/*	background-color: green;*/
+	border-bottom: 1px solid black;
+	cursor: pointer;
+}
+
+#auto-right-copy-section.written-billy {
+	height: 140%;
+	width: 100%;
+	overflow-y: hidden;
+/*	background-color: green;*/
+	border-bottom: 1px solid black;
+	cursor: pointer;
+}
+
+#auto-right-copy-section.written-billy-two {
+	height: 160%;
+	width: 100%;
+	overflow-y: hidden;
+/*	background-color: green;*/
+	border-bottom: 1px solid black;
 	cursor: pointer;
 }
 
@@ -1078,51 +1119,148 @@ video#jimmy {
 
 /*	image slider content (2) */
 
-#image-slider-content-container.two {
-	display: none;
-	height: 100%;
-	width: 100%;
-/*	background-color: red;*/
-/*	display: flex;*/
-	justify-content: center;
-	flex-direction: column;
+.slider#two {
+	position:relative;
+	overflow:hidden;
+	margin:0;
+/*	cursor: pointer;*/
 }
 
-#image-slider-content-container-top.two {
-	height: 150%;
-	width: 100%;
-/*	background-color: blue;*/
+.slider#two ul#image-slider-ul-second.two {
+	position:relative;
+	margin:0;
+	padding:0;
+	height:100%;
+	list-style:none;
+	width:100%;
+	overflow:hidden;
+	left:0;
+}
+		
+.slider#two ul#image-slider-ul-second.two li {
+	position:absolute;
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+	width: 540px;
+	height: 575px;
+/*	background:#F7B733;*/
+	text-align:center;
+	transition: ease-out 0.4s;
+	color: #fff;
+	font-size: 22px;
+	font-family: monospace;
 	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+	background-image: url('assets/photos/elliot/ejbrown0048_optimized.png');
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: contain;
+  	cursor: pointer;
+}
+		
+.slider#two ul#image-slider-ul-second.two li span {
+	margin:auto;
+}
+		
+.slider#two ul#image-slider-ul-second.two li.active#two {
+	left: 0;
 }
 
-#image-slider-container.two {
-	height: 90%;
-	width: 60%;
-/*	background-color: green;*/
-	align-content: center;
-	align-items: center;
+.active#two.fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.7);
+}
+		
+.slider#two ul#image-slider-ul-second.two li.slider2#two {
+/*	background: #4ABDAC;*/
+	background-image: url('assets/photos/naima/Morning After the Hospital-2-min.jpg');
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: contain;
 }
 
-#image-slider-content-container-bottom.two {
-	height: 50%;
-	width: 100%;
-/*	background-color: yellow;*/
-	display: flex;
-	justify-content: flex-start;
-/*	align-content: center;
-	align-items: center;*/
+.slider2#two.fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.7);	
 }
 
-#image-slider-copy-container.two {
-	height: 100%;
-	width: 60%;
-/*	background-color: white;*/
-	margin-left: 35px;
+
+		
+.slider#two ul#image-slider-ul-second.two li.slider3#two {
+/*	background: #B82601;*/
+	background-image: url('assets/photos/lacey/Lacey-Lennon-1-min.jpg');
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: contain;
 }
+
+.slider3#two.fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.7);	
+}
+		
+.slider#two ul#image-slider-ul-second.two li.slider4#two {
+/*	background: #8FC33A;*/
+	background-image: url('assets/photos/naima/Inhala, Villa Victoria-2-min.jpg');
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: contain;
+}
+
+.slider4#two.fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.7);	
+}
+		
+.slider#two ul#image-slider-ul-second.two li.slider5#two {
+/*	background: #F7882F;*/
+	background-image: url('assets/photos/naima/Côte d_Azur, 2018-2-min.jpg');
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: contain;
+}
+
+.slider5#two.fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.7);	
+}
+
+
+
+
+
+
 
 #image-slider-copy {
 	font-size: 2vh;
@@ -1140,11 +1278,11 @@ video#jimmy {
 
 #image-slider-nav-container.two {
 	height: 60%;
-    width: 90%;
+    width: 30%;
     /* background-color: white; */
     margin-left: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
 }
 
@@ -1208,10 +1346,6 @@ video#jimmy {
 /*	background-color: blue;*/
 	position: relative;
 	bottom: 40px;
-}
-
-#auto-right-copy-section.written.sable {
-/*	background-color: green;*/
 }
 
 #written-copy-container.four {
@@ -1426,6 +1560,23 @@ video#paul {
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: 90%;
+  	cursor: pointer;
+}
+
+#single-image-container.fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.7);
+  background-image: url('assets/photos/lacey/Lacey-Lennon-4-min.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;	
 }
 
 #single-image-copy-container {
@@ -1455,6 +1606,22 @@ video#paul {
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: 90%;
+}
+
+#single-image-container.two.fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.7);
+  background-image: url('assets/photos/lacey/Lacey-Lennon-3-min.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;	
 }
 
 #single-image-title-copy.two {
@@ -1506,6 +1673,22 @@ video#paul {
   	background-size: 100%;
 }
 
+#single-image-container.large.fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.7);
+  background-image: url('assets/photos/naima/DeVonn in Brooklyn, 2018-min.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;	
+}
+
 #single-image-container.large.two {
 	height: 90%;
 	width: 90%;
@@ -1516,9 +1699,25 @@ video#paul {
   	background-size: 100%;
 }
 
-#single-image-container.large.three {
-	height: 90%;
-	width: 90%;
+#single-image-container.large.two.fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.7);
+  background-image: url('assets/photos/naima/Gay Head in October,2020-2-min.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;	
+}
+
+#single-image-container.large-three {
+	height: 100%;
+	width: 100%;
 /*	background-color: blue;	*/
 	background-image: url('assets/photos/naima/A plunge, A twist, A slap, 2020-min.jpg');
   	background-repeat: no-repeat;
@@ -1526,18 +1725,50 @@ video#paul {
   	background-size: 100%;
 }
 
+#single-image-container.large-three.fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.7);
+  background-image: url('assets/photos/naima/A plunge, A twist, A slap, 2020-min.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;	
+}
+
 #single-image-copy-top.long {
 	width: 38%;
 }
 
-#single-image-container.large.four {
-	height: 90%;
-	width: 90%;
+#single-image-container.large-four {
+	height: 100%;
+	width: 100%;
 /*	background-color: blue;	*/
 	background-image: url('assets/photos/elliot/ejbrown0041-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: contain;
+}
+
+#single-image-container.large-four.fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.7);
+  background-image: url('assets/photos/elliot/ejbrown0041-min.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;	
 }
 
 #auto-right-copy-section.end {
