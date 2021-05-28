@@ -1,3 +1,79 @@
+/*  index button switch colors  */
+
+function Index() {
+
+/* top part */
+
+   var element = document.getElementById("top-part");
+   element.classList.toggle("index");
+
+   var element = document.getElementById("nav-top-link-one");
+   element.classList.toggle("index");
+
+   var element = document.getElementById("nav-top-link-two");
+   element.classList.toggle("index"); 
+
+    var element = document.getElementById("nav-top-link-three");
+   element.classList.toggle("index");    
+
+    var element = document.getElementById("nav-middle");
+   element.classList.toggle("index");   
+
+    var element = document.getElementById("nav-middle-copy");
+   element.classList.toggle("index");
+
+    var element = document.getElementById("nav-bottom-copy");
+   element.classList.toggle("index");  
+
+    var element = document.getElementById("nav-bottom-copy-two");
+   element.classList.toggle("index"); 
+
+    var element = document.getElementById("nav-bottom-copy-three");
+   element.classList.toggle("index"); 
+
+
+/* content part */
+
+    var element = document.getElementById("bottom-part");
+   element.classList.toggle("index"); 
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+/* marquee part */
+
+    var element = document.getElementById("marquee-part");
+   element.classList.toggle("index"); 
+
+    var element = document.getElementById("scroll");
+   element.classList.toggle("index");    
+
+}
+
 /*	audio players js	*/
 
 /*	first audio */
