@@ -52,6 +52,11 @@ a {
 	background-color: #C7C6C5;
 	display: flex;
 	flex-direction: column;
+	transition: all 3s ease;
+}
+
+#top-part.index {
+	background-color: black;
 }
 
 #nav-top {
@@ -89,6 +94,38 @@ a {
 	transform:skew(-15deg);
 }
 
+/* index switch */
+
+#nav-top-link-one {
+	color: black;
+	transition: all 3s ease;
+}
+
+#nav-top-link-one.index {
+	color: white;
+	transition: all 3s ease;
+}
+
+#nav-top-link-two {
+	color: black;
+	transition: all 3s ease;
+}
+
+#nav-top-link-two.index {
+	color: white;
+	transition: all 3s ease;
+}
+
+#nav-top-link-three {
+	color: black;
+	transition: all 3s ease;
+}
+
+#nav-top-link-three.index {
+	color: white;
+	transition: all 3s ease;
+}
+
 /* middle navigation content */
 
 #nav-middle {
@@ -101,6 +138,7 @@ a {
 	align-items: center;
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;	
+	transition: all 3s ease;
 }
 
 #nav-middle-copy-section {
@@ -113,6 +151,7 @@ a {
 	align-items: center;
 	text-align: center;
 	margin-top: 10px;
+	transition: all 3s ease;
 }
 
 #nav-middle-copy {
@@ -120,6 +159,30 @@ a {
 	font-size: 18vh;
 	text-align: center;
 	font-family: SnellRoundhand-Bold-02;
+	transition: all 3s ease;
+}
+
+/* index switch */
+
+#nav-middle.index {
+	height: 60%;
+	width: 100%;
+/*	background-color: red;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;	
+	transition: all 3s ease;
+}
+
+#nav-middle-copy.index {
+	color: white;
+	font-size: 18vh;
+	text-align: center;
+	font-family: SnellRoundhand-Bold-02;
+	transition: all 3s ease;
 }
 
 /* bottom navigation content */
@@ -153,9 +216,24 @@ a {
 	cursor: pointer;
 	z-index: 10;
 	font-family: Wremena-Light;
+	transition: all 3s ease;
 }
 
 #nav-bottom-copy:hover {
+	transform:skew(-15deg);
+}
+
+#nav-bottom-copy-two {
+	color: black;
+	font-size: 2.5vh;
+	text-align: center;
+	cursor: pointer;
+	z-index: 10;
+	font-family: Wremena-Light;
+	transition: all 3s ease;
+}
+
+#nav-bottom-copy-two:hover {
 	transform:skew(-15deg);
 }
 
@@ -164,6 +242,51 @@ a {
 	cursor: default;
 }
 
+#nav-bottom-copy-three {
+	color: black;
+	font-size: 2.5vh;
+	text-align: center;
+	cursor: pointer;
+	z-index: 10;
+	font-family: Wremena-Light;
+	transition: all 3s ease;
+}
+
+#nav-bottom-copy-three:hover {
+	transform:skew(-15deg);
+}
+
+/* index switch */
+
+#nav-bottom-copy.index {
+	color: white;
+	font-size: 2.5vh;
+	text-align: center;
+	cursor: pointer;
+	z-index: 10;
+	font-family: Wremena-Light;
+	transition: all 3s ease;
+}
+
+#nav-bottom-copy-two.index {
+	color: white;
+	font-size: 2.5vh;
+	text-align: center;
+	cursor: pointer;
+	z-index: 10;
+	font-family: Wremena-Light;
+	transition: all 3s ease;
+}
+
+#nav-bottom-copy-three.index {
+	color: white;
+	font-size: 2.5vh;
+	text-align: center;
+	cursor: pointer;
+	z-index: 10;
+	font-family: Wremena-Light;
+	transition: all 3s ease;
+}
 
 /* main content */
 
@@ -173,14 +296,122 @@ a {
 	left: 0;
 	height: 68vh;
 	width: 100vw;
-/*	background-color: yellow;*/
+	background-color: black;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
+	transition: all 3s ease;	
+/*	border: 1px solid red;*/
+}
+
+/* index switch */
+
+#bottom-part.index {
+	position: absolute;
+	top: 25.4vh;
+	left: 0;
+	height: 68vh;
+	width: 100vw;
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: all 3s ease;	
+}
+
+#index-left {
+	display: none;
+/*	display: flex;*/
+	height: 100%;
+	width: 70%;
+	background-color: transparent;
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+	flex-direction: column;
+	align-items: center;
+	border-right: 1px solid white;
+}
+
+#index-left-content {
+	display: flex;
+	flex-direction: column;
+	height: 200%;
+	width: 100%;
+	overflow: scroll;
+	cursor: pointer;
+}
+
+#index-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	height: 60%;
+	width: 100%;
+/*	background-color: blue;*/
+}
+
+#index-row-2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	height: 60%;
+	width: 100%;
+/*	background-color: yellow;*/
+}
+
+#index-row-3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	height: 60%;
+	width: 100%;
+	background-color: green;
+}
+
+#index-box {
+	display: flex;
+	height: 80%;
+	width: 25%;
+/*	background-color: yellow;*/
+	border: 1px solid white;
+/*	margin-right: 40px;*/
+}
+
+#index-right {
+	display: none;
+/*	display: flex;*/
+	height: 100%;
+	width: 30%;
+/*	background-color: yellow;*/
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#index-right-content {
+	display: flex;
+	height: 92%;
+	width: 80%;
+/*	background-color: yellow;*/
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+	flex-direction: column;
+	align-items: center;
+	color: white;
 }
 
 #auto-left {
+/*	display: none;*/
 	height: 100%;
 	width: 33%;
 /*	border: 1px solid black;*/
@@ -313,12 +544,13 @@ a {
 }
 
 #auto-right {
+/*	display: none;*/
 	height: 100%;
 	width: 67%;
 /*	border: 1px solid black;*/
 	background-color: #DCD3C0;		
 	overflow-y: scroll;
-	display: flex;
+/*	display: flex;*/
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -360,6 +592,47 @@ a {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	transition: all 3s ease;
+}
+
+/* index switch */
+
+#marquee-part.index {
+	position: absolute;
+	top: 93vh;
+	left: 0;
+	height: 7vh;
+	width: 100vw;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: all 3s ease;
+}
+
+#scroll {
+ 	height: 100%;	
+ 	width: 100%;
+ 	/*overflow: auto;*/
+ 	color: white;
+ 	font-size: 20px;
+/* 	display: flex;
+ 	flex-direction: row;*/
+ 	font-family: Baskerville-Italic-03;
+ 	transition: all 3s ease;
+}
+
+#scroll.index {
+ 	height: 100%;	
+ 	width: 100%;
+ 	/*overflow: auto;*/
+ 	color: black;
+ 	font-size: 20px;
+/* 	display: flex;
+ 	flex-direction: row;*/
+ 	font-family: Baskerville-Italic-03;
+ 	transition: all 3s ease;
 }
 
 #nav-marquee-copy-section {
@@ -373,16 +646,6 @@ a {
 	text-align: center;*/
 }
 
-.scroll-left {
- 	height: 100%;	
- 	width: 100%;
- 	/*overflow: auto;*/
- 	color: white;
- 	font-size: 20px;
-/* 	display: flex;
- 	flex-direction: row;*/
- 	font-family: Baskerville-Italic-03;
-}
 
 /*	image slider content (main) */
 
