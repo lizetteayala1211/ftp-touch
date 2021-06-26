@@ -9,22 +9,20 @@ $( document ).ready(function() {
 
 $( window ).on( "load", function() {
    console.log( "window loaded" );
-  $( "#nav-top-copy" ).delay( 5000 ).animate({fontSize: "1.3vh" }, 400 );
-  $( "#nav-top-copy.two" ).delay( 5000 ).animate({fontSize: "1.3vh" }, 400 );
-  $( "#nav-top-copy.three" ).delay( 5000 ).animate({fontSize: "1.3vh" }, 400 );
-  $( "#nav-top-link-one" ).delay( 5000 ).animate({fontSize: "1.3vh" }, 400 );
-  $( "#nav-top-link-two" ).delay( 5000 ).animate({fontSize: "1.3vh" }, 400 );
-  $( "#nav-top-link-three" ).delay( 5000 ).animate({fontSize: "1.3vh" }, 400 );
-  $( "#nav-middle-copy-section" ).delay( 5000 ).animate({ 'marginTop' : "5px" }, 400 );
-  $( "#nav-middle-copy" ).delay( 5000 ).animate({fontSize: "6vh" }, 400 );
-  $( "#nav-bottom-copy" ).delay( 5000 ).animate({fontSize: "1.5vh" }, 400 );
-  $( "#nav-bottom-copy-two" ).delay( 5000 ).animate({fontSize: "1.5vh" }, 400 );
-  $( "#nav-bottom-copy-three" ).delay( 5000 ).animate({fontSize: "1.5vh" }, 400 );
-  $( "#top-part" ).delay( 5000 ).animate({ height: "13vh" }, 400 );
-  $( "#bottom-part" ).delay( 5000 ).animate({ top: "13.1vh" }, 400 );
+  $( "#nav-top-copy" ).delay( 2000 ).animate({fontSize: "1.3vh" }, 400 );
+  $( "#nav-top-copy.two" ).delay( 2000 ).animate({fontSize: "1.3vh" }, 400 );
+  $( "#nav-top-copy.three" ).delay( 2000 ).animate({fontSize: "1.3vh" }, 400 );
+  $( "#nav-top-link-one" ).delay( 2000 ).animate({fontSize: "1.3vh" }, 400 );
+  $( "#nav-top-link-two" ).delay( 2000 ).animate({fontSize: "1.3vh" }, 400 );
+  $( "#nav-top-link-three" ).delay( 2000 ).animate({fontSize: "1.3vh" }, 400 );
+  $( "#nav-middle-copy-section" ).delay( 2000 ).animate({ 'marginTop' : "5px" }, 400 );
+  $( "#nav-middle-copy" ).delay( 2000 ).animate({fontSize: "6vh" }, 400 );
+  $( "#nav-bottom-copy" ).delay( 2000 ).animate({fontSize: "1.5vh" }, 400 );
+  $( "#nav-bottom-copy-two" ).delay( 2000 ).animate({fontSize: "1.5vh" }, 400 );
+  $( "#nav-bottom-copy-three" ).delay( 2000 ).animate({fontSize: "1.5vh" }, 400 );
+  $( "#top-part" ).delay( 2000 ).animate({ height: "13vh" }, 400 );
+  $( "#bottom-part" ).delay( 2000 ).animate({ top: "13.1vh" }, 400 );
   $( "#bottom-part" ).delay( 800 ).animate({ height: "80vh" }, 400 );
-
-
 });
 
 /*  index button switch colors  */
@@ -33,44 +31,26 @@ function Index() {
 
 /* top part */
 
-   var element = document.getElementById("top-part");
-   element.classList.toggle("index");
-
-   var element = document.getElementById("nav-top-link-one");
-   element.classList.toggle("index");
-
-   var element = document.getElementById("nav-top-link-two");
-   element.classList.toggle("index"); 
-
-    var element = document.getElementById("nav-top-link-three");
-   element.classList.toggle("index");    
-
-    var element = document.getElementById("nav-middle");
-   element.classList.toggle("index");   
-
-    var element = document.getElementById("nav-middle-copy");
-   element.classList.toggle("index");
-
-    var element = document.getElementById("nav-bottom-copy");
-   element.classList.toggle("index");  
-
-    var element = document.getElementById("nav-bottom-copy-two");
-   element.classList.toggle("index"); 
-
-    var element = document.getElementById("nav-bottom-copy-three");
-   element.classList.toggle("index"); 
-
-    var element = document.getElementById("body");
-   element.classList.toggle("index"); 
-
-
+   $("#top-part").css("background-color", "white");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "white");
+   $("#scroll").css("color", "black");  
 
 /* content part */
 
     var element = document.getElementById("bottom-part");
    element.classList.toggle("index"); 
 
-   $( "#bottom-part" ).animate({ top: "13.4vh" }, 400 );
+   $( "#bottom-part" ).animate({ top: "13.1vh" }, 400 );
 
   var x = document.getElementById("auto-left");
   if (x.style.display === "none") {
@@ -98,16 +78,1151 @@ function Index() {
     x.style.display = "none";
   } else {
     x.style.display = "flex";
-  }  
-/* marquee part */
-
-    var element = document.getElementById("marquee-part");
-   element.classList.toggle("index"); 
-
-    var element = document.getElementById("scroll");
-   element.classList.toggle("index");    
+  } 
 
 }
+
+/*  autopilot button switch colors  */
+
+function Autopilot() {
+
+/* top part */
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+   $("#auto-right").animate( { scrollLeft: '+=0' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");  
+
+/* content part */
+
+    var element = document.getElementById("bottom-part");
+   element.classList.toggle("index"); 
+
+   $( "#bottom-part" ).animate({ top: "13.1vh" }, 400 );
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+}
+
+/* index reveal one (elliott jerome img one) */
+
+  function IndexBoxShow1() {
+
+  $("#auto-right").animate( { scrollLeft: '+=10500' }, 400); 
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  } 
+
+  }
+
+/* index reveal two (desperate jazz) */
+
+  function IndexBoxShow2() {
+
+  $("#auto-right").animate( { scrollLeft: '+=300' }, 400); 
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  } 
+
+
+  }  
+
+/* index reveal three (jimmy robert) */
+
+  function IndexBoxShow3() {
+
+  $("#auto-right").animate( { scrollLeft: '+=460' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  } 
+
+  }
+
+/* index reveal four (richard siken) */
+
+  function IndexBoxShow4() {
+
+  $("#auto-right").animate( { scrollLeft: '+=1200' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  } 
+
+  }
+
+/* index reveal five (katherine hubbard) */
+
+  function IndexBoxShow5() {
+
+ $("#auto-right").animate( { scrollLeft: '+=2650' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  } 
+
+  }
+
+/* index reveal six (strawberry!) */
+
+  function IndexBoxShow6() {
+
+$("#auto-right").animate( { scrollLeft: '+=3400' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  } 
+
+  }
+
+/* index reveal seven (lacey lennon img one) */
+
+  function IndexBoxShow7() {
+
+$("#auto-right").animate( { scrollLeft: '+=9500' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+
+  }
+
+/* index reveal eight (the way your hair looks on most days) */
+
+  function IndexBoxShow8() {
+
+$("#auto-right").animate( { scrollLeft: '+=5750' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+
+  }
+
+/* index reveal nine (naima green img one) */
+
+  function IndexBoxShow9() {
+
+$("#auto-right").animate( { scrollLeft: '+=1900' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+
+  }
+
+/* index reveal ten (billy ray one) */
+
+  function IndexBoxShow10() {
+
+$("#auto-right").animate( { scrollLeft: '+=4450' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+
+  }
+
+/* index reveal eleven (ray j) */
+
+  function IndexBoxShow11() {
+
+$("#auto-right").animate( { scrollLeft: '+=7500' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+    
+  }
+
+/* index reveal twelve (Caryatid) */
+
+  function IndexBoxShow12() {
+
+$("#auto-right").animate( { scrollLeft: '+=6000' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+
+  }
+
+/* index reveal thirteen (elliott jerome brown img two) */
+
+  function IndexBoxShow13() {
+
+$("#auto-right").animate( { scrollLeft: '+=6700' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+
+  }
+
+/* index reveal fourteen (naima green img two) */
+
+  function IndexBoxShow14() {
+
+$("#auto-right").animate( { scrollLeft: '+=11200' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+
+  }
+
+/* index reveal fifteen (sable elyse smith) */
+
+  function IndexBoxShow15() {
+
+$("#auto-right").animate( { scrollLeft: '+=5100' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+
+  }
+
+/* index reveal sixteen (sticky romance) */
+
+  function IndexBoxShow16() {
+
+$("#auto-right").animate( { scrollLeft: '+=7500' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+
+  }
+
+/* index reveal seventeen (kinky jazz) */
+
+  function IndexBoxShow17() {
+
+$("#auto-right").animate( { scrollLeft: '+=8760' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+
+  }  
+
+/* index reveal eighteen (billy ray second) */
+
+  function IndexBoxShow18() {
+
+$("#auto-right").animate( { scrollLeft: '+=8100' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+
+  }
+
+/* index reveal nineteen (l'rain) */
+
+  function IndexBoxShow19() {
+
+$("#auto-right").animate( { scrollLeft: '+=13600' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+
+  }
+
+/* index reveal twenty (elliott img three) */
+
+  function IndexBoxShow20() {
+
+  $("#auto-right").animate( { scrollLeft: '+=0' }, 400);   
+
+   $("#top-part").css("background-color", "#C7C6C5");
+   $("#top-part").css("color", "black");
+   $("#nav-top-link-one").css("color", "black");
+   $("#nav-top-link-two").css("color", "black");
+   $("#nav-top-link-three").css("color", "black");
+   $("#nav-middle").css("border-top", "2px black solid");
+   $("#nav-middle").css("border-bottom", "2px black solid");
+   $("#nav-middle-copy").css("color", "black");
+   $("#nav-bottom-copy").css("color", "black");
+   $("#nav-bottom-copy-two").css("color", "black");
+   $("#nav-bottom-copy-three").css("color", "black");
+   $("#marquee-part").css("background-color", "black");
+   $("#scroll").css("color", "white");     
+
+  var x = document.getElementById("auto-left");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }  
+
+   $('#auto-right-content-container').css('margin-left', '930vw');
+
+
+  var x = document.getElementById("auto-right");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+
+
+  var x = document.getElementById("index-left");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }  
+
+  var x = document.getElementById("index-right");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  } 
+
+  }
 
 /*	audio players js	*/
 
@@ -267,7 +1382,7 @@ function Index() {
     $( "#draggable-seven" ).draggable();
   } );
 
-/*	time on page counter js	*/
+/*	time on autopilot page counter js	*/
 
 var timerVar = setInterval(countTimer, 1000);
 var totalSeconds = 0;
@@ -284,6 +1399,184 @@ function countTimer() {
              seconds = "0"+seconds;
            document.getElementById("timer").innerHTML = hour + ":" + minute + ":" + seconds;
         }
+
+// /*  time on index (1) page counter js */
+
+// var timerVar2 = setInterval(countTimer2, 1000);
+// var totalSeconds2 = 0;
+// function countTimer2() {
+//            ++totalSeconds2;
+//            var hour = Math.floor(totalSeconds2 /3600);
+//            var minute = Math.floor((totalSeconds2 - hour*3600)/60);
+//            var seconds = totalSeconds2 - (hour*3600 + minute*60);
+//            if(hour < 10)
+//              hour = "0"+hour;
+//            if(minute < 10)
+//              minute = "0"+minute;
+//            if(seconds < 10)
+//              seconds = "0"+seconds;
+//            document.getElementById("timer-two").innerHTML = hour + ":" + minute + ":" + seconds;         
+//        }      
+
+
+// /*  time on index (2) page counter js */
+
+// var timerVar3 = setInterval(countTimer3, 1000);
+// var totalSeconds3 = 0;
+// function countTimer3() {
+//            ++totalSeconds3;
+//            var hour = Math.floor(totalSeconds3 /3600);
+//            var minute = Math.floor((totalSeconds3 - hour*3600)/60);
+//            var seconds = totalSeconds3 - (hour*3600 + minute*60);
+//            if(hour < 10)
+//              hour = "0"+hour;
+//            if(minute < 10)
+//              minute = "0"+minute;
+//            if(seconds < 10)
+//              seconds = "0"+seconds;
+//            document.getElementById("timer-three").innerHTML = hour + ":" + minute + ":" + seconds;
+//         }
+
+// /*  time on index (3) page counter js */
+
+// var timerVar4 = setInterval(countTimer4, 1000);
+// var totalSeconds4 = 0;
+// function countTimer4() {
+//            ++totalSeconds4;
+//            var hour = Math.floor(totalSeconds4 /3600);
+//            var minute = Math.floor((totalSeconds4 - hour*3600)/60);
+//            var seconds = totalSeconds4 - (hour*3600 + minute*60);
+//            if(hour < 10)
+//              hour = "0"+hour;
+//            if(minute < 10)
+//              minute = "0"+minute;
+//            if(seconds < 10)
+//              seconds = "0"+seconds;
+//            document.getElementById("timer-four").innerHTML = hour + ":" + minute + ":" + seconds;
+//         }
+
+// /*  time on index (4) page counter js */
+
+// var timerVar5 = setInterval(countTimer5, 1000);
+// var totalSeconds5 = 0;
+// function countTimer5() {
+//            ++totalSeconds5;
+//            var hour = Math.floor(totalSeconds5 /3600);
+//            var minute = Math.floor((totalSeconds5 - hour*3600)/60);
+//            var seconds = totalSeconds5 - (hour*3600 + minute*60);
+//            if(hour < 10)
+//              hour = "0"+hour;
+//            if(minute < 10)
+//              minute = "0"+minute;
+//            if(seconds < 10)
+//              seconds = "0"+seconds;
+//            document.getElementById("timer-five").innerHTML = hour + ":" + minute + ":" + seconds;
+//         } 
+
+// /*  time on index (5) page counter js */
+
+// var timerVar6 = setInterval(countTimer6, 1000);
+// var totalSeconds6 = 0;
+// function countTimer6() {
+//            ++totalSeconds6;
+//            var hour = Math.floor(totalSeconds6 /3600);
+//            var minute = Math.floor((totalSeconds6 - hour*3600)/60);
+//            var seconds = totalSeconds6 - (hour*3600 + minute*60);
+//            if(hour < 10)
+//              hour = "0"+hour;
+//            if(minute < 10)
+//              minute = "0"+minute;
+//            if(seconds < 10)
+//              seconds = "0"+seconds;
+//            document.getElementById("timer-six").innerHTML = hour + ":" + minute + ":" + seconds;
+//         }               
+
+// /*  time on index (6) page counter js */
+
+// var timerVar7 = setInterval(countTimer7, 1000);
+// var totalSeconds7 = 0;
+// function countTimer7() {
+//            ++totalSeconds7;
+//            var hour = Math.floor(totalSeconds7 /3600);
+//            var minute = Math.floor((totalSeconds7 - hour*3600)/60);
+//            var seconds = totalSeconds7 - (hour*3600 + minute*60);
+//            if(hour < 10)
+//              hour = "0"+hour;
+//            if(minute < 10)
+//              minute = "0"+minute;
+//            if(seconds < 10)
+//              seconds = "0"+seconds;
+//            document.getElementById("timer-seven").innerHTML = hour + ":" + minute + ":" + seconds;
+//         }
+
+// /*  time on index (7) page counter js */
+
+// var timerVar8 = setInterval(countTimer8, 1000);
+// var totalSeconds8 = 0;
+// function countTimer8() {
+//            ++totalSeconds8;
+//            var hour = Math.floor(totalSeconds8 /3600);
+//            var minute = Math.floor((totalSeconds8 - hour*3600)/60);
+//            var seconds = totalSeconds8 - (hour*3600 + minute*60);
+//            if(hour < 10)
+//              hour = "0"+hour;
+//            if(minute < 10)
+//              minute = "0"+minute;
+//            if(seconds < 10)
+//              seconds = "0"+seconds;
+//            document.getElementById("timer-eight").innerHTML = hour + ":" + minute + ":" + seconds;
+//         }
+
+
+/*  index rows (1-4) shuffle js */
+
+$(function () {
+    var parent = $(".shuffle-all");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+});
+
+$(function () {
+    var parent = $(".shuffle-1");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+});
+
+$(function () {
+    var parent = $(".shuffle-2");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+});
+
+$(function () {
+    var parent = $(".shuffle-3");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+});
+
+$(function () {
+    var parent = $(".shuffle-4");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+});
+
+$(function () {
+    var parent = $(".shuffle-5");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+});
 
 
 /*	first slider js	*/
@@ -650,99 +1943,6 @@ jQuery(document).ready(function ($) {
 
 });  
 
-//  /* fifth slider js  */
-
-// $(document).ready(function(){ 
-//     function _slider5(id){
-//       var slidewidth5 = $('.slider4 #image-slider-ul-fifth li').width();
-//       var slideheight5 = $('.slider4 #image-slider-ul-fifth li').outerHeight();
-
-//       $('.slider5').css({'height':slideheight5,'width':slidewidth5});
-//       $('.slider5 #image-slider-ul-fifth li:not(.active00000)').css({'left':slidewidth5});
-//       if($('.slider5 #image-slider-ul-fifth li:nth-child(1)').hasClass('active00000')){
-//         $('.slider5 #image-slider-ul-fifth li:last-child').css({left: - slidewidth5}, -200).prependTo('.slider5 #image-slider-ul-fifth');
-//       }      
-//       function moveright5(){
-//         var slideheight5 = $('.slider5 #image-slider-ul-fifth li.active00000').next().height();
-//         var slidewidth5 = $('.slider5 #image-slider-ul-fifth li.active00000').next().width();
-//         $('.slider5').animate({height:slideheight5,width:slidewidth5},200);
-        
-//         if ($('.slider5 #image-slider-ul-fifth li:nth-last-child(2)').hasClass('active00000')) {
-//            $('.slider5 #image-slider-ul-fifth li:first-child').css({left: slidewidth5}, -200).appendTo('.slider5 #image-slider-ul-fifth');
-//            $('.slider5 #image-slider-ul-fifth li.active00000').css({left: -slidewidth5}, -200).removeClass('active00000').next().addClass('active00000').css({left: 0}, -200);
-//         } else {
-//           $('.slider5 #image-slider-ul-fifth li.active00000').css({left: -slidewidth5}, -200).removeClass('active00000').next().addClass('active00000').css({left: 0}, -200);
-//         }
-//       }
-//       function moveleft5(){
-//         var slideheight5 = $('.slider5 #image-slider-ul-fifth li.active00000').prev().height();
-//         var slidewidth5 = $('.slider5 #image-slider-ul-fifth li.active00000').prev().width();
-//         $('.slider5').animate({height:slideheight5,width:slidewidth5},200);
-
-
-//         if ($('.slider5 #image-slider-ul-fifth li:nth-child(2)').hasClass('active00000')) {
-//            $('.slider5 #image-slider-ul-fifth li:last-child').css({left: - slidewidth5}, -200).prependTo('.slider5 #image-slider-ul-fifth');
-//            $('.slider5 #image-slider-ul-fifth li.active00000').removeClass('active00000').css({left: slidewidth5}, -200).prev().addClass('active00000').css({left: 0}, -200);
-//         } else {
-//           $('.slider5 #image-slider-ul-fifth li.active00000').removeClass('active00000').css({left: slidewidth5}, -200).prev().addClass('active00000').css({left: 0}, -200);
-//         } 
-//       }
-
-//       $('.control_next5').on('click', function(){ 
-//         moveright5();
-//       });
-//       $('.control_prev5').on('click', function(){ 
-//         moveleft5();
-//       });
-//     } 
-//     _slider5('slider_5');
-//   });
-
-//  /* fifth slider image info js  */
-
-// jQuery(document).ready(function ($) {
-  
-//   var slideCount5 = $('#image-slider-nav-info-fifth ul li').length;
-//   var slideWidth5 = $('#image-slider-nav-info-fifth ul li').width();
-//   var slideHeight5 = $('#image-slider-nav-info-fifth ul li').height();
-//   var sliderUlWidth5 = slideCount5 * slideWidth5;
-
-//   $('#image-slider-nav-info-fifth').css({ width: slideWidth5, height: slideHeight5 });
-  
-//   $('#image-slider-nav-info-fifth ul').css({ width: sliderUlWidth5, marginLeft5: - slideWidth5 });
-  
-//     $('#image-slider-nav-info-fifth ul li:last-child').prependTo('#image-slider-nav-info-fifth ul'); 
-
-//     function moveLeft5() {
-//         $('#image-slider-nav-info-fifth ul').animate({
-//             left: + slideWidth5
-//         }, 200, function () {
-//             $('#image-slider-nav-info-fifth ul li:last-child').prependTo('#image-slider-nav-info-fifth ul');
-//             $('#image-slider-nav-info-fifth ul').css('left', '');
-//         });
-//     };
-
-//     function moveRight5() {
-//         $('#image-slider-nav-info-fifth ul').animate({
-//             left: - slideWidth5
-//         }, 200, function () {
-//             $('#image-slider-nav-info-fifth ul li:first-child').appendTo('#image-slider-nav-info-fifth ul');
-//             $('#image-slider-nav-info-fifth ul').css('left', '');
-//         });
-//     };
-
-//     $('.control_next5').click(function () {
-//         moveLeft5();
-//     });
-
-//     $('.control_prev5').click(function () {
-//         moveRight5();
-//     });
-
-// });  
-
-
-
 /*	enlarge slider images js	*/
 
 /*  first set  */
@@ -878,30 +2078,6 @@ $(document).ready(function() {
     $(this).toggleClass('fullscreen');
   });
 });
-
-// /*  fifth set  */
-
-// $(document).ready(function() {
-//   $('.active00000').click(function(e) {
-//     // Change Selector Here
-//     $(this).toggleClass('fullscreen');
-//   });
-// });
-
-// $(document).ready(function() {
-//   $('.slider00002').click(function(e) {
-//     // Change Selector Here
-//     $(this).toggleClass('fullscreen');
-//   });
-// });
-
-// $(document).ready(function() {
-//   $('.slider00003').click(function(e) {
-//     // Change Selector Here
-//     $(this).toggleClass('fullscreen');
-//   });
-// });
-
 
 /*	enlarge single images js	*/
 
