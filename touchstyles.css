@@ -562,7 +562,6 @@ span#text {
 	width: 90%;
 /*	background-color: green;*/
 /*	border: 1px solid white;*/
-	cursor: pointer;
 	display: flex;
 	flex-direction: column;
 	opacity: 0.5;
@@ -572,7 +571,6 @@ span#text {
 
 #auto-left-copy-section:hover {
 	opacity: 1;
-	cursor: pointer;
 }
 
 #auto-left-top-copy-container {
@@ -607,6 +605,23 @@ span#text {
 	font-family: Messapia-Regular;
 }
 
+#bio-arrow-container {
+	cursor: pointer;
+	height: 6vh;
+	width: 25%;
+/*	background-color: green;*/
+	background-image: url('assets/icons/backtobottom.png');
+  	background-repeat: no-repeat;
+  	background-position: bottom;
+  	background-size: 20%;
+  	opacity 1s ease-in-out; -moz-transition: opacity 1s ease-in-out; -o-transition: opacity 1s ease-in-out; transition: opacity 1s ease-in-out; 	
+}
+
+.arrow-up {
+	transform: rotate(0.5turn);
+	background-position: top;
+}
+
 #auto-left-name:hover {
 	font-size: 3vh;	
 	font-family: Messapia-Regular;
@@ -620,7 +635,7 @@ span#text {
 	display: flex;
 	flex-direction: row;
 	font-family: Druk-Wide-Medium;
-	margin-top: 5px;
+	margin-top: 15px;
 }
 
 #auto-left-bottom-copy-container.right {
@@ -675,16 +690,18 @@ span#text {
 }
 
 #auto-left-bio-container {
+	display: none;
 /*	font-family: Messapia-Regular;*/
     font-family: HelveticaNeue-01;
 	font-size: 1.7vh;
 	height: 100%;
+/*	width: 100%;*/
 }
 
 #auto-left-bio-container.katherine {
 	margin-left: 20px;
 	margin-right: 20px;
-	margin-bottom: -30px;
+/*	margin-bottom: -30px;*/
 }
 
 #auto-right {
@@ -703,7 +720,7 @@ span#text {
 
 #auto-right-content-container {
 	height: 99%;
-	width: 1000vw;
+	width: 1400vw;
 	margin: 10px;	
 /*	background-color: red;*/
 	scroll-behavior: smooth;
@@ -722,7 +739,8 @@ span#text {
 /*	cursor: pointer;*/
 /*	margin-bottom: 30px;*/
 	scroll-behavior: smooth;
-	margin-left: 40px;
+	margin-left: 100px;
+	margin-right: 100px;
 }
 
 * {
@@ -969,7 +987,7 @@ span#text {
 	left: 10vw;
 	bottom: 10px;
 	height: 18%;
-	width: 120%;
+	width: 100%;
 	background-color: black;
 	cursor: pointer;
 }
@@ -1017,7 +1035,7 @@ span#text {
 
 #draggable-six {
 	position: relative;
-	left: 10vw;
+/*	left: 10vw;*/
 	top: 5vh;
 	height: 18%;
 	width: 80%;
@@ -1405,7 +1423,7 @@ a.control_next {
 
 #video-content-container {
 	height: 100%;
-	width: 100%;
+	width: 60vw;
 /*	background-color: red;*/
 	display: flex;
 	justify-content: center;
@@ -1461,7 +1479,7 @@ video#jimmy {
 
 #auto-right-copy-section.written {
     height: 100%;
-    width: 140%;
+    width: 100%;
     overflow: hidden;
     /* background-color: green; */
     /* border-bottom: 1px solid black; */
@@ -1497,9 +1515,27 @@ video#jimmy {
   	transform: rotate(0.5turn);	
 }
 
+#written-left-container {
+	height: 15%;
+	width: 20%;
+  	background-image: url('assets/icons/left-arrow.png');
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: contain;	
+}
+
+#written-right-container {
+	height: 15%;
+	width: 20%;
+  	background-image: url('assets/icons/right-arrow.png');
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: contain;
+}
+
 #auto-right-copy-section.written-two {
 	height: 100%;
-	width: 140%;
+	width: 100%;
 	overflow-x: hidden;
 	overflow-y: hidden;
 /*	background-color: green;*/
@@ -1512,7 +1548,7 @@ video#jimmy {
 
 #auto-right-copy-section.written.sable {
     height: 100%;
-    width: 140%;
+    width: 100%;
      overflow-y: scroll; 
     /* background-color: green; */
     /* border-bottom: 1px solid black; */
@@ -1546,7 +1582,7 @@ video#jimmy {
 
 #auto-right-copy-section.written-billy {
 	height: 100%;
-	width: 140%;
+	width: 100%;
 	overflow-y: scroll;
 /*	background-color: green;*/
 	border-bottom: 1px solid black;
@@ -1565,7 +1601,7 @@ video#jimmy {
 
 #auto-right-copy-section.written-billy-two {
 	height: 100%;
-	width: 150%;
+	width: 100%;
 	overflow-y: hidden;
 /*	background-color: green;*/
 /*	border-bottom: 1px solid black;*/
@@ -1579,7 +1615,7 @@ video#jimmy {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
-	overflow-y: scroll;
+	overflow-y: hidden;
 	overflow-x: hidden;
 }
 
@@ -1630,6 +1666,14 @@ video#jimmy {
 	margin-right: 20px;
 	position: relative;
 	bottom: 30px;
+}
+
+#all-stanza-container {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 
 #stanza-container {
@@ -2525,7 +2569,7 @@ video#jimmy {
 
 #auto-right-copy-section.video.two {
 	height: 100%;
-	width: 180%;
+	width: 140%;
 /*	background-color: green;*/
 /*	border: 1px solid white;*/
 /*	cursor: pointer;*/
@@ -2617,8 +2661,8 @@ video#paul {
 /*	single image container css  */ 
 
 #auto-right-copy-section.single-image {
-	margin-left: 60px;
-	margin-right: 60px;
+	margin-left: 100px;
+	margin-right: 100px;
 }
 
 #single-image-content-container {
