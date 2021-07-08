@@ -5,6 +5,68 @@ $( document ).ready(function() {
   console.log( "document loaded" );
 });
 
+/*  collapsable bio's  */
+
+$('#bio-arrow-container.first').click(function(){
+  $(this).toggleClass("arrow-up");
+    $('#auto-left-bio-container.first').slideToggle(500, 'linear');
+});
+
+$('#bio-arrow-container.second').click(function(){
+  $(this).toggleClass("arrow-up");
+    $('#auto-left-bio-container.second').slideToggle(500, 'linear');
+});
+
+$('#bio-arrow-container.third').click(function(){
+  $(this).toggleClass("arrow-up");
+    $('#auto-left-bio-container.third').slideToggle(500, 'linear');
+});
+
+$('#bio-arrow-container.fourth').click(function(){
+  $(this).toggleClass("arrow-up");
+    $('#auto-left-bio-container.fourth').slideToggle(500, 'linear');
+});
+
+$('#bio-arrow-container.katherine').click(function(){
+  $(this).toggleClass("arrow-up");
+    $('#auto-left-bio-container.katherine').slideToggle(500, 'linear');
+});
+
+$('#bio-arrow-container.sixth').click(function(){
+  $(this).toggleClass("arrow-up");
+    $('#auto-left-bio-container.sixth').slideToggle(500, 'linear');
+});
+
+$('#bio-arrow-container.seventh').click(function(){
+  $(this).toggleClass("arrow-up");
+    $('#auto-left-bio-container.seventh').slideToggle(500, 'linear');
+});
+
+$('#bio-arrow-container.eighth').click(function(){
+  $(this).toggleClass("arrow-up");
+    $('#auto-left-bio-container.eighth').slideToggle(500, 'linear');
+});
+
+$('#bio-arrow-container.ninth').click(function(){
+  $(this).toggleClass("arrow-up");
+    $('#auto-left-bio-container.ninth').slideToggle(500, 'linear');
+});
+
+$('#bio-arrow-container.tenth').click(function(){
+  $(this).toggleClass("arrow-up");
+    $('#auto-left-bio-container.tenth').slideToggle(500, 'linear');
+});
+
+$('#bio-arrow-container.eleventh').click(function(){
+  $(this).toggleClass("arrow-up");
+    $('#auto-left-bio-container.eleventh').slideToggle(500, 'linear');
+});
+
+$('#bio-arrow-container.twelveth').click(function(){
+  $(this).toggleClass("arrow-up");
+    $('#auto-left-bio-container.twelveth').slideToggle(500, 'linear');
+});
+
 /*  on page load, accordion effect  */
 
 $( window ).on( "load", function() {
@@ -142,6 +204,9 @@ function Autopilot() {
   }
 
 }
+
+/*  richard siken, horizontal written slider  */
+
 
 /* index reveal one (elliott jerome img one) */
 
