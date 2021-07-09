@@ -610,7 +610,7 @@ span#text {
 	height: 6vh;
 	width: 25%;
 /*	background-color: green;*/
-	background-image: url('assets/icons/backtobottom.png');
+	background-image: url('assets/icons/backtotobottom.png');
   	background-repeat: no-repeat;
   	background-position: bottom;
   	background-size: 20%;
@@ -844,6 +844,14 @@ span#text {
 #image-slider-container {
 	height: 100%;
 	width: 65%;
+/*	background-color: yellow;*/
+	align-content: center;
+	align-items: center;
+}
+
+#image-slider-container.second {
+	height: 100%;
+	width: 100%;
 /*	background-color: yellow;*/
 	align-content: center;
 	align-items: center;
@@ -1637,6 +1645,17 @@ video#jimmy {
 	font-family: Charon-Regular;
 	font-size: 4.5vh;
 	margin-left: 30px;
+/*	margin-bottom: 30px;*/
+}
+
+#written-copy-container-top.margin-bottom {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	font-family: Charon-Regular;
+	font-size: 4.5vh;
+	margin-left: 30px;
 	margin-bottom: 30px;
 }
 
@@ -1665,20 +1684,48 @@ video#jimmy {
 	width: 45%;
 	margin-right: 20px;
 	position: relative;
-	bottom: 30px;
+/*	bottom: 30px;*/
 }
 
 #all-stanza-container {
 	display: flex;
 	width: 100%;
+	height: 100%;
 	flex-direction: row;
-	overflow-x: scroll;
+	overflow-x: hidden;
 	overflow-y: hidden;
+}
+
+#all-stanza-container.two {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: row;
+	overflow: hidden;
+	position: relative;
+    bottom: 30px;
+}
+
+#all-stanza-container.three {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: row;
+	overflow: hidden;
+	position: relative;
+    bottom: 60px;
 }
 
 #stanza-container {
 	height: auto;
 	width: 100%;
+/*	background-color: blue;*/
+}
+
+#stanza-container.scroll {
+	height: auto;
+	width: 100%;
+	overflow-y: scroll;
 /*	background-color: blue;*/
 }
 
@@ -2299,6 +2346,7 @@ video#jimmy {
   height: 50%;
   width: 100%;
   background-color: transparent;
+  width: 180px;
 }
 
 #image-slider-nav-info-fourth ul {
@@ -2447,7 +2495,7 @@ video#jimmy {
     align-items: flex-start;
 	font-size: 5vh;
 	margin-left: 0px;
-	margin-bottom: 0;
+	margin-bottom: 30px;
 /*	background-color: red;*/
 }
 
@@ -2473,7 +2521,7 @@ video#jimmy {
 	width: 100%;
 /*	background-color: blue;*/
 	position: relative;
-	bottom: 80px;
+/*	bottom: 80px;*/
 }
 
 #stanza-copy.four {
@@ -2491,24 +2539,17 @@ video#jimmy {
 #stanza-center {
 	display: flex;
 	text-align: center;
-	margin-left: 40px;
+	margin-left: 20px;
 }
 
 #stanza-asterick {
-	margin-left: 25vw;
+	margin-left: 20vw;
 }
 
 #stanza-left-margin {
 	margin-left: 40px;
 }
 
-#written-content-container.three {
-	overflow-y: scroll;
-}
-
-#written-copy-container.three {
-/*	background-color: blue;*/
-}
 
 #written-copy-container-top.three {
 	display: flex;
@@ -2518,7 +2559,7 @@ video#jimmy {
     align-items: flex-start;
 	font-size: 5vh;
 	margin-left: 0px;
-	margin-bottom: 0;
+/*	margin-bottom: 30px;*/
 /*	background-color: red;*/
 }
 
@@ -2552,11 +2593,11 @@ video#jimmy {
 }
 
 #stanza-container.three {
-	height: auto;
+	height: 100%;
 	width: 100%;
 /*	background-color: blue;*/
 	position: relative;
-	bottom: 80px;
+/*	bottom: 80px;*/
 }
 
 #stanza-copy-small {
@@ -2690,8 +2731,8 @@ video#paul {
 /*	background-color: white;	*/
 	background-image: url('assets/photos/lacey/Lacey-Lennon-4-min.jpg');
   	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: cover;
+  	background-position: left;
+  	background-size: contain;
   	cursor: pointer;
 }
 
@@ -2738,8 +2779,8 @@ video#paul {
 /*	background-color: white;	*/
 	background-image: url('assets/photos/lacey/Lacey-Lennon-3-min.jpg');
   	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: cover;
+  	background-position: left;
+  	background-size: contain;
 }
 
 #single-image-container.two.fullscreen {
@@ -2779,7 +2820,7 @@ video#paul {
 	margin-bottom: 15px;
 /*	background-color: blue;*/
 	border-bottom: 2px solid black;
-	width: 45%;
+	width: 30%;
 }
 
 #single-image-copy-bottom {
@@ -2814,7 +2855,7 @@ video#paul {
 	background-image: url('assets/photos/naima/DeVonn in Brooklyn, 2018-min.jpg');
   	background-repeat: no-repeat;
   	background-position: left;
-  	background-size: cover;
+  	background-size: contain;
 }
 
 #single-image-container.large.fullscreen {
@@ -2839,8 +2880,8 @@ video#paul {
 /*	background-color: blue;	*/
 	background-image: url('assets/photos/naima/Gay Head in October,2020-2-min.jpg');
   	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: cover;
+  	background-position: left;
+  	background-size: contain;
 }
 
 #single-image-container.large.two.fullscreen {
@@ -2865,8 +2906,8 @@ video#paul {
 /*	background-color: blue;	*/
 	background-image: url('assets/photos/naima/A plunge, A twist, A slap, 2020-min.jpg');
   	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: cover;
+  	background-position: left;
+  	background-size: contain;
 }
 
 #single-image-container.large-three.fullscreen {
@@ -2886,7 +2927,7 @@ video#paul {
 }
 
 #single-image-copy-top.long {
-	width: 82%;
+	width: 50%;
 }
 
 #single-image-container.large-four {
@@ -2896,7 +2937,7 @@ video#paul {
 	background-image: url('assets/photos/elliot/ejbrown0041-min.jpg');
   	background-repeat: no-repeat;
   	background-position: left;
-  	background-size: 80%;
+  	background-size: contain;
 }
 
 #single-image-container.large-four.fullscreen {
@@ -2942,7 +2983,7 @@ video#paul {
 
 #scroll-to-top-arrow {
 	height: 60%;
-	width: 20%;
+	width: 15%;
 /*	background-color: yellow;*/
 	background-image: url('assets/icons/backtotop.png');
   	background-repeat: no-repeat;
