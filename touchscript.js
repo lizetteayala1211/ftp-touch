@@ -2363,7 +2363,7 @@ $( window ).on( "load", function() {
   $( "#nav-bottom-copy-two" ).delay( 2000 ).animate({fontSize: "1.2vh" }, 400 );
   $( "#nav-bottom-copy-three" ).delay( 2000 ).animate({fontSize: "1.2vh" }, 400 );
   $( "#top-part" ).delay( 2000 ).animate({ height: "13vh" }, 400 );
-  $( "#bottom-part" ).delay( 2000 ).animate({ top: "13.1vh" }, 400 );
+  $( "#bottom-part" ).delay( 2000 ).animate({ top: "12.2vh" }, 400 );
   $( "#bottom-part" ).delay( 800 ).animate({ height: "80vh" }, 400 );
 });
 
