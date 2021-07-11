@@ -3090,7 +3090,7 @@ video#paul {
 
 #bottom-part {
     position: absolute;
-    top: 19vh;
+    top: 23vh;
     left: 0;
     height: 69vh;
     width: 100vw;
@@ -3407,7 +3407,7 @@ video#paul {
     background-image: url(assets/photos/lacey/Lacey-Lennon-1-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 50%;
+    background-size: 60%;
 }
 
 .slider3.fullscreen {
@@ -3489,8 +3489,8 @@ video#paul {
     justify-content: flex-start;
     align-content: flex-start;
     align-items: center;
-    position: relative;
-    right: 16vw;
+/*    position: relative;
+    right: 16vw;*/
 }
 
 #image-slider-nav-container {
