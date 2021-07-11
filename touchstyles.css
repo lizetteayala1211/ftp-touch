@@ -3085,11 +3085,12 @@ video#paul {
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+
+body {
+	overflow: hidden;
+}
 
 #bottom-part {
     position: absolute;
@@ -3136,7 +3137,7 @@ video#paul {
 
 #nav-middle-copy {
     color: black;
-    font-size: 12vh;
+    font-size: 10vh;
     text-align: center;
     font-family: SnellRoundhand-Bold-02;
     transition: all 3s ease;
@@ -3304,7 +3305,7 @@ video#paul {
 
 #image-slider-content-container {
     height: 80%;
-    width: 48%;
+    width: 70%;
     /* background-color: red; */
     display: flex;
     justify-content: flex-start;
