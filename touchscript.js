@@ -2358,13 +2358,13 @@ $( window ).on( "load", function() {
   $( "#nav-top-link-three" ).delay( 2000 ).animate({fontSize: "1vh" }, 400 );
   $( "#nav-middle-copy-section" ).delay( 2000 ).animate({ 'marginTop' : "5px" }, 400 );
   $( "#nav-middle-copy" ).delay( 2000 ).animate({fontSize: "6vh" }, 400 );
+  $( "#nav-middle-copy" ).delay( 2000 ).animate({fontSize: "6vh" }, 400 );
   $( "#nav-bottom-copy" ).delay( 2000 ).animate({fontSize: "1.2vh" }, 400 );
   $( "#nav-bottom-copy-two" ).delay( 2000 ).animate({fontSize: "1.2vh" }, 400 );
   $( "#nav-bottom-copy-three" ).delay( 2000 ).animate({fontSize: "1.2vh" }, 400 );
-  $( "#top-part" ).delay( 2000 ).animate({ height: "14vh" }, 400 );
+  $( "#top-part" ).delay( 2000 ).animate({ height: "13vh" }, 400 );
   $( "#bottom-part" ).delay( 2000 ).animate({ top: "13.1vh" }, 400 );
-  $( "#bottom-part" ).delay( 800 ).animate({ height: "70vh" }, 400 );
-  $( "#marquee-part" ).delay( 2000 ).animate({ top: "82vh" }, 400 );  
+  $( "#bottom-part" ).delay( 800 ).animate({ height: "80vh" }, 400 );
 });
 
 
