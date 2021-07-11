@@ -2334,10 +2334,56 @@ $("#scroll-to-top-container").click(function () {
 /*  all mobile js  */
 
 $(function() {      
-    let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+    let isMobile = window.matchMedia("only screen and (min-device-width: 320px) and (max-device-width: 480px)").matches;
 
     if (isMobile) {
         //Conditional script here
+
+/*  document load test  */
+
+$( document ).ready(function() {
+  console.log( "mobile is loading" );
+});        
+
+/*  on page load, accordion effect  */
+
+$( window ).on( "load", function() {
+   console.log( "window loaded" );
+  $( "#nav-top-copy" ).delay( 2000 ).animate({fontSize: "1vh" }, 400 );
+  $( "#nav-top-copy.two" ).delay( 2000 ).animate({fontSize: "1vh" }, 400 );
+  $( "#nav-top-copy.three" ).delay( 2000 ).animate({fontSize: "1vh" }, 400 );
+  $( "#nav-top-link-one" ).delay( 2000 ).animate({fontSize: "1vh" }, 400 );
+  $( "#nav-top-link-two" ).delay( 2000 ).animate({fontSize: "1vh" }, 400 );
+  $( "#nav-top-link-three" ).delay( 2000 ).animate({fontSize: "1vh" }, 400 );
+  $( "#nav-middle-copy-section" ).delay( 2000 ).animate({ 'marginTop' : "5px" }, 400 );
+  $( "#nav-middle-copy" ).delay( 2000 ).animate({fontSize: "4vh" }, 400 );
+  $( "#nav-bottom-copy" ).delay( 2000 ).animate({fontSize: "1vh" }, 400 );
+  $( "#nav-bottom-copy-two" ).delay( 2000 ).animate({fontSize: "1vh" }, 400 );
+  $( "#nav-bottom-copy-three" ).delay( 2000 ).animate({fontSize: "1vh" }, 400 );
+  $( "#top-part" ).delay( 2000 ).animate({ height: "13vh" }, 400 );
+  $( "#bottom-part" ).delay( 2000 ).animate({ top: "13.1vh" }, 400 );
+  $( "#bottom-part" ).delay( 800 ).animate({ height: "75vh" }, 400 );
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
  });
 
