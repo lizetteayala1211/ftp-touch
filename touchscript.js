@@ -2202,6 +2202,10 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.active000').click(function(e) {
     // Change Selector Here
+    $('.slider002').toggle();
+    $('.slider003').toggle();
+    $('.slider004').toggle();
+    $('.slider005').toggle();
     $(this).toggleClass('fullscreen');
   });
 });
@@ -2209,6 +2213,9 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.slider002').click(function(e) {
     // Change Selector Here
+    $('.slider003').toggle();
+    $('.slider004').toggle();
+    $('.slider005').toggle();
     $(this).toggleClass('fullscreen');
   });
 });
@@ -2216,6 +2223,10 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.slider003').click(function(e) {
     // Change Selector Here
+
+    $('.slider002').toggle();
+    $('.slider004').toggle();
+    $('.slider005').toggle();    
     $(this).toggleClass('fullscreen');
   });
 });
@@ -2223,6 +2234,10 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.slider004').click(function(e) {
     // Change Selector Here
+
+    $('.slider002').toggle();
+    $('.slider003').toggle();
+    $('.slider005').toggle();    
     $(this).toggleClass('fullscreen');
   });
 });
@@ -2230,7 +2245,11 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.slider005').click(function(e) {
     // Change Selector Here
-    $(this).toggleClass('fullscreen');
+
+    $('.slider002').toggle();
+    $('.slider003').toggle();
+    $('.slider004').toggle(); 
+    $(this).toggleClass('fullscreen');   
   });
 });
 
@@ -2239,6 +2258,8 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.active0000').click(function(e) {
     // Change Selector Here
+    $('.slider0002').toggle();
+    $('.slider0003').toggle();    
     $(this).toggleClass('fullscreen');
   });
 });
@@ -2246,6 +2267,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.slider0002').click(function(e) {
     // Change Selector Here
+    $('.slider0003').toggle();     
     $(this).toggleClass('fullscreen');
   });
 });
@@ -2253,6 +2275,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.slider0003').click(function(e) {
     // Change Selector Here
+    $('.slider0002').toggle();    
     $(this).toggleClass('fullscreen');
   });
 });
@@ -2308,7 +2331,15 @@ $("#scroll-to-top-container").click(function () {
    $("#auto-right").animate({scrollLeft: 0, behavior: 'smooth'});
 });	
 
+/*  all mobile js  */
 
+$(function() {      
+    let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
+    if (isMobile) {
+        //Conditional script here
+    }
+ });
 
 
 
