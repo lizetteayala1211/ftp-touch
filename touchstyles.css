@@ -3387,7 +3387,7 @@ video#paul {
     background-image: url(assets/photos/naima/Morning After the Hospital-2-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 50%;
+    background-size: 60%;
 }
 
 .slider2.fullscreen {
@@ -3516,7 +3516,7 @@ video#paul {
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
-    right: 20px;    
+    right: -5px;    
 }
 
 #image-slider-controls-container {
@@ -3555,7 +3555,7 @@ video#paul {
 
 #image-slider-container.second {
     height: 90%;
-    width: 100%;
+    width: 80%;
     /* background-color: yellow; */
     align-content: center;
     align-items: center;
@@ -3642,8 +3642,8 @@ video#paul {
     left: 130px;
     bottom: 0px;
     top: 50px;
-    height: 45%;
-    width: 240%;
+    height: 20%;
+    width: 260%;
     background-color: black;
     cursor: pointer;
 }
@@ -3720,7 +3720,7 @@ video#paul {
     background-image: url(assets/photos/elliot/ejbrown0053-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 40%;
+    background-size: 50%;
     cursor: pointer;
 }
 
@@ -3741,7 +3741,7 @@ video#paul {
     background-image: url(assets/photos/elliot/ejbrown0041-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 40%;
+    background-size: 60%;
 }
 
 .slider02.fullscreen {
@@ -3761,7 +3761,7 @@ video#paul {
     background-image: url(assets/photos/elliot/ejbrown0054-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 40%;
+    background-size: 60%;
 }
 
 .slider03.fullscreen {
@@ -3781,7 +3781,7 @@ video#paul {
     background-image: url(assets/photos/naima/Cyn_Travis at home in Roma Norte, 2019-2-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 40%;
+    background-size: 55%;
 }
 
 .slider04.fullscreen {
@@ -3794,14 +3794,14 @@ video#paul {
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
     background-position: center !important;
-    background-size: 100% !important;    
+    background-size: 55% !important;    
 }
 
 .slider2 ul li.slider05 {
     background-image: url(assets/photos/naima/200 Sterling Place-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 40%;
+    background-size: 55%;
 }
 
 .slider05.fullscreen {
@@ -3979,7 +3979,7 @@ video#paul {
 
 #written-content-container {
     height: 100%;
-    width: 200%;
+    width: 240%;
     /* background-color: red; */
     display: flex;
     justify-content: flex-start;
@@ -4000,20 +4000,22 @@ video#paul {
     align-content: center;
     align-items: center;
     font-family: Charon-Regular;
-    font-size: 3vh;
-    margin-left: 20px;
+    font-size: 2.8vh;
+    margin-left: 0px;
     margin-bottom: 0px;
 }
 
 #stanza-number {
     height: 10%;
-    width: 80%;
+    width: 100%;
     justify-content: center;
     align-content: center;
     align-items: center;
     text-align: left;
     font-family: Baskerville-01;
-    margin-left: 140px;
+    margin-left: 150px;
+    position: relative;
+    left: 20px;
 }
 
 #stanza-number-p {
@@ -4023,7 +4025,7 @@ video#paul {
 #stanza-copy-p {
     width: 100%;
     margin-left: 0px;
-    font-size: 2.1vh;
+    font-size: 1.9vh;
 }
 
 #written-scroll-indicator {
@@ -4047,7 +4049,9 @@ video#paul {
     align-items: center;
     display: flex;
     /* background-color: green; */
-    margin-left: 140px;
+    margin-left: 160px;
+    position: relative;
+    left: 10px;
 }
 
 #written-scroll-indicator.two {
@@ -4120,7 +4124,7 @@ video#paul {
 
 #written-content-container.first-written.second {
     height: 100%;
-    width: 150%;
+    width: 160%;
     /* background-color: red; */
     display: flex;
     justify-content: flex-start;
@@ -4135,7 +4139,7 @@ video#paul {
     align-content: center;
     align-items: center;
     font-family: Charon-Regular;
-    font-size: 3vh;
+    font-size: 2.6vh;
     margin-left: 30px;
     /* margin-bottom: 30px; */
 }
