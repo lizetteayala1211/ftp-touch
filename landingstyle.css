@@ -1,0 +1,1971 @@
+@font-face {
+    font-family: "GrandSlang-Roman";
+    src: url("GrandSlang-Roman.otf");
+}
+
+@font-face {
+    font-family: "MaisonNeue-Book";
+    src: url("MaisonNeue-Book.otf");
+}
+
+@font-face {
+    font-family: "NeueHaasGrotesk";
+    src: url("NeueHaasGrotesk.otf");
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+	margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+script {
+  display: none;
+}
+
+.line-spacing-essays {
+	letter-spacing: 1px;
+}
+
+.changefont {
+	font-family: "NeueHaasGrotesk";
+}
+
+
+video#main-vid {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#container-row {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+  	height: 100%;
+}
+
+#container {
+	position: relative;
+	top: 0;
+  color: #f1f1f1;
+  width: 100%;
+}
+
+#title-container {
+  font-family: 'GrandSlang-Roman';
+  padding-left: 50px;
+/*  background: rgba(0, 0, 0, 0.5);*/
+  display: flex;
+  justify-content: flex-start;
+}
+
+#maker_contact {
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
+#maker_contact-sable {
+
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
+#installation-underline {
+	text-decoration: underline;
+
+}
+
+#title-line {
+   width: 10%; 
+   text-align: center; 
+   border-bottom: 1px solid white; 
+   line-height: 0.1em;
+   margin: 10px 10px 35px;
+}
+
+#artist-container { 
+	font-family: 'NeueHaasGrotesk';
+	display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 150px;
+    padding-bottom: 20px;
+    padding-top: 20%;
+}
+
+#artist-contribution-number {
+	font-family: 'NeueHaasGrotesk';
+	text-align: center; 
+	font-size: 25px;
+}
+
+#artwork-full-title {
+	line-height: 5px;
+	font-size: 18px;
+}
+
+#artwork-full-title-long {
+	line-height: 4px;
+	font-size: 18px;
+}
+
+.line-height-change {
+	line-height: 1!important;
+}
+
+#artist-line {
+   width: 90%; 
+   text-align: center; 
+   border-bottom: 1px solid white; 
+   line-height: 0.1em;
+   margin: 10px 50px 35px;
+}
+
+#credits-container {
+	display: flex;
+    justify-content: space-between;
+    margin: 0px 50px 30px;
+    padding-left: 200px;
+
+    left: 100px;
+}
+
+#credits-container-copy-one-first {
+	color: transparent;
+	width: 20%; 
+}
+
+#credits-container-copy-one {
+	width: 40%; 
+}
+
+#credits-copy {
+	font-size: 12px;
+}
+
+#container-two {
+  position: relative;
+  color: white;
+  margin-bottom: 5%;
+}
+
+#container-three {
+  position: relative;
+  color: white;
+}
+
+#container-four {
+  position: relative;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#container-five {
+  position: relative;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#container-six {
+  position: relative;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+#artist-title-container {
+  font-family: 'GrandSlang-Roman';
+  display: flex;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  border-bottom: 1px solid white; 
+}
+
+#artist-title-one {
+	display: flex;
+  	justify-content: space-between;
+  	border-right: 1px solid white;
+  	padding-right: 100px;
+  	padding-left: 20px;
+}
+
+#artist-title-two {
+  	border-right: 1px solid white;
+  	margin-left: 50px;
+  	padding-right: 50px;
+}
+
+#artist-two-title-two {
+	border-right: 1px solid white;
+  	margin-left: 200px;
+  	padding-right: 200px;
+  	text-align: center;
+}
+
+#artist-three-title-two {
+	border-right: 1px solid white;
+  	margin-left: 150px;
+  	padding-right: 150px;
+  	text-align: center;
+}
+
+#artist-four-title-two {
+	border-right: 1px solid white;
+  	margin-left: 135px;
+  	padding-right: 135px;
+  	text-align: center;
+}
+
+#artist-five-title-two {
+	border-right: 1px solid white;
+  	margin-left: 100px;
+  	padding-right: 100px;
+  	text-align: center;
+}
+
+#artist-title-three {
+  	margin-left: 80px;
+}
+
+#artist-title-three-one {
+  	margin-left: 120px;
+}
+
+#artist-title-number {
+	font-size: 30px;
+	margin-right: 30px;
+	margin-block-start: 0em;
+}
+
+#artist-title-number-two {
+	font-size: 30px;
+	margin-right: 30px;
+	margin-block-start: 0em;
+}
+
+#artist-title-number-three {
+	font-size: 30px;
+	margin-right: 30px;
+	margin-block-start: 0em;
+}
+
+#artist-title-info {
+	font-size: 45px;
+}
+
+#artist-title-info-small {
+	font-size: 40px;
+}
+
+#artist-title-info-two {
+	font-size: 28.5px;
+}
+
+#artist-title-info-three {
+	font-size: 30px;
+}
+
+#artist-title-info-four {
+	font-size: 40px;
+	padding-right: 20px;
+}
+
+#artist-title-info-five {
+	font-size: 30px;
+}
+
+#artwork-container {
+	display: flex;
+  	justify-content: space-between;
+  	/*margin-left: 0px;
+  	margin-right: 30px;
+  	margin-bottom: 50px;*/
+}
+
+
+#placement-bar {
+	padding-left: 30px;
+}
+
+#placement-bar-container {
+	border-right: 1px solid white;
+    padding-bottom: 150px;
+}
+
+#placement-bar-place {
+	font-size: 10px;
+	padding-right: 30px;
+	padding-left: 20px;
+}
+
+#placement-bar-place-first {
+	font-size: 10px;
+	padding-top: 30px;
+}
+
+#placement-bar-place-second {
+	font-size: 10px;
+	padding-top: 10px;
+}
+
+#placement-bar-place-third {
+	font-size: 10px;
+	padding-top: 10px;
+}
+
+#placement-bar-place-fourth {
+	font-size: 10px;
+	padding-top: 10px;
+}
+
+#placement-bar-place-five {
+	font-size: 10px;
+	padding-top: 10px;
+}
+
+#placement-bar-place-number {
+ 	margin-left: 40px;
+}
+
+#placement-bar-copy {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+
+}
+
+#placement-bar-copy-line {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	
+}
+
+p#placement-full-name {
+	margin-block-end: 0em;
+	width: 100px;
+	padding-left: 10px;
+}
+
+p#placement-artwork-title {
+	margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-left: 10px;
+}
+
+p#placement-artwork-date {
+	margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-left: 10px;
+}
+
+p#placement-artwork-date-line {
+	margin-block-start: 0em;
+	padding-left: 10px;
+}
+
+#artwork-copy-container {
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#audio-container {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid white;
+	width: 36%;
+}
+
+#audio-player {
+	display: flex;
+	justify-content: flex-start;
+
+}
+
+
+
+#play-button {
+	padding-left: 5px;
+}
+
+#audio-title {
+	padding-right: 15px;
+}
+
+.toggle {
+	display: flex;
+	justify-content: flex-start;
+}
+
+#play-button-img {
+	transform: scale(.6);
+}
+
+#pause-button-img {
+	transform: scale(.6);
+}
+
+#writing-container {
+	display: flex;
+	/*justify-content: flex-start;*/
+	justify-content: space-between;
+}
+
+#writing-copy {
+	padding-right: 30px;	
+}
+
+#writing-copy-one {
+	padding-right: 30px;
+	width: 90%;	
+}
+
+
+#writing-copy-two {
+/*	padding-left: 10px;*/
+	width: 90%;	
+}
+
+#writing-copy-three {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+    right: 8%;
+}
+
+#poem {
+	margin-right: 15px;
+	font-size: 5px;
+}
+
+#poem2 {
+	font-size: 5px;
+	margin-right: 15px;
+}
+
+#poem3 {
+	font-size: 5px;
+}
+
+
+#writing-container-credits {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+#writing-credits {
+	font-size: 12px;
+}
+
+#video-slider-numbers-list {
+	display: none;
+}
+
+#vl2 {
+	display: none;
+}
+
+#slider {
+	width: 70%;
+	margin-bottom: 150px;
+}
+
+#fixed {
+	height: 400px;
+	width: 600px;
+}
+
+.mySlides {
+	font-family: 'GrandSlang-Roman';
+	font-size: 50px;
+	text-align: left;
+}
+
+
+#slider-arrows-container {
+	width: 160px;
+	border: 1px solid white;
+	position: relative;
+	padding: 5px;
+	top: 30%;
+}
+
+button#slider-arrows {
+font-family: "NeueHaasGrotesk";
+background: transparent;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+  border: none;
+
+}
+
+button#slider-arrows:hover {
+opacity: 1;
+  -webkit-transition: all 0.2s ease;
+
+}
+
+.margin-fix {
+	margin-bottom: 100px;
+}
+
+/*a.control_prev, a.control_next {
+  top: 40%;
+  z-index: 999;
+  padding: 1% 2%;
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+*/
+
+video#dial-history {
+ width: 75%;
+}
+
+#video-container {
+	margin-top: 10px;
+	display: flex;
+    justify-content: center;
+
+}
+
+
+video#paul {
+ width: 95%;
+}
+
+video#paul-1 {
+ width: 95%;
+}
+
+video#paul-2 {
+ width: 95%;
+}
+
+video#paul-3 {
+ width: 95%;
+}
+
+video#paul-4 {
+ width: 95%;
+}
+
+video#paul-5 {
+ width: 95%;
+}
+
+video#paul-6 {
+ width: 95%;
+}
+
+video#paul-7 {
+ width: 95%;
+}
+
+video#paul-8 {
+ width: 95%;
+}
+
+video#paul-9 {
+ width: 95%;
+}
+
+video#paul-10 {
+ width: 95%;
+}
+
+video#paul-11 {
+ width: 95%;
+}
+
+video#paul-12 {
+ width: 95%;
+}
+
+video#paul-13 {
+ width: 95%;
+}
+
+video#paul-14 {
+ width: 95%;
+}
+
+#vl {
+	border-left: 1px solid white;
+  	height: 550px;
+  	position: relative;
+  	left: 55px;
+}
+
+
+
+
+
+#click0 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+
+
+}
+
+#click0:hover, #click0:focus, #click0:active, #click0:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+
+}
+
+
+#click {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click:hover, #click:focus, #click:active, #click:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+
+}
+
+#click2 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click2:hover, #click2:focus, #click2:active, #click2:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click3 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click3:hover, #click3:focus, #click3:active, #click3:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click4 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+}
+
+#click4:hover, #click4:focus, #click4:active, #click4:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click5 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+	
+}
+
+#click5:hover, #click5:focus, #click5:active, #click5:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click6 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click6:hover, #click6:focus, #click6:active, #click6:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click7 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click7:hover, #click7:focus, #click7:active, #click7:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click8 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click8:hover, #click8:focus, #click8:active, #click8:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click9 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click9:hover, #click9:focus, #click9:active, #click9:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click10 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click10:hover, #click10:focus, #click10:active, #click10:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click11 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click11:hover, #click11:focus, #click11:active, #click11:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click12 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click12:hover, #click12:focus, #click12:active, #click12:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click13 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click13:hover, #click13:focus, #click13:active, #click13:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click14 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click14:hover, #click14:focus, #click14:active, #click14:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+
+
+#click00 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+
+
+}
+
+#click00:hover, #click00:focus, #click00:active, #click00:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+
+}
+
+
+#clickk {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#clickk:hover, #clickk:focus, #clickk:active, #clickk:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+
+}
+
+#click20 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click20:hover, #click20:focus, #click20:active, #click20:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click30 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click30:hover, #click30:focus, #click30:active, #click30:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click40 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+}
+
+#click40:hover, #click40:focus, #click40:active, #click40:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click50 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+	
+}
+
+#click50:hover, #click50:focus, #click50:active, #click50:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click60 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click60:hover, #click60:focus, #click60:active, #click60:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click70 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click70:hover, #click70:focus, #click70:active, #click70:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click80 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click80:hover, #click80:focus, #click80:active, #click80:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click90 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click90:hover, #click90:focus, #click90:active, #click90:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click100 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click100:hover, #click100:focus, #click100:active, #click100:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click110 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click110:hover, #click110:focus, #click110:active, #click110:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click120 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click120:hover, #click120:focus, #click120:active, #click120:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click130 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click130:hover, #click130:focus, #click130:active, #click130:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#click140 {
+	background: transparent;
+	color: white;
+	font-family: 'GrandSlang-Roman';
+	font-size: 16px;
+	padding-right: 20px;
+	border: none;
+	border-color: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+
+}
+
+#click140:hover, #click140:focus, #click140:active, #click140:visited, .active {
+	border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+#video-slider {
+	width: 100%;
+}
+
+#video-slider-list {
+	width: 35%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+/*#video-slider-numbers-list {
+	font-family: 'GrandSlang-Roman';
+	border-right: 1px solid white;
+	padding-right: 20px;
+}
+
+#video-slider-numbers-picked {
+	border-bottom: 1px solid white;
+	padding-bottom: 5px;
+	padding-right: 20px;
+}*/
+
+#video-slider-names-list {
+	font-family: 'GrandSlang-Roman';
+}
+
+#video-slider-names {
+	padding-left: 20px;
+}
+
+/*#video-slider-names-picked {
+	border-bottom: 1px solid white;
+	padding-bottom: 5px;
+	padding-left: 20px;
+}*/
+
+#ending-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 8%;
+	margin-bottom: 8%;
+}
+
+#ending-direction-container {
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 70px;
+	padding-right: 100px;
+}
+
+#ending-title {
+	font-family: 'GrandSlang-Roman';
+	font-size: 160px;
+	margin-left: 5%;
+}
+
+#to-top {
+	font-family: 'GrandSlang-Roman';
+	font-size: 50px;
+	padding-right: 5%;
+}
+
+#dividing-line-container {
+   width: 20%; 
+   text-align: center; 
+   border-bottom: 1px solid white; 
+   line-height: 0.1em;
+   margin: 10px 10px 80px;
+}
+
+#to-home {
+	font-family: 'GrandSlang-Roman';
+	font-size: 50px;
+	padding-left: 5%;
+}
+
+#slider-arrows-container {
+	display: none;
+    width: 135px;
+    border: 1px solid white;
+    position: relative;
+    top: 30%;
+
+}
+
+div#fixed.mySlides {
+	text-align: center;
+	position: relative;
+    right: 100px;
+}
+
+/*.row-switch {
+	flex-direction: column;
+
+}*/
+/*.slider-arrows {
+	flex-direction: column;
+}
+*/
+#arrow-images {
+/*	margin-top: 50px;*/
+position: relative;
+display: flex;
+transform: scale(.4);
+right: 0px;
+top: 170px;
+}
+
+#writing-copy.slider-arrows {
+	margin-top: 0px;
+
+}
+
+
+
+#slider-arrows {
+ display: none;
+}
+
+.mobilemenu {
+display: none;	
+}
+
+#myDropdown {
+display: none;	
+}
+
+/*#writing-copy-two.margin-fix {
+	position: relative;
+	left: 200px;
+	
+}*/
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  	video#main-vid {
+    object-fit: cover;
+    width: 110vw;
+    height: 110vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#container {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#container-row {
+    display: flex;
+    flex-direction: column;
+    width: 110%;
+    height: 100%;
+
+}
+
+  	#title-container {
+  		display: flex;
+  		justify-content: center;
+  		padding-left: 0px;
+  	}
+
+  	h2#title {
+  		font-size: 50px;
+  	}
+
+  	h2#title-line {
+  		width: 40%;
+    text-align: center;
+    border-bottom: 1px solid white;
+    line-height: 0.1em;
+    margin: 10px 20px 70px;
+}
+
+
+  	#artist-container {
+  	font-family: 'NeueHaasGrotesk';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+        margin-left: 300px;
+    margin-right: 300px;
+    border: solid 1px white;
+}
+
+  	#artwork-full-title-long {
+    line-height: 4px;
+    font-size: 25px;
+    text-align: center!important;
+}
+
+p#full-name {
+	text-align: center;
+	font-size: 25px;
+}
+
+p#artwork-title.line-height-change {
+	text-align: center;
+	font-size: 25px;
+}
+
+p#artwork-date {
+	text-align: center;
+	font-size: 25px;
+}
+
+#artwork-full-title {
+    line-height: 5px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#artist-line {
+width: 90%;
+    text-align: center;
+    border-bottom: 1px solid white;
+    line-height: 0.1em;
+    margin: 40px 50px 35px;
+
+}
+
+#credits-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    height: 150px;
+    /* margin: 0px 50px 30px; */
+    /* padding-left: 100px; */
+    /* left: 100px;*/
+
+}
+
+#credits-container-copy-one-first {
+    color: transparent;
+    width: 0%;
+}
+
+#credits-container-copy-one {
+    width: 40%;
+}
+
+#credits-copy {
+    font-size: 20px;
+}
+
+#artist-title-container {
+    font-family: 'GrandSlang-Roman';
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    border-bottom: 1px solid white;
+}
+
+#artist-title-info-five {
+}
+
+#artist-title-one {
+    display: flex;
+    /* justify-content: space-between; */
+     justify-content: flex-start;
+     border: none;
+}
+
+#artist-title-number {
+    font-size: 30px;
+    margin-right: 30px;
+    margin-block-start: 1em;
+}
+
+#artist-five-title-two {
+    border-right: 1px solid white;
+    margin-left: 50px;
+    justify-content: flex-start;
+    text-align: left;
+    border: none;
+    /* padding-right: 100px; */
+    /* text-align: center; */
+}
+
+
+#artist-title-three-one { 
+	display: none!important;
+}
+
+
+#placement-bar {
+    display: none;
+}
+
+.artistmobilesize {
+	font-size: 35px !important;
+}
+
+.titlemobilesize {
+	margin-top: 0;
+	font-size: 40px !important;
+}
+
+#audio-container {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+    width: 100%;
+    margin-top: 20px;
+    /* padding-left: 50px; */
+    /* margin-left: 50px; */
+    /* margin-right: 50px; */
+}
+
+#audio-title {
+	padding-right: 15px;
+    font-size: 25px;
+}
+
+.toggle {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+#play-button-img {
+    transform: scale(1);
+}
+
+#pause-button-img {
+    transform: scale(1);
+    margin-left: 30px;
+}
+
+#writing-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.line-spacing-essays {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+#writing-credits {
+    /* margin-top: 50px; */
+    font-size: 20px;
+}
+
+#artist-four-title-two {
+    border: none;
+    margin-left: 50px;
+
+    padding: 0;
+    text-align: left;
+}
+
+#artist-title-info-small {
+    display: none;
+    font-size: 40px;
+}
+
+#writing-container {
+    display: flex;
+    /*flex-direction: column-reverse;*/
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+#writing-container.row-switch {
+	display: flex;
+    flex-direction: column-reverse;
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+}
+
+.row-switch {
+	flex-direction: column-reverse;
+}
+
+#video-slider-list {
+	display: flex;
+}
+
+#video-slider-numbers-list {
+	display: block!important;
+}
+
+#video-slider-names-list {
+    position: relative;
+    bottom: 110px;
+    font-family: 'GrandSlang-Roman';
+}
+
+#vl {
+	border-left: 1px solid white;
+  	height: 390px;
+  	position: relative;
+  	left: 95px;
+}
+
+#vl2 {
+	display: flex;
+	border-left: 1px solid white;
+  	height: 390px;
+  	position: relative;
+  	left: 95px;
+}
+
+#click00 { 
+font-size: 30px;
+}
+
+#clickk { 
+font-size: 30px;
+}
+
+#click20 { 
+font-size: 30px;
+}
+
+#click30 { 
+font-size: 30px;
+}
+
+#click40 { 
+font-size: 30px;
+}
+
+#click50 { 
+font-size: 30px;
+}
+
+#click60 { 
+font-size: 30px;
+}
+
+
+
+#click70 { 
+	display: none;
+}
+
+#click80 { 
+	display: none;
+}
+
+#click90 { 
+	display: none;
+}
+
+#click100 { 
+	display: none;
+}
+
+#click110 { 
+	display: none;
+}
+
+#click120 { 
+	display: none;
+}
+
+#click130 { 
+	display: none;
+}
+
+#click0 { 
+	display: none;
+}
+
+
+#click0 { 
+	display: none;
+}
+
+#click { 
+	display: none;
+}
+
+#click2 { 
+	display: none;
+}
+
+#click3 { 
+	display: none;
+}
+
+#click4 { 
+	display: none;
+}
+
+#click5 { 
+	display: none;
+}
+
+#click6 { 
+	display: none;
+}
+
+#click7 { 
+font-size: 30px;
+}
+
+#click8 { 
+font-size: 30px;
+}
+
+#click9 { 
+font-size: 30px;
+}
+
+#click10 { 
+font-size: 30px;
+}
+
+#click11 { 
+font-size: 30px;
+}
+
+#click12 { 
+font-size: 30px;
+}
+
+#click13 { 
+font-size: 30px;
+}
+
+#artist-two-title-two {
+    border: none;
+    margin-left: 50px;
+    padding-right: 0;
+    text-align: left;
+}
+
+#artist-title-three {
+	display: none;
+}
+
+.mySlides {
+    font-family: 'GrandSlang-Roman';
+    font-size: 50px;
+    text-align: center;
+}
+
+#writing-copy-two.margin-fix {
+	display: flex;
+	justify-content: center;
+}
+
+#writing-copy.slider-arrows {
+	display: flex;
+	justify-content: center;
+}
+
+#slider-arrows-container {
+    width: 100px;
+    height: 60px;
+    border: 1px solid white;
+    position: relative;
+    margin-top: 120px;
+    top: 30%;
+}
+
+button#slider-arrows {
+    font-family: "NeueHaasGrotesk";
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    font-weight: 600;
+    font-size: 35px;
+    opacity: 0.8;
+    cursor: pointer;
+    border: none;
+}
+
+#artist-title-number-two {
+    font-size: 30px;
+    margin-right: 30px;
+    margin-block-start: 1em;
+}
+
+#artist-title-number-three {
+    font-size: 30px;
+    margin-right: 30px;
+    margin-block-start: 1em;
+}
+
+#artist-three-title-two {
+    border: none;
+    margin-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+}
+
+video#dial-history {
+    width: 100%;
+}
+
+#artist-title-three {
+    display: none;
+}
+
+
+#artist-title-info.goaway {
+    display: none;
+}
+
+#writing-copy-three { 
+	display: none;
+}
+
+#arrow-images {
+/*	margin-top: 50px;*/
+margin-top: 150px;
+margin-bottom: 50px;
+position: relative;
+display: flex;
+transform: scale(1);
+left: 260%;
+top: 70px;
+
+}
+
+div#fixed.mySlides {
+    text-align: center;
+    position: relative;
+    right: 0px;
+}
+
+#writing-copy.slider-arrows {
+	margin-top: 0px;
+	padding-right: 0;
+	width: 15%;
+}
+
+#ending-direction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-start; */
+    padding-left: 70px;
+    padding-right: 100px;
+    margin-bottom: 100px;
+}
+
+
+.vl3 {
+  height: 100px;
+  text-align: center;
+  border-left: 1px solid white;
+}
+
+.vl4 {
+  height: 100px;
+  text-align: center;
+  border-left: 1px solid white;
+}
+
+#dividing-line-container {
+	display: none;
+}
+
+#to-home {
+    font-family: 'GrandSlang-Roman';
+    font-size: 80px;
+    padding-left: 0;
+}
+
+#to-top {
+    font-family: 'GrandSlang-Roman';
+    font-size: 80px;
+    padding-right: 0;
+}
+
+
+/*.mobilemenuhide {
+	display: none;
+}
+
+.mobile-hide {
+	display: none;
+}
+
+
+.mobilemenu {
+	display: flex;
+}
+
+#title-line-two {
+	width: 40%;
+    text-align: center;
+    border-bottom: 1px solid white;
+    line-height: 0.1em;
+    margin: 10px 20px 70px;
+}*/
+
+
+
+
+}
+
+
+
+}
