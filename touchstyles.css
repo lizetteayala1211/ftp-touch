@@ -3308,8 +3308,8 @@ video#paul {
     /* cursor: pointer; */
     /* margin-bottom: 30px; */
     scroll-behavior: smooth;
-    margin-left: 140px;
-    margin-right: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 #auto-right-copy-section.elliott-second.third {
@@ -3565,7 +3565,7 @@ video#paul {
     position: relative;
     overflow: hidden;
     margin: 10px auto 0 auto;
-    width: 80px;
+    width: 90px;
     height: 140px;
     background-color: transparent;
 }
@@ -3741,7 +3741,7 @@ video#paul {
     background-image: url(assets/photos/elliot/ejbrown0041-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 100%;
+    background-size: 50%;
 }
 
 .slider02.fullscreen {
@@ -3761,7 +3761,7 @@ video#paul {
     background-image: url(assets/photos/elliot/ejbrown0054-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 100%;
+    background-size: 50%;
 }
 
 .slider03.fullscreen {
@@ -3801,7 +3801,7 @@ video#paul {
     background-image: url(assets/photos/naima/200 Sterling Place-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 550%;
+    background-size: 50%;
 }
 
 .slider05.fullscreen {
@@ -3843,7 +3843,7 @@ video#paul {
     margin: 0;
     height: 575px !important;
     width: 350px !important;
-    margin-right: 0px;
+    margin-right: 20px;
 }
 
 .slider3 ul li {
@@ -3863,7 +3863,7 @@ video#paul {
     background-image: url(assets/photos/elliot/ejbrown0057-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 60%;
+    background-size: 50%;
     cursor: pointer;
 }
 
@@ -3884,7 +3884,7 @@ video#paul {
     background-image: url(assets/photos/elliot/ejbrown0036-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 60%;
+    background-size: 50%;
 }
 
 .slider002.fullscreen {
@@ -3903,8 +3903,8 @@ video#paul {
 .slider3 ul li.slider003 {
     background-image: url(assets/photos/elliot/ejbrown0056-min.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 60%;
+    background-position: left;
+    background-size: 50%;
 }
 
 .slider003.fullscreen {
@@ -3924,7 +3924,7 @@ video#paul {
     background-image: url(assets/photos/naima/Darajani Market-2-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 60%;
+    background-size: 50%;
 }
 
 .slider004.fullscreen {
@@ -3944,7 +3944,7 @@ video#paul {
     background-image: url(assets/photos/naima/Michocan 118, after I remembered, 2019-2-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 60%;
+    background-size: 50%;
 }
 
 .slider005.fullscreen {
@@ -3958,6 +3958,25 @@ video#paul {
     background-color: rgba(0, 0, 0, 0.7);
     background-position: center;
     background-size: 100%;     
+}
+
+#image-slider-content-container.third {
+    height: 80%;
+    width: 60%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#image-slider-nav-container.third {
+    height: 100%;
+    width: 60%;
+    /* background-color: white; */
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 #auto-right-copy-section.written {
@@ -4168,7 +4187,7 @@ video#paul {
 
 #written-content-container.three {
     height: 85%;
-    width: 250%;
+    width: 220%;
 }
 
 #written-copy-container-top.three {
@@ -4232,6 +4251,17 @@ video#paul {
     /* align-self: flex-start; */
 }
 
+#written-content-container.sable {
+    height: 85%;
+    width: 115%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* overflow-y: initial; */
+    /* overflow-x: hidden; */
+}
+
 #all-stanza-container.three {
     display: flex;
     width: 100%;
@@ -4262,9 +4292,9 @@ video#paul {
 #written-copy-top.four2 {
     font-family: NeueHaasGrotesk;
     font-style: italic;
-    margin-left: 50vw;
+    margin-left: 40vw;
     position: relative;
-    bottom: 25px;
+    bottom: 45px;
 }
 
 #written-scroll-indicator.four {
@@ -4276,7 +4306,7 @@ video#paul {
     align-items: center;
     display: flex;
     /* background-color: green; */
-    margin-left: 60px;
+    margin-left: 80px;
 }
 
 #draggable-three {
@@ -4284,7 +4314,7 @@ video#paul {
     left: -25vw;
     bottom: 10px;
     height: 18%;
-    width: 98vw;
+    width: 135vw;
     background-color: black;
     cursor: pointer;
 }
@@ -4301,7 +4331,7 @@ video#paul {
 
 #video-content-container.video.two {
     height: 100%;
-    width: 370%;
+    width: 270%;
     /* background-color: red; */
     display: flex;
     justify-content: flex-start;
@@ -4314,9 +4344,9 @@ video#paul {
     position: relative;
     overflow: hidden;
     margin: 0;
-    height: 500px;
-    width: 440px;
-    margin-right: 00px;
+    height: 575px !important;
+    width: 350px !important;
+    margin-right: 20px;
 }
 
 .slider4 ul li {
@@ -4325,7 +4355,7 @@ video#paul {
     float: left;
     margin: 0;
     padding: 0;
-    width: 540px;
+    width: 600px;
     height: 575px;
     text-align: center;
     transition: ease-out 0.4s;
@@ -4336,7 +4366,7 @@ video#paul {
     background-image: url(assets/photos/elliot/ejbrown0039-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 40%;
+    background-size: 50%;
     cursor: pointer;
 }
 
@@ -4349,15 +4379,15 @@ video#paul {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    background-position: center;
-    background-size: 100%;    
+    background-position: center !important;
+    background-size: 100% !important;    
 }
 
 .slider4 ul li.slider0002 {
     background-image: url(assets/photos/naima/Enrico Martinez, 33, DF-2-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 40%;
+    background-size: 50%;
 }
 
 .slider0002.fullscreen {
@@ -4369,15 +4399,15 @@ video#paul {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    background-position: center;
-    background-size: 100%;    
+    background-position: center !important;
+    background-size: 100% !important;    
 }
 
 .slider4 ul li.slider0003 {
     background-image: url(assets/photos/lacey/Lacey-Lennon-2-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 40%;
+    background-size: 50%;
 }
 
 .slider0003.fullscreen {
@@ -4389,18 +4419,61 @@ video#paul {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    background-position: center;
-    background-size: 100%;    
+    background-position: center !important;
+    background-size: 100% !important;    
+}
+
+#image-slider-content-container.fourth {
+    height: 80%;
+    width: 60%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#image-slider-container.fourth {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+}
+
+#image-slider-nav-container.fourth {
+    height: 100%;
+    width: 35%;
+    position: relative;
+    right: 20px;
+    margin-right: 0px;
+    margin-left: 30px;    
 }
 
 #image-slider-nav-info-fourth {
     position: relative;
     overflow: hidden;
     margin: 20px auto 0 auto;
-    width: 80px;
-    height: 140px;
+    width: 100px !important;
+    height: 320px !important;
     background-color: transparent;
-    width: 180px;
+}
+
+#image-slider-nav-info-fourth ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    width: auto !important;
+    list-style: none;
+    margin-left: 0px !important;
+}
+
+#image-slider-controls-container.fourth {
+    height: 20%;
+    width: 110%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: row;
 }
 
 #draggable-four {
@@ -4477,12 +4550,12 @@ video#paul {
     /* background-color: blue; */
 }
 
-#written-copy-top.three2 {
+#written-copy-top.three2.second {
     font-family: NeueHaasGrotesk;
     font-style: italic;
     margin-left: 20vw;
     position: relative;
-    bottom: 40px;
+    bottom: 55px;
     /* background-color: yellow; */
     position: relative;
     left: 100px;
@@ -4493,10 +4566,10 @@ video#paul {
     font-style: italic;
     margin-left: 20vw;
     position: relative;
-    bottom: 25px;
+    bottom: 55px;
     /* background-color: yellow; */
     position: relative;
-    left: 100px;
+    left: 70px;
 }
 
 #written-scroll-indicator.five {
@@ -4525,12 +4598,23 @@ video#paul {
 
 #auto-right-copy-section.single-image {
     margin-left: 220px;
-    margin-right: 0px;
+    margin-right: 100px;
+}
+
+#single-image-container {
+    height: 100%;
+    width: 100%;
+    /* background-color: white; */
+    background-image: url(assets/photos/lacey/Lacey-Lennon-4-min.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    cursor: pointer;
 }
 
 #single-image-content-container {
-    height: 98%;
-    width: 60%;
+    height: 100%;
+    width: 70%;
     /* background-color: green; */
     display: flex;
     flex-direction: column;
@@ -4541,7 +4625,7 @@ video#paul {
 
 #single-image-copy-top {
     font-family: FetteHaenelFraktur;
-    font-size: 4vh;
+    font-size: 2.5vh;
     margin-top: 10px;
     margin-bottom: 15px;
     /* background-color: blue; */
@@ -4550,13 +4634,13 @@ video#paul {
 }
 
 #auto-right-copy-section.single-image.second {
-    margin-left: -100px;
-    margin-right: 0px;
+    margin-left: 0px;
+    margin-right: 100px;
 }
 
 #single-image-content-container.two {
-    height: 98%;
-    width: 200vw;
+    height: 100%;
+    width: 95vw;
     /* background-color: green; */
     display: flex;
     flex-direction: column;
@@ -4574,28 +4658,45 @@ video#paul {
 
 #single-image-copy-top.two {
     font-family: FetteHaenelFraktur;
-    font-size: 4vh;
+    font-size: 2.5vh;
     margin-top: 10px;
     margin-bottom: 15px;
     /* background-color: blue; */
     border-bottom: 2px solid black;
-    width: 20%;
+    width: 35%;
 }
 
 #single-image-copy-top.long.two {
     font-family: FetteHaenelFraktur;
-    font-size: 4vh;
+    font-size: 2.5vh;
     margin-top: 10px;
     margin-bottom: 15px;
     /* background-color: blue; */
     border-bottom: 2px solid black;
+    width: 430%;
+}
+
+#single-image-copy-bottom.long.two {
+    font-family: Baskerville-01;
+    font-size: 2vh;
     width: 400%;
 }
 
 #auto-right-copy-section.single-image.third {
-    margin-left: -350px;
-    margin-right: 0px;
-    height: 97%;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 100%;
+}
+
+#single-image-content-container.large {
+    height: 100%;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
 }
 
 #single-image-container.large {
@@ -4616,14 +4717,14 @@ video#paul {
 }
 
 #auto-right-copy-section.single-image.fourth {
-    margin-left: -150px;
+    margin-left: 100px;
     margin-right: 0px;
-    height: 105%;
+    height: 100%;
 }
 
 #single-image-container.large-four {
     height: 100%;
-    width: 300%;
+    width: 500%;
     /* background-color: blue; */
     background-image: url(assets/photos/elliot/ejbrown0041-min.jpg);
     background-repeat: no-repeat;
@@ -4640,13 +4741,13 @@ video#paul {
 
 #auto-right-copy-section.single-image.fifth {
     margin-left: 300px;
-    margin-right: 0px;
+    margin-right: 100px;
     height: 105%;
 }
 
 #single-image-container.large.two {
     height: 90%;
-    width: 400%;
+    width: 600%;
     /* background-color: blue; */
     background-image: url(assets/photos/naima/Gay Head in October,2020-2-min.jpg);
     background-repeat: no-repeat;
@@ -4666,7 +4767,7 @@ video#paul {
 
 #single-image-copy-top.fourth {
     font-family: FetteHaenelFraktur;
-    font-size: 4vh;
+    font-size: 2.5vh;
     margin-top: 10px;
     margin-bottom: 15px;
     /* background-color: blue; */
