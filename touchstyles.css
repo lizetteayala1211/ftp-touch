@@ -3472,7 +3472,7 @@ video#paul {
 }
 
 #image-slider-content-container-top {
-    height: 100%;
+    height: 120%;
     width: 90%;
     /* background-color: blue; */
     display: flex;
@@ -3516,7 +3516,7 @@ video#paul {
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
-    right: -5px;    
+    right: -20px;    
 }
 
 #image-slider-controls-container {
@@ -3548,7 +3548,7 @@ video#paul {
     position: relative;
     overflow: hidden;
     margin: 10px auto 0 auto;
-    width: 150px;
+    width: 100px;
     height: 100px;
     background-color: transparent;
 }
@@ -3741,7 +3741,7 @@ video#paul {
     background-image: url(assets/photos/elliot/ejbrown0041-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 60%;
+    background-size: 100%;
 }
 
 .slider02.fullscreen {
@@ -3761,7 +3761,7 @@ video#paul {
     background-image: url(assets/photos/elliot/ejbrown0054-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 60%;
+    background-size: 100%;
 }
 
 .slider03.fullscreen {
@@ -3781,7 +3781,7 @@ video#paul {
     background-image: url(assets/photos/naima/Cyn_Travis at home in Roma Norte, 2019-2-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 55%;
+    background-size: 50%;
 }
 
 .slider04.fullscreen {
@@ -3794,14 +3794,14 @@ video#paul {
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
     background-position: center !important;
-    background-size: 55% !important;    
+    background-size: 100% !important;    
 }
 
 .slider2 ul li.slider05 {
     background-image: url(assets/photos/naima/200 Sterling Place-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 55%;
+    background-size: 550%;
 }
 
 .slider05.fullscreen {
@@ -3827,11 +3827,11 @@ video#paul {
 
 #draggable-two {
     position: relative;
-    left: 45vw;
+    left: 35vw;
     top: 17vh;
     /* bottom: 5vh; */
     height: 20%;
-    width: 90%;
+    width: 120%;
     background-color: black;
     cursor: pointer;
     z-index: 222;
@@ -3841,8 +3841,8 @@ video#paul {
     position: relative;
     overflow: hidden;
     margin: 0;
-    height: 500px;
-    width: 500px;
+    height: 575px !important;
+    width: 350px !important;
     margin-right: 0px;
 }
 
@@ -3852,7 +3852,7 @@ video#paul {
     float: left;
     margin: 0;
     padding: 0;
-    width: 540px;
+    width: 600px;
     height: 575px;
     text-align: center;
     transition: ease-out 0.4s;
@@ -3863,7 +3863,7 @@ video#paul {
     background-image: url(assets/photos/elliot/ejbrown0057-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 40%;
+    background-size: 60%;
     cursor: pointer;
 }
 
@@ -3884,7 +3884,7 @@ video#paul {
     background-image: url(assets/photos/elliot/ejbrown0036-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 40%;
+    background-size: 60%;
 }
 
 .slider002.fullscreen {
@@ -3904,7 +3904,7 @@ video#paul {
     background-image: url(assets/photos/elliot/ejbrown0056-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 60%;
 }
 
 .slider003.fullscreen {
@@ -3924,7 +3924,7 @@ video#paul {
     background-image: url(assets/photos/naima/Darajani Market-2-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 40%;
+    background-size: 60%;
 }
 
 .slider004.fullscreen {
@@ -3944,7 +3944,7 @@ video#paul {
     background-image: url(assets/photos/naima/Michocan 118, after I remembered, 2019-2-min.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 40%;
+    background-size: 60%;
 }
 
 .slider005.fullscreen {
@@ -3973,7 +3973,7 @@ video#paul {
     align-self: center;
     display: flex;
     margin-left: 40px;
-    margin-right: 150px;
+    margin-right: 280px;
     flex-direction: column;
 }
 
@@ -4124,7 +4124,7 @@ video#paul {
 
 #written-content-container.first-written.second {
     height: 100%;
-    width: 160%;
+    width: 165%;
     /* background-color: red; */
     display: flex;
     justify-content: flex-start;
@@ -4139,7 +4139,7 @@ video#paul {
     align-content: center;
     align-items: center;
     font-family: Charon-Regular;
-    font-size: 2.6vh;
+    font-size: 2.8vh;
     margin-left: 30px;
     /* margin-bottom: 30px; */
 }
@@ -4162,7 +4162,7 @@ video#paul {
     /* background-color: green; */
     border-bottom: 1px solid black;
     cursor: pointer;
-    margin-left: -200px;
+    margin-left: 100px;
     margin-right: 80px;
 }
 
