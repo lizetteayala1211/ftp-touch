@@ -3565,8 +3565,8 @@ video#paul {
     position: relative;
     overflow: hidden;
     margin: 10px auto 0 auto;
-    width: 90px;
-    height: 140px;
+    width: 100px !important;
+    height: 280px !important;
     background-color: transparent;
 }
 
@@ -3621,7 +3621,7 @@ video#paul {
     display: flex;
     flex-direction: row;
     font-family: FetteHaenelFraktur;
-    font-size: 2vh;
+    font-size: 1.6vh;
 }
 
 #auto-right-copy-section {
@@ -3668,7 +3668,7 @@ video#paul {
     background-image: url(assets/icons/stop.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 70%;
+    background-size: 60%;
     cursor: pointer;
 }
 
@@ -3679,7 +3679,7 @@ video#paul {
     background-image: url(assets/icons/play.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 70%;
+    background-size: 60%;
     cursor: pointer;
 }
 
@@ -3842,7 +3842,7 @@ video#paul {
     overflow: hidden;
     margin: 0;
     height: 575px !important;
-    width: 350px !important;
+    width: 280px !important;
     margin-right: 20px;
 }
 
@@ -4213,6 +4213,17 @@ video#paul {
     font-style: italic;
     margin-left: 20vw;
     position: relative;
+    bottom: 55px;
+    /* background-color: yellow; */
+    position: relative;
+    left: 100px;
+}
+
+#written-copy-top.three2.second {
+    font-family: NeueHaasGrotesk;
+    font-style: italic;
+    margin-left: 20vw;
+    position: relative;
     bottom: 20px;
     /* background-color: yellow; */
     position: relative;
@@ -4340,13 +4351,26 @@ video#paul {
     flex-direction: column;
 }
 
+#video-container.video.two {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+#video-copy-container.paul {
+    height: 15%;
+    width: 100%;
+}
+
 .slider4 {
     position: relative;
     overflow: hidden;
     margin: 0;
     height: 575px !important;
-    width: 350px !important;
-    margin-right: 20px;
+    width: 250px !important;
+    margin-right: 10px;
 }
 
 .slider4 ul li {
@@ -4679,7 +4703,7 @@ video#paul {
 #single-image-copy-bottom.long.two {
     font-family: Baskerville-01;
     font-size: 2vh;
-    width: 400%;
+    width: 400% !important;
 }
 
 #auto-right-copy-section.single-image.third {
@@ -4757,7 +4781,7 @@ video#paul {
 
 #single-image-copy-top.three {
     font-family: FetteHaenelFraktur;
-    font-size: 4vh;
+    font-size: 2.5vh;
     margin-top: 10px;
     margin-bottom: 15px;
     /* background-color: blue; */
@@ -4794,7 +4818,7 @@ video#paul {
 
 #single-image-container.large-three {
     height: 100%;
-    width: 400%;
+    width: 600%;
     /* background-color: blue; */
     background-image: url(assets/photos/naima/A plunge, A twist, A slap, 2020-min.jpg);
     background-repeat: no-repeat;
@@ -4813,7 +4837,7 @@ video#paul {
 }
 
 #single-image-copy-bottom.sixth {
-	width: 300%;
+	width: 400%;
     font-family: Baskerville-01;
     font-size: 2vh;
 }
