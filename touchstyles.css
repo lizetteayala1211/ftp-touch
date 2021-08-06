@@ -238,6 +238,10 @@ a {
 	transform:skew(-15deg) !important;
 }
 
+#nav-bottom-copy.disabled {
+	pointer-events: none;	
+}
+
 #nav-bottom-copy-two {
 	color: black;
 	font-size: 2.5vh;
@@ -265,6 +269,10 @@ a {
 
 #nav-bottom-copy-three:hover {
 	transform:skew(-15deg) !important;
+}
+
+#nav-bottom-copy-three.disabled {
+	pointer-events: none;	
 }
 
 /* index switch */
@@ -963,10 +971,17 @@ span#text {
 /*	background: #4ABDAC;*/
 }
 
+.slider-img-container {
+	display: flex;
+	height: 85%;
+	width: 100%;
+/*	background-color: green;*/
+}
+
 .slider2-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 95%;
 	width: 100%;
 	background-image: url('assets/photos/elliot/ejbrown0048_optimized.png');
   	background-repeat: no-repeat;
@@ -995,7 +1010,7 @@ span#text {
 .slider3-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 95%;
 	width: 100%;	
 	background-image: url('assets/photos/naima/Morning After the Hospital-2-min.jpg');
   	background-repeat: no-repeat;
@@ -1024,7 +1039,7 @@ span#text {
 .slider4-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 95%;
 	width: 100%;	
 	background-image: url('assets/photos/lacey/Lacey-Lennon-1-min.jpg');
   	background-repeat: no-repeat;
@@ -1053,7 +1068,7 @@ span#text {
 .slider5-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 95%;
 	width: 100%;	
 	background-image: url('assets/photos/naima/Inhala, Villa Victoria-2-min.jpg');
   	background-repeat: no-repeat;
@@ -1063,6 +1078,29 @@ span#text {
 }
 
 .slider5-img.fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.7);
+}
+
+.slider5-2-img {
+	margin-top: 10px;
+	display: flex;
+	height: 95%;
+	width: 100%;	
+	background-image: url('assets/photos/naima/Cote d Azur, 2018-2-min.jpg');
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: contain;
+  	cursor: pointer;
+}
+
+.slider5-2-img.fullscreen {
   z-index: 9999;
   position: fixed;
   margin: 0 auto;
@@ -1121,6 +1159,17 @@ video#jimmy {
 /*	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;*/
+}
+
+#written-copy-container.scroll {
+	height: auto;
+	width: 100%;
+	overflow-y: scroll;
+/*	background-color: green;*/
+/*	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;*/
+	cursor: pointer;
 }
 
 #written-copy-container-top {
@@ -1186,12 +1235,13 @@ video#jimmy {
 
 #stanza-number {
 	height: 100%;
-	width: 5%;
+	width: 70%;
 	justify-content: center;
 	align-content: center;
 	align-items: center;
 	text-align: left;
 	font-family: Baskerville-01;
+	font-style: italic;
 /*	margin-left: 100px;*/
 }
 
@@ -1366,7 +1416,7 @@ video#jimmy {
 .slider28-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 90%;
 	width: 100%;	
 	background-image: url('assets/photos/elliot/ejbrown0057-min.jpg');
   	background-repeat: no-repeat;
@@ -1389,7 +1439,7 @@ video#jimmy {
 .slider29-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 90%;
 	width: 100%;	
 	background-image: url('assets/photos/elliot/ejbrown0036-min.jpg');
   	background-repeat: no-repeat;
@@ -1412,7 +1462,7 @@ video#jimmy {
 .slider30-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 95%;
 	width: 100%;	
 	background-image: url('assets/photos/elliot/ejbrown0056-min.jpg');
   	background-repeat: no-repeat;
@@ -1435,7 +1485,7 @@ video#jimmy {
 .slider31-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 90%;
 	width: 100%;	
 	background-image: url('assets/photos/naima/Darajani Market-2-min.jpg');
   	background-repeat: no-repeat;
@@ -1458,7 +1508,7 @@ video#jimmy {
 .slider32-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 90%;
 	width: 100%;	
 	background-image: url('assets/photos/naima/Michocan 118, after I remembered, 2019-2-min.jpg');
   	background-repeat: no-repeat;
@@ -1492,6 +1542,7 @@ video#jimmy {
 
 
 #video-container {
+	margin-top: 10px;
 	height: 85%;
 	width: 90%;
 	background-color: black;
@@ -1510,6 +1561,7 @@ video#jimmy {
 /* paul pfeiffer video */
 
 #video-content-container.video.two {
+	margin-top: 10px;
     height: 85%;
     width: 90%;
     /* background-color: red; */
@@ -1555,7 +1607,7 @@ video#paul {
 .slider64-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 90%;
 	width: 100%;	
 	background-image: url('assets/photos/elliot/ejbrown0039-min.jpg');
   	background-repeat: no-repeat;
@@ -1578,7 +1630,7 @@ video#paul {
 .slider65-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 95%;
 	width: 100%;	
 	background-image: url('assets/photos/naima/Enrico Martinez, 33, DF-2-min.jpg');
   	background-repeat: no-repeat;
@@ -1601,7 +1653,7 @@ video#paul {
 .slider66-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 95%;
 	width: 100%;	
 	background-image: url('assets/photos/lacey/Lacey-Lennon-2-min.jpg');
   	background-repeat: no-repeat;
@@ -1624,7 +1676,7 @@ video#paul {
 .slider71-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 95%;
 	width: 100%;	
 	background-image: url('assets/photos/lacey/Lacey-Lennon-4-min.jpg');
   	background-repeat: no-repeat;
@@ -1647,7 +1699,7 @@ video#paul {
 .slider72-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 95%;
 	width: 100%;	
 	background-image: url('assets/photos/lacey/Lacey-Lennon-3-min.jpg');
   	background-repeat: no-repeat;
@@ -1670,7 +1722,7 @@ video#paul {
 .slider73-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 90%;
 	width: 100%;	
 	background-image: url('assets/photos/naima/DeVonn in Brooklyn, 2018-min.jpg');
   	background-repeat: no-repeat;
@@ -1693,9 +1745,9 @@ video#paul {
 .slider74-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 90%;
 	width: 100%;	
-	background-image: url('assets/photos/naima/Gay Head in October,2020-2-min.jpg');
+	background-image: url('assets/photos/elliot/ejbrown0041-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: contain;
@@ -1716,9 +1768,9 @@ video#paul {
 .slider75-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 95%;
 	width: 100%;	
-	background-image: url('assets/photos/naima/A plunge, A twist, A slap, 2020-min.jpg');
+	background-image: url('assets/photos/naima/Gay Head in October,2020-2-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: contain;
@@ -1739,9 +1791,9 @@ video#paul {
 .slider76-img {
 	margin-top: 10px;
 	display: flex;
-	height: 80%;
+	height: 90%;
 	width: 100%;	
-	background-image: url('assets/photos/elliot/ejbrown0041-min.jpg');
+	background-image: url('assets/photos/naima/A plunge, A twist, A slap, 2020-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: contain;
