@@ -631,7 +631,8 @@ span#text {
 
 
 #auto-left-name {
-	font-size: 2.5vh;	
+	font-size: 2.5vh;
+	/*font-size: 2.5vh;*/	
 	font-family: Messapia-Regular;
 	cursor: pointer;
 }
@@ -800,6 +801,10 @@ span#text {
 	font-size: 2.5vh;
 	font-family: Baskerville-Italic-03;	
 	opacity: 0;
+}
+
+.selected {
+	opacity: 1 !important;
 }
 
 #auto-left-counter-container.hidden {
@@ -1014,6 +1019,36 @@ span#text {
     bottom: 10px;  */  
 }
 
+/*	Exit Fullscreen Image */
+
+.Exit-Button-2, .Exit-Button-3, .Exit-Button-4, .Exit-Button-5, .Exit-Button-5-2, .Exit-Button-19
+, .Exit-Button-20, .Exit-Button-21, .Exit-Button-22, .Exit-Button-23, .Exit-Button-28, .Exit-Button-29,
+.Exit-Button-30, .Exit-Button-31, .Exit-Button-32, .Exit-Button-64, .Exit-Button-65, .Exit-Button-66, 
+.Exit-Button-71, .Exit-Button-72, .Exit-Button-73, .Exit-Button-74, .Exit-Button-75, .Exit-Button-76  {   
+    padding: 10px;
+    display:none;
+    left: 77.1vw;
+    float:right;
+    position: absolute;
+    /*background-color: green;*/
+    background-color: #C7C6C5;
+    color: white;
+    border: 1px solid black;
+    text-align:center;  
+    cursor: pointer;  
+    z-index: 500;
+}
+
+.Exit-Button-2.show, .Exit-Button-3.show, .Exit-Button-4.show, .Exit-Button-5.show, .Exit-Button-5-2.show,
+.Exit-Button-19.show, .Exit-Button-20.show, .Exit-Button-21.show, .Exit-Button-22.show, .Exit-Button-23.show, 
+.Exit-Button-28.show, .Exit-Button-29.show, .Exit-Button-30.show, .Exit-Button-31.show, .Exit-Button-32.show, 
+.Exit-Button-64.show, .Exit-Button-65.show, .Exit-Button-66.show, .Exit-Button-71.show, .Exit-Button-72.show, 
+.Exit-Button-73.show, .Exit-Button-74.show, .Exit-Button-75.show, .Exit-Button-76.show {   
+    display:block;
+    z-index: 10000;
+}
+
+
 #slider ul li.active {
 	left: 0;
 	display: flex;
@@ -1030,6 +1065,7 @@ span#text {
 	display: flex;
 	height: 85%;
 	width: 100%;
+  	background-color:rgba(0, 0, 0, 0.3);	
 /*	background-color: green;*/
 }
 
