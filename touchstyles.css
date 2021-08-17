@@ -147,7 +147,7 @@ a {
 	justify-content: center;
 	align-items: center;
 	border-top: 2px solid black;
-	border-bottom: 2px solid black;	
+	border-bottom: 2px solid black;
 	transition: all 3s ease;
 }
 
@@ -183,7 +183,7 @@ a {
 	justify-content: center;
 	align-items: center;
 	border-top: 2px solid white;
-	border-bottom: 2px solid white;	
+	border-bottom: 2px solid white;
 	transition: all 3s ease;
 }
 
@@ -204,7 +204,7 @@ a {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
 	border-bottom: 2px solid black;
 }
 
@@ -239,7 +239,7 @@ a {
 }
 
 #nav-bottom-copy.disabled {
-	pointer-events: none;	
+	pointer-events: none;
 }
 
 #nav-bottom-copy-two {
@@ -272,7 +272,7 @@ a {
 }
 
 #nav-bottom-copy-three.disabled {
-	pointer-events: none;	
+	pointer-events: none;
 }
 
 /* index switch */
@@ -320,7 +320,7 @@ a {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	transition: all 3s ease;	
+	transition: all 3s ease;
 /*	border: 1px solid red;*/
 }
 
@@ -337,7 +337,7 @@ a {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	transition: all 3s ease;	
+	transition: all 3s ease;
 }
 
 #index-left {
@@ -404,7 +404,7 @@ a {
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: cover;
-  	cursor: pointer;	
+  	cursor: pointer;
 }
 
 #index-box.seven {
@@ -412,7 +412,7 @@ a {
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: cover;
-  	cursor: pointer;	
+  	cursor: pointer;
 }
 
 #index-box.nine {
@@ -420,7 +420,7 @@ a {
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: cover;
-  	cursor: pointer;	
+  	cursor: pointer;
 }
 
 #index-box.thirteen {
@@ -428,7 +428,7 @@ a {
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: cover;
-  	cursor: pointer;	
+  	cursor: pointer;
 }
 
 #index-box.fourteen {
@@ -436,7 +436,7 @@ a {
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: cover;
-  	cursor: pointer;	
+  	cursor: pointer;
 }
 
 #index-box.twenty {
@@ -444,7 +444,7 @@ a {
   	background-repeat: no-repeat;
   	background-position: center;
   	background-size: cover;
-  	cursor: pointer;	
+  	cursor: pointer;
 }
 
 span {
@@ -455,12 +455,12 @@ span {
 span#video-one {
 	height: 42%;
 	font-family: FetteHaenelFraktur;
-	font-size: 5.5vh;	
+	font-size: 5.5vh;
 }
 span#video-two {
 	height: 50%;
 	font-family: FetteHaenelFraktur;
-	font-size: 6.5vh;		
+	font-size: 6.5vh;
 }
 
 #index-box.two {
@@ -468,8 +468,8 @@ span#video-two {
 }
 
 span#timer-two {
-	font-family: Wremena-Light;	
-	font-size: 3.5vh;	
+	font-family: Wremena-Light;
+	font-size: 3.5vh;
 }
 
 #index-box.eight {
@@ -477,8 +477,8 @@ span#timer-two {
 }
 
 span#timer-three {
-	font-family: Wremena-Light;	
-	font-size: 3.5vh;	
+	font-family: Wremena-Light;
+	font-size: 3.5vh;
 }
 
 #index-box.six {
@@ -486,8 +486,8 @@ span#timer-three {
 }
 
 span#timer-four {
-	font-family: Wremena-Light;	
-	font-size: 3.5vh;	
+	font-family: Wremena-Light;
+	font-size: 3.5vh;
 }
 
 #index-box.eleven {
@@ -495,8 +495,8 @@ span#timer-four {
 }
 
 span#timer-five {
-	font-family: Wremena-Light;	
-	font-size: 3.5vh;	
+	font-family: Wremena-Light;
+	font-size: 3.5vh;
 }
 
 #index-box.sixteen {
@@ -504,8 +504,8 @@ span#timer-five {
 }
 
 span#timer-six {
-	font-family: Wremena-Light;	
-	font-size: 3.5vh;	
+	font-family: Wremena-Light;
+	font-size: 3.5vh;
 }
 
 #index-box.seventeen {
@@ -513,8 +513,8 @@ span#timer-six {
 }
 
 span#timer-seven {
-	font-family: Wremena-Light;	
-	font-size: 3.5vh;	
+	font-family: Wremena-Light;
+	font-size: 3.5vh;
 }
 
 #index-box.nineteen {
@@ -522,15 +522,15 @@ span#timer-seven {
 }
 
 span#timer-eight {
-	font-family: Wremena-Light;	
-	font-size: 3.5vh;	
+	font-family: Wremena-Light;
+	font-size: 3.5vh;
 }
 
 span#text {
     height: 25%;
 	font-family: Baskerville-01;
 	font-size: 3.8vh;
-	font-style: italic;	
+	font-style: italic;
 	margin: 0px 20px;
 }
 
@@ -553,7 +553,7 @@ span#text {
 #auto-left-content-container {
 	height: auto;
 	width: 100%;
-/*	margin: 5px;*/	
+/*	margin: 5px;*/
 /*	background-color: red;*/
 	display: flex;
 	flex-direction: column;
@@ -568,10 +568,10 @@ span#text {
 .hidden-name {
 	display: none !important;
 	opacity: 0 !important;
-	-webkit-transition: all 15s ease;
-    -moz-transition: all 15s ease;
-    -o-transition: all 15s ease;
-    transition: all 15s ease;
+	-webkit-transition: all 35s ease;
+    -moz-transition: all 35s ease;
+    -o-transition: all 35s ease;
+    transition: all 35s ease;
 }
 
 .hidden-name.display {
@@ -580,7 +580,7 @@ span#text {
 
 /* original */
 
-#auto-left-copy-section, #auto-left-copy-section-nav2, #auto-left-copy-section-nav3, 
+#auto-left-copy-section, #auto-left-copy-section-nav2, #auto-left-copy-section-nav3,
 #auto-left-copy-section-nav4, #auto-left-copy-section-nav5, #auto-left-copy-section-nav6, #auto-left-copy-section-nav7,
 #auto-left-copy-section-nav8, #auto-left-copy-section-nav9, #auto-left-copy-section-nav10, #auto-left-copy-section-nav11,
 #auto-left-copy-section-nav12, #auto-left-copy-section-nav13, #auto-left-copy-section-nav14, #auto-left-copy-section-nav15,
@@ -612,21 +612,21 @@ span#text {
 	opacity: 0.5;
 	transition: opacity 1s ease;
 	margin-bottom: 20px;
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
-#auto-left-copy-section:hover, #auto-left-copy-section-nav1:hover, #auto-left-copy-section-nav2:hover, 
+#auto-left-copy-section:hover, #auto-left-copy-section-nav1:hover, #auto-left-copy-section-nav2:hover,
 #auto-left-copy-section-nav3:hover, #auto-left-copy-section-nav4:hover, #auto-left-copy-section-nav5:hover,
 #auto-left-copy-section-nav6:hover, #auto-left-copy-section-nav7:hover, #auto-left-copy-section-nav8:hover,
-#auto-left-copy-section-nav9:hover, #auto-left-copy-section-nav10:hover, #auto-left-copy-section-nav11:hover, 
+#auto-left-copy-section-nav9:hover, #auto-left-copy-section-nav10:hover, #auto-left-copy-section-nav11:hover,
 #auto-left-copy-section-nav12:hover, #auto-left-copy-section-nav13:hover, #auto-left-copy-section-nav14:hover,
 #auto-left-copy-section-nav15:hover, #auto-left-copy-section-nav16:hover, #auto-left-copy-section-nav17:hover,
 #auto-left-copy-section-nav18:hover, #auto-left-copy-section-nav19:hover, #auto-left-copy-section-nav20:hover,
 #auto-left-copy-section-nav21:hover, #auto-left-copy-section-nav22:hover, #auto-left-copy-section-nav23:hover,
 #auto-left-copy-section-nav24:hover, #auto-left-copy-section-nav25:hover, #auto-left-copy-section-nav26:hover,
 #auto-left-copy-section-nav27:hover, #auto-left-copy-section-nav28:hover, #auto-left-copy-section-nav29:hover,
-#auto-left-copy-section-nav30:hover, #auto-left-copy-section-nav31:hover, #auto-left-copy-section-nav32:hover 
-#auto-left-copy-section-nav33:hover, #auto-left-copy-section-nav34:hover, #auto-left-copy-section-nav35:hover, 
+#auto-left-copy-section-nav30:hover, #auto-left-copy-section-nav31:hover, #auto-left-copy-section-nav32:hover
+#auto-left-copy-section-nav33:hover, #auto-left-copy-section-nav34:hover, #auto-left-copy-section-nav35:hover,
 #auto-left-copy-section-nav36:hover, #auto-left-copy-section-nav37:hover, #auto-left-copy-section-nav38:hover {
 	opacity: 1;
 }
@@ -660,14 +660,14 @@ span#text {
 
 #auto-left-name {
 	font-size: 2.0vh;
-	/*font-size: 2.5vh;*/	
+	/*font-size: 2.5vh;*/
 	font-family: Messapia-Regular;
 	cursor: pointer;
 }
 
 #auto-left-name.margin-top {
 	font-size: 2.0vh;
-	/*font-size: 2.5vh;*/	
+	/*font-size: 2.5vh;*/
 	font-family: Messapia-Regular;
 	cursor: pointer;
 	margin-top: 40px;
@@ -694,7 +694,7 @@ span#text {
 }
 
 #auto-left-name:hover {
-	font-size: 2.0vh;	
+	font-size: 2.0vh;
 	font-family: Messapia-Regular;
 	font-style: italic;
 }
@@ -756,10 +756,10 @@ span#text {
 #auto-left-counter-container {
 	height: 96%;
 	width: 40%;
-/*	background-color: yellow;*/	
+/*	background-color: yellow;*/
 	text-align: right;
 	margin-top: 5px;
-	font-size: 2vh;	
+	font-size: 2vh;
 	font-weight: 400;
 	font-family: Druk-Wide-Medium;
 }
@@ -807,12 +807,12 @@ span#text {
 /*	background-color: blue;*/
 	display: flex;
 	justify-content: flex-start;
-	opacity: 0;	
+	opacity: 0;
 }
 
 #auto-left-name.hidden {
-	font-size: 3vh;	
-	font-family: Messapia-Regular;	
+	font-size: 3vh;
+	font-family: Messapia-Regular;
 	opacity: 0;
 }
 
@@ -823,7 +823,7 @@ span#text {
 	display: flex;
 	flex-direction: row;
 	font-family: Druk-Wide-Medium;
-	margin-top: 15px;	
+	margin-top: 15px;
 	opacity: 0;
 }
 
@@ -839,7 +839,7 @@ span#text {
 	align-items: center;
 	text-align: left;
 	font-size: 2.5vh;
-	font-family: Baskerville-Italic-03;	
+	font-family: Baskerville-Italic-03;
 	opacity: 0;
 }
 
@@ -850,12 +850,12 @@ span#text {
 #auto-left-counter-container.hidden {
 	height: 96%;
 	width: 40%;
-/*	background-color: yellow;*/	
+/*	background-color: yellow;*/
 	text-align: right;
 	margin-top: 5px;
-	font-size: 2vh;	
+	font-size: 2vh;
 	font-weight: 400;
-	font-family: Druk-Wide-Medium;	
+	font-family: Druk-Wide-Medium;
 	opacity: 0;
 }
 
@@ -865,7 +865,7 @@ span#text {
 /*	display: none;*/
 	height: 100%;
 	width: 80%;
-	background-color: #DCD3C0;		
+	background-color: #DCD3C0;
 	overflow-y: hidden;
 /*	display: flex;*/
 	flex-direction: column;
@@ -931,7 +931,7 @@ span#text {
 }
 
 #scroll {
- 	height: 100%;	
+ 	height: 100%;
  	width: 100%;
  	/*overflow: auto;*/
  	color: white;
@@ -943,7 +943,7 @@ span#text {
 }
 
 #scroll.index {
- 	height: 100%;	
+ 	height: 100%;
  	width: 100%;
  	/*overflow: auto;*/
  	color: black;
@@ -977,7 +977,7 @@ span#text {
 	margin:0;
 	padding:0;
 	height:100% !important;
-	width:100vw;	
+	width:100vw;
 	list-style:none;
 	overflow:hidden;
 	left:0;
@@ -1028,7 +1028,7 @@ span#text {
 	width: 100%;
 	display: flex;
 /*	background-color: green;*/
-	justify-content: space-between;	
+	justify-content: space-between;
 	align-items: center;
 	align-content: center;
 	-webkit-transition:all 0.5s ease;
@@ -1056,15 +1056,15 @@ span#text {
     background-size: contain;
     cursor: pointer;
 /*    position: relative;
-    bottom: 10px;  */  
+    bottom: 10px;  */
 }
 
 /*	Exit Fullscreen Image */
 
 .Exit-Button-2, .Exit-Button-3, .Exit-Button-4, .Exit-Button-5, .Exit-Button-5-2, .Exit-Button-19
 , .Exit-Button-20, .Exit-Button-21, .Exit-Button-22, .Exit-Button-23, .Exit-Button-28, .Exit-Button-29,
-.Exit-Button-30, .Exit-Button-31, .Exit-Button-32, .Exit-Button-64, .Exit-Button-65, .Exit-Button-66, 
-.Exit-Button-71, .Exit-Button-72, .Exit-Button-73, .Exit-Button-74, .Exit-Button-75, .Exit-Button-76  {   
+.Exit-Button-30, .Exit-Button-31, .Exit-Button-32, .Exit-Button-64, .Exit-Button-65, .Exit-Button-66,
+.Exit-Button-71, .Exit-Button-72, .Exit-Button-73, .Exit-Button-74, .Exit-Button-75, .Exit-Button-76  {
     padding: 10px;
     display:none;
     left: 76vw;
@@ -1074,24 +1074,24 @@ span#text {
 /*    background-color: #C7C6C5;*/
     color: #C7C6C5;
 /*    border: 1px solid black;*/
-    text-align:center;  
-    cursor: pointer;  
+    text-align:center;
+    cursor: pointer;
     z-index: 500;
     font-size: 35px;
     font-family: 'Wremena-Light';
 }
 
 .Exit-Button-2.show, .Exit-Button-3.show, .Exit-Button-4.show, .Exit-Button-5.show, .Exit-Button-5-2.show,
-.Exit-Button-19.show, .Exit-Button-20.show, .Exit-Button-21.show, .Exit-Button-22.show, .Exit-Button-23.show, 
-.Exit-Button-28.show, .Exit-Button-29.show, .Exit-Button-30.show, .Exit-Button-31.show, .Exit-Button-32.show, 
-.Exit-Button-64.show, .Exit-Button-65.show, .Exit-Button-66.show, .Exit-Button-71.show, .Exit-Button-72.show, 
-.Exit-Button-73.show, .Exit-Button-74.show, .Exit-Button-75.show, .Exit-Button-76.show {   
+.Exit-Button-19.show, .Exit-Button-20.show, .Exit-Button-21.show, .Exit-Button-22.show, .Exit-Button-23.show,
+.Exit-Button-28.show, .Exit-Button-29.show, .Exit-Button-30.show, .Exit-Button-31.show, .Exit-Button-32.show,
+.Exit-Button-64.show, .Exit-Button-65.show, .Exit-Button-66.show, .Exit-Button-71.show, .Exit-Button-72.show,
+.Exit-Button-73.show, .Exit-Button-74.show, .Exit-Button-75.show, .Exit-Button-76.show {
     display:block;
     z-index: 10000;
 }
 
 
-#slider ul li.active {
+#slider ul li.slider1 {
 	left: 0;
 	display: flex;
 	justify-content: center;
@@ -1107,7 +1107,7 @@ span#text {
 	display: flex;
 	height: 85%;
 	width: 100%;
-  	background-color:rgba(0, 0, 0, 0.3);	
+  	background-color:rgba(0, 0, 0, 0.3);
 /*	background-color: green;*/
 }
 
@@ -1144,7 +1144,7 @@ span#text {
 	margin-top: 10px;
 	display: flex;
 	height: 95%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/naima/Morning After the Hospital-2-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1173,7 +1173,7 @@ span#text {
 	margin-top: 10px;
 	display: flex;
 	height: 95%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/lacey/Lacey-Lennon-1-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1202,7 +1202,7 @@ span#text {
 	margin-top: 10px;
 	display: flex;
 	height: 95%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/naima/Inhala, Villa Victoria-2-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1225,7 +1225,7 @@ span#text {
 	margin-top: 10px;
 	display: flex;
 	height: 95%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/naima/Cote d Azur, 2018-2-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1374,7 +1374,7 @@ video#jimmy {
 #stanza-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;	
+    justify-content: center;
     align-content: center;
     align-items: center;
 	height: auto;
@@ -1412,9 +1412,15 @@ video#jimmy {
 #stanza-copy-p {
 	width: 90%;
 	margin-left: 30px;
-	font-size: 3vh;
+	font-size: 2.8vh;
 	text-align: left;
 	font-family: Baskerville-01;
+}
+
+#stanza-copy-p.end {
+	width: 20%;
+    font-size: 8vh;
+    font-family: 'Messapia-Regular';
 }
 
 #slider ul li span#stanza-copy-italics {
@@ -1451,7 +1457,7 @@ video#jimmy {
 	margin-top: 10px;
 	display: flex;
 	height: 80%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/elliot/ejbrown0053-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1474,7 +1480,7 @@ video#jimmy {
 	margin-top: 10px;
 	display: flex;
 	height: 80%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/elliot/ejbrown0041-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1497,7 +1503,7 @@ video#jimmy {
 	margin-top: 10px;
 	display: flex;
 	height: 80%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/elliot/ejbrown0054-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1520,7 +1526,7 @@ video#jimmy {
 	margin-top: 10px;
 	display: flex;
 	height: 80%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/naima/Cyn_Travis at home in Roma Norte, 2019-2-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1543,7 +1549,7 @@ video#jimmy {
 	margin-top: 10px;
 	display: flex;
 	height: 80%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/naima/200 Sterling Place-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1567,7 +1573,7 @@ video#jimmy {
 	margin-top: 10px;
 	display: flex;
 	height: 90%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/elliot/ejbrown0057-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1590,7 +1596,7 @@ video#jimmy {
 	margin-top: 10px;
 	display: flex;
 	height: 90%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/elliot/ejbrown0036-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1613,7 +1619,7 @@ video#jimmy {
 	margin-top: 10px;
 	display: flex;
 	height: 95%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/elliot/ejbrown0056-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1636,7 +1642,7 @@ video#jimmy {
 	margin-top: 10px;
 	display: flex;
 	height: 90%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/naima/Darajani Market-2-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1659,7 +1665,7 @@ video#jimmy {
 	margin-top: 10px;
 	display: flex;
 	height: 90%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/naima/Michocan 118, after I remembered, 2019-2-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1758,7 +1764,7 @@ video#paul {
 	margin-top: 10px;
 	display: flex;
 	height: 90%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/elliot/ejbrown0039-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1781,7 +1787,7 @@ video#paul {
 	margin-top: 10px;
 	display: flex;
 	height: 95%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/naima/Enrico Martinez, 33, DF-2-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1804,7 +1810,7 @@ video#paul {
 	margin-top: 10px;
 	display: flex;
 	height: 95%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/lacey/Lacey-Lennon-2-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1827,7 +1833,7 @@ video#paul {
 	margin-top: 10px;
 	display: flex;
 	height: 95%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/lacey/Lacey-Lennon-4-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1850,7 +1856,7 @@ video#paul {
 	margin-top: 10px;
 	display: flex;
 	height: 95%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/lacey/Lacey-Lennon-3-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1873,7 +1879,7 @@ video#paul {
 	margin-top: 10px;
 	display: flex;
 	height: 90%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/naima/DeVonn in Brooklyn, 2018-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1896,7 +1902,7 @@ video#paul {
 	margin-top: 10px;
 	display: flex;
 	height: 90%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/elliot/ejbrown0041-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1919,7 +1925,7 @@ video#paul {
 	margin-top: 10px;
 	display: flex;
 	height: 95%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/naima/Gay Head in October,2020-2-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1942,7 +1948,7 @@ video#paul {
 	margin-top: 10px;
 	display: flex;
 	height: 90%;
-	width: 100%;	
+	width: 100%;
 	background-image: url('assets/photos/naima/A plunge, A twist, A slap, 2020-min.jpg');
   	background-repeat: no-repeat;
   	background-position: center;
@@ -1980,10 +1986,10 @@ video#paul {
 	justify-content: center;
 	align-items: center;
 	align-self: center;
-	align-content: center;	
+	align-content: center;
 	height: 45%;
 	width: 100%;
-/*	background-color: yellow;*/	
+/*	background-color: yellow;*/
 	cursor: pointer;
 	margin-bottom: 7px;
 }
@@ -2025,13 +2031,13 @@ video#paul {
 	height: 30%;
 	width: 100%;
 /*	background-color: red;	*/
-	text-align: center;	
+	text-align: center;
 }
 
 #audio-player-bottom-container {
 	height: 20%;
 	width: 100%;
-	border-top: 2px solid rgba(220, 211, 192);	
+	border-top: 2px solid rgba(220, 211, 192);
 }
 
 /* first audio container */
@@ -2110,5 +2116,3 @@ video#paul {
 /*    cursor: pointer;*/
     top: 180px;
 }
-
-
