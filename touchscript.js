@@ -21,69 +21,29 @@ $(window).on("load", function() {
 
   if (isDesktop) {
 
-    $('#auto-left-copy-section.hidden').css('display', 'none');
-    $("#nav-top-copy").delay(2000).animate({
-      fontSize: "1.1vh"
-    }, 400);
-    $("#nav-top-copy.two").delay(2000).animate({
-      fontSize: "1.1vh"
-    }, 400);
-    $("#nav-top-copy.three").delay(2000).animate({
-      fontSize: "1.1vh"
-    }, 400);
-    $("#nav-middle-copy-section").delay(2000).animate({
-      'marginTop': "5px"
-    }, 400);
-    $("#nav-middle-copy-section").delay(2000).animate({
-      'marginRight': "15px"
-    }, 400);
-    $("#nav-middle-copy-section").delay(2000).animate({
-      width: "95%"
-    }, 400);
-    $("#nav-middle").delay(2000).animate({
-      height: "58%"
-    }, 400);
-    $("#nav-middle-copy").delay(2000).animate({
-      fontSize: "7vh"
-    }, 400);
-    $("#nav-bottom-copy").delay(2000).animate({
-      fontSize: "1.3vh"
-    }, 400);
-    $("#nav-bottom-copy-two").delay(2000).animate({
-      fontSize: "1.8vh"
-    }, 400);
-    $("#nav-bottom-copy-three").delay(2000).animate({
-      fontSize: "1.3vh"
-    }, 400);
-
-    $("#top-part").delay(2000).animate({
-      height: "20vh"
-    }, 400);
-    $("#bottom-part").delay(2000).animate({
-      top: "13.1vh"
-    }, 400);
-    $("#bottom-part").delay(800).animate({
-      height: "80vh"
-    }, 400);
-    $("#top-part").delay(2000).animate({
-      width: "20vw"
-    }, 400);
-    $("#top-part").css("z-index", "5", 3000);
-    $("#bottom-part").delay(800).animate({
-      height: "95vh"
-    }, 400);
-    $("#auto-right").delay(2000).animate({
-      top: "20vh"
-    }, 400);
-    $("#auto-left").delay(2000).animate({
-      width: "20vw"
-    }, 400);
-    $("#bottom-part").delay(2000).animate({
-      top: "0vh"
-    }, 400);
-    // $('#auto-left-copy-section.hidden').delay( 6000 ).addClass('show');
-    // $('#auto-left-copy-section.hidden').delay( 6000 ).removeClass('hidden');
-    $('.hidden-name').delay(6000).addClass("display");
+    $("#nav-top-copy").delay(2000).animate({ fontSize: "1.1vh" }, 400);
+    $("#nav-top-copy.two").delay(2000).animate({ fontSize: "1.1vh"}, 400);
+    $("#nav-top-copy.three").delay(2000).animate({ fontSize: "1.1vh"}, 400);
+    $("#nav-middle-copy-section").delay(2000).animate({ 'marginTop': "5px"}, 400);
+    $("#nav-middle-copy-section").delay(2000).animate({ 'marginRight': "15px"}, 400);
+    $("#nav-middle-copy-section").delay(2000).animate({ width: "95%"}, 400);
+    $("#nav-middle").delay(2000).animate({ height: "58%" }, 400);
+    $("#nav-middle-copy").delay(2000).animate({ fontSize: "7vh" }, 400);
+    $("#nav-bottom-copy").delay(2000).animate({ fontSize: "1.3vh" }, 400);
+    $("#nav-bottom-copy-two").delay(2000).animate({ fontSize: "1.8vh" }, 400);
+    $("#nav-bottom-copy-three").delay(2000).animate({ fontSize: "1.3vh" }, 400);
+    // $("#bottom-part").delay(800).animate({ top: "13.1vh" }, 400);
+    // $("#bottom-part").delay(800).animate({ height: "80vh" }, 400);  
+    $("#bottom-part").delay(300).animate({ top: "0vh"}, 400); 
+    $("#bottom-part").delay(800).animate({ height: "95vh" }, 400);     
+    $("#top-part").css("z-index", "5", 3000);          
+    $("#top-part").delay(2000).animate({  height: "20vh" }, 400);
+    $("#top-part").delay(2000).animate({ width: "20vw" }, 400);
+    $("#auto-right").delay(2000).animate({ top: "20vh" }, 400);
+    $("#auto-left").delay(2000).animate({ width: "20vw" }, 400);
+    $("#auto-left").delay(2000).animate({ top: "8vh" }, 400);
+    $("#auto-left").delay(2000).animate({  height: "79%" }, 400);
+    $( "#auto-left" ).delay(2000).addClass( "relative" );
 
   }
 
@@ -286,6 +246,7 @@ function Autopilot() {
 
     /* top part */
 
+    // $("body").css("background-color", "black");
     $("#top-part").css("background-color", "#C7C6C5");
     $("#top-part").css("color", "black");
     $("#nav-top-link-one").css("color", "black");
@@ -421,12 +382,17 @@ $(document).ready(function() {
       $('.selected').removeClass('selected')
       var nav_section = $('.nav-section').eq(index)
       nav_section.addClass('selected')
-      // var y = nav_section[0].offsetTop-26
-      // $('#auto-left')[0].scrollTo(0, y)
+      var y = nav_section[0].offsetTop-26
+      $('#auto-left')[0].scrollTo(0, y)
     }
 
-    if (current_class == last_class) {
-      next = $('#slider ul li:first')
+    var first_last = {
+      prev: [first_class, 'last'],
+      next: [last_class, 'first'],
+    }[direction]
+
+    if (current_class == first_last[0]) {
+      next = $(`#slider ul li:${first_last[1]}`)
     }
     next.fadeIn(1000).show()
 
@@ -442,6 +408,84 @@ $(document).ready(function() {
   })
 
 })
+
+// $(document).ready(function() {
+
+//   var first_class = $('#slider ul li:first').attr('class')
+//   var last_class = $('#slider ul li:last').attr('class')
+
+//   function nav_button(e, direction) {
+//     e.preventDefault()
+//     var current = $("#slider ul li:visible").hide()
+//     var current_class = current.attr('class')
+//     var next = current[direction]()
+
+//     var index = next.attr('data-nav')
+//     index = parseInt(index)
+
+//     if (!isNaN(index)) {
+//       $('.selected').removeClass('selected')
+//       var nav_section = $('.nav-section').eq(index)
+//       nav_section.addClass('selected')
+//       var y = nav_section[0].offsetTop-26
+//       $('#auto-left')[0].scrollTo(0, y)
+//     }
+
+//     if (current_class == last_class) {
+//       next = $('#slider ul li:first')
+//     }
+//     next.fadeIn(1000).show()
+//   }
+
+//   $("#slider-nav-right-img").click(function(e) {
+//     nav_button(e, 'next')
+//   })
+
+
+//   $("#slider-nav-left-img").click(function(e) {
+//     nav_button(e, 'prev')
+//   })
+
+// })
+
+// $(document).ready(function() {
+
+//   var first_class = $('#slider ul li:first').attr('class')
+//   var last_class = $('#slider ul li:last').attr('class')
+//   var index = next.attr('data-nav')
+//     index = parseInt(index)
+
+// $("#slider-nav-right-img").click(function(e) {
+
+//   e.preventDefault();
+//   var current = $("#slider ul li:visible").hide()
+//   var next = current.next()
+//   var current_class = current.attr('class')
+//   var index = next.attr('data-nav')
+//     index = parseInt(index)
+
+
+//   if (current_class == last_class) {
+//     next = $('#slider ul li:first')
+//   }
+//   next.fadeIn(1000).show();
+// });
+
+
+// $("#slider-nav-left-img").click(function(e) {
+
+//   e.preventDefault();
+//   var current = $("#slider ul li:visible").hide()
+//   var prev = current.prev()
+//   var current_class = current.attr('class')
+
+//   if (current_class == first_class) {
+//     prev = $('#slider ul li:last')
+//   }
+//   prev.fadeIn(1000).show();
+// });
+
+// }); 
 
 function showSlider() {
 
@@ -770,53 +814,53 @@ function countTimer() {
 
 /*  index rows (1-4) shuffle js */
 
-// $(function () {
-//     var parent = $(".shuffle-all");
-//     var divs = parent.children();
-//     while (divs.length) {
-//         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-//     }
-// });
+$(function () {
+    var parent = $(".shuffle-all");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+});
 
-// $(function () {
-//     var parent = $(".shuffle-1");
-//     var divs = parent.children();
-//     while (divs.length) {
-//         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-//     }
-// });
+$(function () {
+    var parent = $(".shuffle-1");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+});
 
-// $(function () {
-//     var parent = $(".shuffle-2");
-//     var divs = parent.children();
-//     while (divs.length) {
-//         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-//     }
-// });
+$(function () {
+    var parent = $(".shuffle-2");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+});
 
-// $(function () {
-//     var parent = $(".shuffle-3");
-//     var divs = parent.children();
-//     while (divs.length) {
-//         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-//     }
-// });
+$(function () {
+    var parent = $(".shuffle-3");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+});
 
-// $(function () {
-//     var parent = $(".shuffle-4");
-//     var divs = parent.children();
-//     while (divs.length) {
-//         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-//     }
-// });
+$(function () {
+    var parent = $(".shuffle-4");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+});
 
-// $(function () {
-//     var parent = $(".shuffle-5");
-//     var divs = parent.children();
-//     while (divs.length) {
-//         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-//     }
-// });
+$(function () {
+    var parent = $(".shuffle-5");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+});
 
 
 //   $('#auto-left-copy-section-nav1, #auto-left-copy-section-nav3, #auto-left-copy-section-nav4, #auto-left-copy-section-nav5, #auto-left-copy-section-nav6, #auto-left-copy-section-nav7, #auto-left-copy-section-nav8, #auto-left-copy-section-nav9, #auto-left-copy-section-nav10, #auto-left-copy-section-nav11, #auto-left-copy-section-nav12, #auto-left-copy-section-nav13, #auto-left-copy-section-nav14, #auto-left-copy-section-nav15, #auto-left-copy-section-nav16, #auto-left-copy-section-nav17, #auto-left-copy-section-nav18, #auto-left-copy-section-nav19, #auto-left-copy-section-nav20, #auto-left-copy-section-nav21, #auto-left-copy-section-nav22, #auto-left-copy-section-nav23, #auto-left-copy-section-nav24, #auto-left-copy-section-nav25, #auto-left-copy-section-nav26, #auto-left-copy-section-nav27, #auto-left-copy-section-nav28, #auto-left-copy-section-nav29, #auto-left-copy-section-nav30, #auto-left-copy-section-nav31, #auto-left-copy-section-nav32, #auto-left-copy-section-nav33, #auto-left-copy-section-nav34, #auto-left-copy-section-nav35, #auto-left-copy-section-nav36, #auto-left-copy-section-nav37, #auto-left-copy-section-nav38').css('opacity', '0.5');
