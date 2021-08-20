@@ -2246,7 +2246,7 @@ div.play {
     width: 110% !important;
     background-color: black;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: all 3s ease;
@@ -2264,6 +2264,33 @@ div.play {
     justify-content: center;
     align-items: center;
     scroll-behavior: smooth;
+    margin-top: 2px;
+}
+
+#auto-right-copy-section {
+    height: 98%;
+    width: 100%;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#auto-left {
+    /* display: none; */
+    height: 35%;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: #EFEEE8;
+    /* margin: 5px; */
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border-right: 2px solid black;
 }
 
 #marquee-part {
@@ -2397,6 +2424,446 @@ span#timer-eight {
     font-family: Wremena-Light;
     font-size: 4.5vh;
 }
+
+#slider {
+    height: 85% !important;
+    width: 100% !important;
+}
+
+#slider ul li {
+    position: absolute;
+    /* display: block; */
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #F7B733; */
+    text-align: center;
+    /* transition: ease-out 0.4s; */
+    color: #fff;
+    font-size: 22px;
+    font-family: monospace;
+    /* display: flex; */
+    display: none;
+    /* opacity: 0; */
+    /* visibility: hidden; */
+}
+
+#slider-nav-left-img {
+    height: 40%;
+    width: 30%;
+    background-image: url(assets/icons/left-arrow.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#slider-nav-right-img {
+    height: 40%;
+    width: 30%;
+    background-image: url(assets/icons/right-arrow.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    cursor: pointer;
+}
+
+/* AUDIO CSS */
+
+#draggable {
+    position: relative;
+    height: 30%;
+    width: 90%;
+    background-color: black;
+    /* cursor: pointer; */
+    top: 110px;
+}
+
+#draggable-two {
+    position: relative;
+    height: 30%;
+    width: 90%;
+    background-color: black;
+    /* cursor: pointer; */
+    top: 110px;
+}
+
+#draggable-three {
+    position: relative;
+    height: 45%;
+    width: 90%;
+    background-color: black;
+    /* cursor: pointer; */
+    top: 110px;
+}
+
+#draggable-four {
+    position: relative;
+    height: 30%;
+    width: 90%;
+    background-color: black;
+    /* cursor: pointer; */
+    top: 110px;
+}
+
+#draggable-five {
+    position: relative;
+    height: 30%;
+    width: 90%;
+    background-color: black;
+    /* cursor: pointer; */
+    top: 110px;
+}
+
+#draggable-six {
+    position: relative;
+    height: 30%;
+    width: 90%;
+    background-color: black;
+    /* cursor: pointer; */
+    top: 110px;
+}
+
+#draggable-seven {
+    position: relative;
+    height: 30%;
+    width: 90%;
+    background-color: black;
+    /* cursor: pointer; */
+    top: 110px;
+}
+
+#audio-player-play {
+    height: 80%;
+    width: 10%;
+    /* background-color: red; */
+    margin-right: 15px;
+}
+
+div.play {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-left: 20px solid #DCD3C0;
+    border-bottom: 12px solid transparent;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+/*    margin-right: 15px;*/
+}
+
+#audio-player-stop {
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    width: 8%;
+    /* background-color: red; */
+    margin-left: 15px;
+}
+
+.dot {
+    height: 22px;
+    width: 22px;
+    background-color: #DCD3C0;
+    border-radius: 50%;
+    display: inline-block;
+    /* margin-left: 10px !important; */
+}
+
+/* VIDEO CSS */
+
+#video-copy-container-top {
+    display: none;
+    flex-direction: row;
+    color: black;
+    font-family: FetteHaenelFraktur;
+    font-size: 3vh;
+}
+
+/* IMAGES CSS */
+
+.slider-img-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    /* background-color: green; */
+}
+
+.slider19-img {
+    margin-top: 20px;
+    display: flex;
+    height: 85%;
+    width: 100%;
+    background-image: url(assets/photos/elliot/ejbrown0053-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.slider20-img {
+    margin-top: 10px;
+    display: flex;
+    height: 95%;
+    width: 100%;
+    background-image: url(assets/photos/elliot/ejbrown0041-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* cursor: pointer; */
+}
+
+.slider21-img {
+    margin-top: 10px;
+    display: flex;
+    height: 95%;
+    width: 100%;
+    background-image: url(assets/photos/elliot/ejbrown0054-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* cursor: pointer; */
+}
+
+.slider22-img {
+    margin-top: 10px;
+    display: flex;
+    height: 95%;
+    width: 100%;
+    background-image: url(assets/photos/naima/Cyn_Travis at home in Roma Norte, 2019-2-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* cursor: pointer; */
+}
+
+.slider23-img {
+    margin-top: 10px;
+    display: flex;
+    height: 95%;
+    width: 100%;
+    background-image: url(assets/photos/naima/200 Sterling Place-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* cursor: pointer; */
+}
+
+.slider28-img {
+    margin-top: 10px;
+    display: flex;
+    height: 95%;
+    width: 100%;
+    background-image: url(assets/photos/elliot/ejbrown0057-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* cursor: pointer; */
+}
+
+.slider29-img {
+    margin-top: 10px;
+    display: flex;
+    height: 95%;
+    width: 100%;
+    background-image: url(assets/photos/elliot/ejbrown0036-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* cursor: pointer; */
+}
+
+.slider31-img {
+    margin-top: 35px;
+    display: flex;
+    height: 75%;
+    width: 100%;
+    background-image: url(assets/photos/naima/Darajani Market-2-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* cursor: pointer; */
+}
+
+.slider32-img {
+    margin-top: 10px;
+    display: flex;
+    height: 95%;
+    width: 100%;
+    background-image: url(assets/photos/naima/Michocan 118, after I remembered, 2019-2-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* cursor: pointer; */
+}
+
+.slider64-img {
+    margin-top: 10px;
+    display: flex;
+    height: 95%;
+    width: 100%;
+    background-image: url(assets/photos/elliot/ejbrown0039-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* cursor: pointer; */
+}
+
+.slider66-img {
+    margin-top: 15px;
+    display: flex;
+    height: 90%;
+    width: 100%;
+    background-image: url(assets/photos/lacey/Lacey-Lennon-2-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* cursor: pointer; */
+}
+
+.slider71-img {
+    margin-top: 20px;
+    display: flex;
+    height: 90%;
+    width: 100%;
+    background-image: url(assets/photos/lacey/Lacey-Lennon-4-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* cursor: pointer; */
+}
+
+.slider72-img {
+    margin-top: 20px;
+    display: flex;
+    height: 90%;
+    width: 100%;
+    background-image: url(assets/photos/lacey/Lacey-Lennon-3-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* cursor: pointer; */
+}
+
+.slider73-img {
+    margin-top: 10px;
+    display: flex;
+    height: 95%;
+    width: 100%;
+    background-image: url(assets/photos/naima/DeVonn in Brooklyn, 2018-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* cursor: pointer; */
+}
+
+.slider74-img {
+    margin-top: 10px;
+    display: flex;
+    height: 95%;
+    width: 100%;
+    background-image: url(assets/photos/elliot/ejbrown0041-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* cursor: pointer; */
+}
+
+.slider76-img {
+    margin-top: 10px;
+    display: flex;
+    height: 95%;
+    width: 100%;
+    background-image: url(assets/photos/naima/A plunge, A twist, A slap, 2020-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* cursor: pointer; */
+}
+
+/* WRITTEN CSS */
+
+#written-content-container {
+    height: 85%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-y: visible;
+    overflow-x: hidden;
+    color: black;
+}
+
+#written-copy-container-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    font-family: Charon-Regular;
+    font-size: 4vh;
+    /* margin-left: 30px; */
+    /* margin-bottom: 30px; */
+}
+
+#all-stanza-container {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+#stanza-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: auto;
+    width: 95%;
+    /* background-color: blue; */
+}
+
+#written-content-container.centered {
+    height: 85%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-y: visible;
+    overflow-x: hidden;
+    color: black;
+}
+
+#stanza-copy-p {
+    width: 100%;
+    margin-left: 15px;
+    font-size: 2.8vh;
+    text-align: left;
+    font-family: Baskerville-01;
+}
+
+#stanza-copy-small {
+    font-size: 2vh;
+    width: 100%;
+    /* margin-left: 30px; */
+    margin-right: 0vw;
+}
+
+#stanza-copy.end {
+    /* width: 20%; */
+    width: auto;
+    height: 100%;
+    margin-top: 50px;
+}
+
 
 
 
