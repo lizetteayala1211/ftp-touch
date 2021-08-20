@@ -2175,25 +2175,75 @@ div.play {
 }
 
 
+    /* TOP BOTTOM & MARQUEE CSS */
+
 #top-part {
     position: absolute;
     top: 0;
     left: 0;
     height: 24vh;
-    width: 110%;    
+    width: 110% !important;    
     /* width: 100vw; */
     background-color: #C7C6C5;
     display: flex;
     flex-direction: column;
     transition: all 3s ease;
-}  	
+}
+
+#nav-top-copy {
+    color: black;
+    font-size: 1.5vh;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+    font-family: Messapia-Regular;
+} 
+
+#nav-middle-copy {
+    color: black;
+    font-size: 11vh;
+    text-align: center;
+    font-family: SnellRoundhand-Bold-02;
+    transition: all 3s ease;
+    margin-right: 15px;
+}
+
+#nav-bottom-copy {
+    color: black;
+    font-size: 1.8vh;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+    font-family: Wremena-Light;
+    transition: all 3s ease;
+}
+
+#nav-bottom-copy-two {
+    color: black;
+    font-size: 2vh;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+    font-family: Wremena-Light;
+    transition: all 3s ease;
+}
+
+#nav-bottom-copy-three {
+    color: black;
+    font-size: 1.8vh;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+    font-family: Wremena-Light;
+    transition: all 3s ease;
+} 	
 
 #bottom-part {
     position: absolute;
     top: 24vh;
     left: 0;
     height: 69vh;
-    width: 110%;
+    width: 110% !important;
     background-color: black;
     display: flex;
     flex-direction: row;
@@ -2221,7 +2271,7 @@ div.play {
     top: 93vh;
     left: 0;
     height: 7vh;
-    width: 110%;
+    width: 110% !important;
     background-color: black;
     display: flex;
     flex-direction: row;
@@ -2230,19 +2280,123 @@ div.play {
     transition: all 3s ease;
 }
 
+    /* INDEX CSS */
 
+#index-left {
+    display: none;
+    flex: 1;
+    /* display: flex; */
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    flex-direction: column;
+    align-items: center;
+    /* border-right: 1px solid white; */
+}
 
+#index-left-content {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* min-height: min-content; */
+    height: 300%;
+    width: 95%;
+    /* overflow: scroll; */
+    cursor: pointer;
+    /* margin: 10px; */
+    overflow-x: hidden;
+}
 
+#index-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* align-content: center; */
+    /* align-self: center; */
+    height: 300%;
+    width: 100%;
+    /* background-color: blue; */
+     margin-bottom: 0px; 
+     margin-left: 0px; 
+     margin-right: 0px; 
+}
 
+#index-box {
+    display: flex;
+    height: 24%;
+    width: 100%;
+    /* background-color: yellow; */
+    color: white;
+    border: 1px solid white;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+     margin-right: 0px; 
+    margin-bottom: 10px;
+}
 
+span#text {
+    height: 35%;
+    font-family: Baskerville-01;
+    font-size: 4.5vh;
+    font-style: italic;
+    margin: 0px 20px;
+}
 
+span#video-one {
+    height: 45%;
+    font-family: FetteHaenelFraktur;
+    font-size: 6.5vh;
+    margin-left: 25px;
+    margin-right: 25px;
+}
 
+span#video-two {
+    height: 45%;
+    font-family: FetteHaenelFraktur;
+    font-size: 6.5vh;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
+span#timer-two {
+    font-family: Wremena-Light;
+    font-size: 4.5vh;
+}
 
+span#timer-three {
+    font-family: Wremena-Light;
+    font-size: 4.5vh;
+}
 
+span#timer-four {
+    font-family: Wremena-Light;
+    font-size: 4.5vh;
+}
 
+span#timer-five {
+    font-family: Wremena-Light;
+    font-size: 4.5vh;
+}
 
+span#timer-six {
+    font-family: Wremena-Light;
+    font-size: 4.5vh;
+}
 
+span#timer-seven {
+    font-family: Wremena-Light;
+    font-size: 4.5vh;
+}
+
+span#timer-eight {
+    font-family: Wremena-Light;
+    font-size: 4.5vh;
+}
 
 
 
