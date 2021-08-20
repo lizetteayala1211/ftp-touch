@@ -2852,7 +2852,19 @@ div.play {
 /* WRITTEN CSS */
 
 #written-content-container {
-    height: 85%;
+    height: 95%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-y: visible;
+    overflow-x: hidden;
+    color: black;
+}
+
+#written-content-container.centered {
+    height: 95%;
     width: 100%;
     /* background-color: red; */
     display: flex;
@@ -2894,18 +2906,6 @@ div.play {
     height: auto;
     width: 95%;
     /* background-color: blue; */
-}
-
-#written-content-container.centered {
-    height: 85%;
-    width: 100%;
-    /* background-color: red; */
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    overflow-y: visible;
-    overflow-x: hidden;
-    color: black;
 }
 
 #stanza-copy-p {
