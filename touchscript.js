@@ -375,6 +375,15 @@ $(document).ready(function() {
     var current_class = current.attr('class')
     var next = current[direction]()
 
+    var first_last = {
+      prev: [first_class, 'last'],
+      next: [last_class, 'first'],
+    }[direction]
+
+    if (current_class == first_last[0]) {
+      next = $(`#slider ul li:${first_last[1]}`)
+    }
+
     var index = next.attr('data-nav')
     index = parseInt(index)
 
@@ -386,14 +395,6 @@ $(document).ready(function() {
       $('#auto-left')[0].scrollTo(0, y)
     }
 
-    var first_last = {
-      prev: [first_class, 'last'],
-      next: [last_class, 'first'],
-    }[direction]
-
-    if (current_class == first_last[0]) {
-      next = $(`#slider ul li:${first_last[1]}`)
-    }
     next.fadeIn(1000).show()
 
   }
@@ -408,6 +409,51 @@ $(document).ready(function() {
   })
 
 })
+
+// $(document).ready(function() {
+
+//   var first_class = $('#slider ul li:first').attr('class')
+//   var last_class = $('#slider ul li:last').attr('class')
+
+//   function nav_button(e, direction) {
+//     e.preventDefault()
+//     var current = $("#slider ul li:visible").hide()
+//     var current_class = current.attr('class')
+//     var next = current[direction]()
+
+//     var index = next.attr('data-nav')
+//     index = parseInt(index)
+
+//     if (!isNaN(index)) {
+//       $('.selected').removeClass('selected')
+//       var nav_section = $('.nav-section').eq(index)
+//       nav_section.addClass('selected')
+//       var y = nav_section[0].offsetTop-26
+//       $('#auto-left')[0].scrollTo(0, y)
+//     }
+
+//     var first_last = {
+//       prev: [first_class, 'last'],
+//       next: [last_class, 'first'],
+//     }[direction]
+
+//     if (current_class == first_last[0]) {
+//       next = $(`#slider ul li:${first_last[1]}`)
+//     }
+//     next.fadeIn(1000).show()
+
+//   }
+
+//   $("#slider-nav-right-img").click(function(e) {
+//     nav_button(e, 'next')
+//   })
+
+
+//   $("#slider-nav-left-img").click(function(e) {
+//     nav_button(e, 'prev')
+//   })
+
+// })
 
 // $(document).ready(function() {
 
@@ -2438,294 +2484,294 @@ function Nav38() {
 
 /*	enlarge images js	*/
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-  $('.Exit-Button-2').click(function(e) {
-    // Change Selector Here
-    $('.slider2-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-2').click(function(e) {
+//     // Change Selector Here
+//     $('.slider2-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider2-img').click(function(e) {
-    // Change Selector Here
-    $(this).addClass('fullscreen');
-    $('.Exit-Button-2').addClass('show');
-  });
+//   $('.slider2-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).addClass('fullscreen');
+//     $('.Exit-Button-2').addClass('show');
+//   });
 
-  $('.Exit-Button-3').click(function(e) {
-    // Change Selector Here
-    $('.slider3-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-3').click(function(e) {
+//     // Change Selector Here
+//     $('.slider3-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider3-img').click(function(e) {
-    // Change Selector Here
-    $(this).addClass('fullscreen');
-    $('.Exit-Button-3').addClass('show');
-  });
+//   $('.slider3-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).addClass('fullscreen');
+//     $('.Exit-Button-3').addClass('show');
+//   });
 
-  $('.Exit-Button-4').click(function(e) {
-    // Change Selector Here
-    $('.slider4-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-4').click(function(e) {
+//     // Change Selector Here
+//     $('.slider4-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider4-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-4').addClass('show');
-  });
+//   $('.slider4-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-4').addClass('show');
+//   });
 
-  $('.Exit-Button-5').click(function(e) {
-    // Change Selector Here
-    $('.slider5-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-5').click(function(e) {
+//     // Change Selector Here
+//     $('.slider5-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider5-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-5').addClass('show');
-  });
+//   $('.slider5-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-5').addClass('show');
+//   });
 
-  $('.Exit-Button-5-2').click(function(e) {
-    // Change Selector Here
-    $('.slider5-2-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-5-2').click(function(e) {
+//     // Change Selector Here
+//     $('.slider5-2-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider5-2-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-5-2').addClass('show');
-  });
+//   $('.slider5-2-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-5-2').addClass('show');
+//   });
 
-  $('.Exit-Button-19').click(function(e) {
-    // Change Selector Here
-    $('.slider19-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-19').click(function(e) {
+//     // Change Selector Here
+//     $('.slider19-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider19-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-19').addClass('show');
-  });
+//   $('.slider19-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-19').addClass('show');
+//   });
 
-  $('.Exit-Button-20').click(function(e) {
-    // Change Selector Here
-    $('.slider20-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-20').click(function(e) {
+//     // Change Selector Here
+//     $('.slider20-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider20-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-20').addClass('show');
-  });
+//   $('.slider20-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-20').addClass('show');
+//   });
 
-  $('.Exit-Button-21').click(function(e) {
-    // Change Selector Here
-    $('.slider21-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-21').click(function(e) {
+//     // Change Selector Here
+//     $('.slider21-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider21-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-21').addClass('show');
-  });
+//   $('.slider21-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-21').addClass('show');
+//   });
 
-  $('.Exit-Button-22').click(function(e) {
-    // Change Selector Here
-    $('.slider22-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-22').click(function(e) {
+//     // Change Selector Here
+//     $('.slider22-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider22-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-22').addClass('show');
-  });
+//   $('.slider22-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-22').addClass('show');
+//   });
 
-  $('.Exit-Button-23').click(function(e) {
-    // Change Selector Here
-    $('.slider23-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-23').click(function(e) {
+//     // Change Selector Here
+//     $('.slider23-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider23-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-23').addClass('show');
-  });
+//   $('.slider23-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-23').addClass('show');
+//   });
 
-  $('.Exit-Button-28').click(function(e) {
-    // Change Selector Here
-    $('.slider28-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-28').click(function(e) {
+//     // Change Selector Here
+//     $('.slider28-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider28-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-28').addClass('show');
-  });
+//   $('.slider28-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-28').addClass('show');
+//   });
 
-  $('.Exit-Button-29').click(function(e) {
-    // Change Selector Here
-    $('.slider29-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-29').click(function(e) {
+//     // Change Selector Here
+//     $('.slider29-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider29-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-29').addClass('show');
-  });
+//   $('.slider29-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-29').addClass('show');
+//   });
 
-  $('.Exit-Button-30').click(function(e) {
-    // Change Selector Here
-    $('.slider30-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-30').click(function(e) {
+//     // Change Selector Here
+//     $('.slider30-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider30-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-30').addClass('show');
-  });
+//   $('.slider30-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-30').addClass('show');
+//   });
 
-  $('.Exit-Button-31').click(function(e) {
-    // Change Selector Here
-    $('.slider31-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-31').click(function(e) {
+//     // Change Selector Here
+//     $('.slider31-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider31-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-31').addClass('show');
-  });
+//   $('.slider31-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-31').addClass('show');
+//   });
 
-  $('.Exit-Button-32').click(function(e) {
-    // Change Selector Here
-    $('.slider32-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-32').click(function(e) {
+//     // Change Selector Here
+//     $('.slider32-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider32-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-32').addClass('show');
-  });
+//   $('.slider32-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-32').addClass('show');
+//   });
 
-  $('.Exit-Button-64').click(function(e) {
-    // Change Selector Here
-    $('.slider64-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-64').click(function(e) {
+//     // Change Selector Here
+//     $('.slider64-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider64-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-64').addClass('show');
-  });
+//   $('.slider64-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-64').addClass('show');
+//   });
 
-  $('.Exit-Button-65').click(function(e) {
-    // Change Selector Here
-    $('.slider65-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-65').click(function(e) {
+//     // Change Selector Here
+//     $('.slider65-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider65-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-65').addClass('show');
-  });
+//   $('.slider65-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-65').addClass('show');
+//   });
 
-  $('.Exit-Button-66').click(function(e) {
-    // Change Selector Here
-    $('.slider66-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-66').click(function(e) {
+//     // Change Selector Here
+//     $('.slider66-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider66-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-66').addClass('show');
-  });
+//   $('.slider66-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-66').addClass('show');
+//   });
 
-  $('.Exit-Button-71').click(function(e) {
-    // Change Selector Here
-    $('.slider71-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-71').click(function(e) {
+//     // Change Selector Here
+//     $('.slider71-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider71-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-71').addClass('show');
-  });
+//   $('.slider71-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-71').addClass('show');
+//   });
 
-  $('.Exit-Button-72').click(function(e) {
-    // Change Selector Here
-    $('.slider72-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-72').click(function(e) {
+//     // Change Selector Here
+//     $('.slider72-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider72-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-72').addClass('show');
-  });
+//   $('.slider72-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-72').addClass('show');
+//   });
 
-  $('.Exit-Button-73').click(function(e) {
-    // Change Selector Here
-    $('.slider73-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-73').click(function(e) {
+//     // Change Selector Here
+//     $('.slider73-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider73-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-73').addClass('show');
-  });
+//   $('.slider73-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-73').addClass('show');
+//   });
 
-  $('.Exit-Button-74').click(function(e) {
-    // Change Selector Here
-    $('.slider74-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-74').click(function(e) {
+//     // Change Selector Here
+//     $('.slider74-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider74-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-74').addClass('show');
-  });
+//   $('.slider74-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-74').addClass('show');
+//   });
 
-  $('.Exit-Button-75').click(function(e) {
-    // Change Selector Here
-    $('.slider75-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-75').click(function(e) {
+//     // Change Selector Here
+//     $('.slider75-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider75-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-75').addClass('show');
-  });
+//   $('.slider75-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-75').addClass('show');
+//   });
 
-  $('.Exit-Button-76').click(function(e) {
-    // Change Selector Here
-    $('.slider76-img').removeClass('fullscreen');
-    $(this).removeClass('show');
-  });
+//   $('.Exit-Button-76').click(function(e) {
+//     // Change Selector Here
+//     $('.slider76-img').removeClass('fullscreen');
+//     $(this).removeClass('show');
+//   });
 
-  $('.slider76-img').click(function(e) {
-    // Change Selector Here
-    $(this).toggleClass('fullscreen');
-    $('.Exit-Button-76').addClass('show');
-  });
+//   $('.slider76-img').click(function(e) {
+//     // Change Selector Here
+//     $(this).toggleClass('fullscreen');
+//     $('.Exit-Button-76').addClass('show');
+//   });
 
-});
+// });

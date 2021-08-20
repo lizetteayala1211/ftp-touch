@@ -55,25 +55,41 @@ h2 {
   cursor: pointer;
 }
 
+#name-container {
+/*  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 200%;*/
+}
+
 #titlewrapper {
   display: flex;
 }
 
 
 #name {
+/*  display: flex;
+  flex-direction: row;*/
   color: white;
   font-size: 15px;
   float: left;
+/*  width: 200%;*/
 }
 
 #name:after {
-      border-top: 1px solid green;
+/*      border-top: 1px solid green;*/
       content: '';
       display: table-cell;
       position: relative;
       top: 0.5em;
       width: 45%;
       left: 1.5%;
+}
+
+hr {
+  height: 2%;
+  position: relative;
+  top: 20px;
 }
 
 .enter {
@@ -85,16 +101,17 @@ font-family: 'MaisonNeue-Book';
 }
 
 .enter:after {
+  color: white;
   position: relative; 
   top: -10px;
-  content:'ENTER SITE';
+  content:'ENTER';
 }
 
 .enter:hover:after {
   position: relative;
   top: -10px;
   color: black;
-  content:'ENTER SITE'; 
+  content:'ENTER'; 
 }
 
 #titlebutton {
@@ -140,14 +157,14 @@ font-family: 'MaisonNeue-Book';
   position: relative; 
   top: -10px;
   color: black;
-  content:'ENTER SITE';
+  content:'ENTER';
 }
 
 .enter2:hover:after {
   position: relative;
   top: -10px;
   color: white;
-  content:'ENTER SITE'; 
+  content:'ENTER'; 
 }
 
 #titlebutton2 {
@@ -191,20 +208,21 @@ font-family: 'MaisonNeue-Book';
         font-family: "GrandSlang-Roman";
         font-size: 140px;
         color: black;
-        
-
       }
 
       #bigtitle2 {
         font-family: "GrandSlang-Roman";
         font-size: 140px;
         color: black;
-        
         position: relative;
         left: 100%;
-
-
         }
+
+      #bigtitle3 {
+        font-family: "GrandSlang-Roman";
+        font-size: 140px;
+        color: black;
+      }
 
   .menu-open #titlewrapper { display:none; }
   .menu-open #titlewrapper2 { display: flex; }
@@ -294,6 +312,9 @@ p {
 #titlebutton3 {
   display: none;
 }
+
+#bigtitle3:hover .coming-soon {display:none; }
+#bigtitle3:hover:before {content:"COMING LATE 2021."; font-size: 55px; position: relative;}
 
 
 
@@ -682,14 +703,14 @@ font-family: 'MaisonNeue-Book';
 .enter3:after {
   position: relative; 
   top: -10px;
-  content:'ENTER SITE';
+  content:'ENTER';
 }
 
 .enter3:hover:after {
   position: relative;
   top: -10px;
   color: black;
-  content:'ENTER SITE'; 
+  content:'ENTER'; 
 }
 
 #titlebutton3 {
