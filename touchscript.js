@@ -845,7 +845,134 @@ function showSlider() {
       x.style.display = "none";
     }
   }
+
+if (isMobile) {
+
+/* top part */
+
+    $("#top-part").css("background-color", "#C7C6C5");
+    $("#top-part").css("color", "black");
+    $("#nav-top-link-one").css("color", "black");
+    $("#nav-top-link-two").css("color", "black");
+    $("#nav-top-link-three").css("color", "black");
+    $("#nav-middle").css("border-top", "2px black solid");
+    $("#nav-middle").css("border-bottom", "2px black solid");
+    $("#nav-middle-copy").css("color", "black");
+    $("#nav-bottom-copy").css("color", "black");
+    $("#nav-bottom-copy-two").css("color", "black");
+    $("#nav-bottom-copy-three").css("color", "black");
+    $("#marquee-part").css("background-color", "black");
+    $("#scroll").css("color", "white");
+
+    /* content part */
+
+    var element = document.getElementById("bottom-part");
+    element.classList.toggle("index");
+
+    // $("#nav-top-copy").css({
+    //   fontSize: "1.1vh"
+    // }, 400);
+    // $("#nav-top-copy.two").css({
+    //   fontSize: "1.1vh"
+    // }, 400);
+    // $("#nav-top-copy.three").css({
+    //   fontSize: "1.1vh"
+    // }, 400);
+    // $("#nav-middle-copy-section").css({
+    //   'marginTop': "5px"
+    // }, 400);
+    // $("#nav-middle-copy-section").css({
+    //   'marginRight': "15px"
+    // }, 400);
+    // $("#nav-middle-copy-section").css({
+    //   width: "95%"
+    // }, 400);
+    // $("#nav-middle").css({
+    //   height: "58%"
+    // }, 400);
+    // $("#nav-middle-copy").css({
+    //   fontSize: "7vh"
+    // }, 400);
+    // $("#nav-bottom-copy").css({
+    //   fontSize: "1.3vh"
+    // }, 400);
+    // $("#nav-bottom-copy-two").css({
+    //   fontSize: "1.8vh"
+    // }, 400);
+    // $("#nav-bottom-copy-three").css({
+    //   fontSize: "1.3vh"
+    // }, 400);
+    // $("#top-part").css({
+    //   height: "20vh"
+    // }, 400);
+    // $("#bottom-part").css({
+    //   top: "13.1vh"
+    // }, 400);
+    // $("#bottom-part").css({
+    //   height: "80vh"
+    // }, 400);
+    // $("#top-part").css({
+    //   width: "20vw"
+    // }, 400);
+    // $("#top-part").css("z-index", "5", 3000);
+    // $("#bottom-part").css({
+    //   height: "95vh"
+    // }, 400);
+    // $("#auto-right").css({
+    //   top: "20vh"
+    // }, 400);
+    // $("#auto-left").css({
+    //   width: "20vw"
+    // }, 400);
+    // $("#bottom-part").css({
+    //   top: "0vh"
+    // }, 400);
+    $("#top-part").css({
+      height: "21.5vh"
+    }, 400);    
+
+
+    var x = document.getElementById("auto-left");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+
+
+    var x = document.getElementById("auto-right");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+
+
+    var x = document.getElementById("index-left");
+    // x.style.display = "flex";
+    if (x.style.display === "none") {
+      x.style.display = "flex";
+    } else {
+      x.style.display = "none";
+    }
+
+    var x = document.getElementById("index-right");
+    // x.style.display = "flex";
+    if (x.style.display === "none") {
+      x.style.display = "flex";
+    } else {
+      x.style.display = "none";
+    }
+
 }
+
+}
+
+
+
+
+
+
 
 function openSliderWithSpecificSlide($slider, $sliderItems, slideIndex) {
   $slider.find('li').hide()

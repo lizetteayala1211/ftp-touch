@@ -2171,7 +2171,7 @@ div.play {
 
 #body {
 	overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: visible;
 }
 
 
@@ -2301,7 +2301,7 @@ div.play {
     /* flex-direction: row; */
     /* min-height: min-content; */
     height: 300%;
-    width: 95%;
+    width: 94%;
     /* overflow: scroll; */
     cursor: pointer;
     /* margin: 10px; */
