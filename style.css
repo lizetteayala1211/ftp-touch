@@ -820,6 +820,19 @@ h1 {
         margin-top: 10%;
       }
 
+      #rotating-title-2 {
+        display: flex;
+        text-align: center;
+        font-family: "GrandSlang-Roman";
+        font-size: 200px;
+        color: black;
+        margin-top: 10%;
+      }  
+
+#rotating-title-2:hover .coming-soon {display:none; }
+#rotating-title-2:hover:before {content:"COMING LATE 2021."; font-size: 130px; position: relative;}
+
+
  #name-container3 {
   width: 100%;
  }   
