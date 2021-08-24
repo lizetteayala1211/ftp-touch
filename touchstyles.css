@@ -2182,7 +2182,7 @@ div.play {
     top: 0;
     left: 0;
     height: 24vh;
-    width: 110% !important;    
+    width: 100% !important;    
     /* width: 100vw; */
     background-color: #C7C6C5;
     display: flex;
@@ -2243,7 +2243,7 @@ div.play {
     top: 24vh;
     left: 0;
     height: 69vh;
-    width: 110% !important;
+    width: 100% !important;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -2364,7 +2364,7 @@ div.play {
     top: 93vh;
     left: 0;
     height: 7vh;
-    width: 110% !important;
+    width: 100% !important;
     background-color: black;
     display: flex;
     flex-direction: row;
