@@ -2888,6 +2888,29 @@ div.play {
     /* margin-bottom: 30px; */
 }
 
+#written-copy-container-top.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    font-family: Charon-Regular;
+    font-size: 4vh;
+    /* margin-left: 30px; */
+    /* margin-bottom: 30px; */
+}
+
+#written-copy-top.column {
+	margin-right: 0px;
+	width: 90%;
+	text-align: left;
+}
+
+#written-copy-top.column.bottom {
+	margin-top: 0px;
+}
+
 #all-stanza-container {
     display: flex;
     width: 90%;
