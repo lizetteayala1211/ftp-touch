@@ -1362,6 +1362,12 @@ video#jimmy {
 /*	background-color: yellow;*/
 }
 
+#written-copy-top.column {
+	margin-right: 50px;
+/*	width: 90%;
+	text-align: left;*/
+}
+
 #written-copy-bottom {
 	width: 45%;
 	margin-right: 20px;
