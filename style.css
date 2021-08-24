@@ -832,6 +832,8 @@ h1 {
 #rotating-title-2:hover .coming-soon {display:none; }
 #rotating-title-2:hover:before {content:"COMING LATE 2021."; font-size: 130px; position: relative;}
 
+#rotating-title-2:active .coming-soon {display:none; }
+#rotating-title-2:active:before {content:"COMING LATE 2021."; font-size: 130px; position: relative;}
 
  #name-container3 {
   width: 100%;
