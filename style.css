@@ -40,7 +40,7 @@ h1 {
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease; 
-  cursor: pointer
+/*  cursor: pointer;*/
 }
 
 h2 {
@@ -52,14 +52,14 @@ h2 {
     -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease; 
-  cursor: pointer;
+/*  cursor: pointer;*/
 }
 
 #name-container {
-/*  display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 200%;*/
+  width: 200%;
 }
 
 #titlewrapper {
@@ -71,25 +71,25 @@ h2 {
 /*  display: flex;
   flex-direction: row;*/
   color: white;
-  font-size: 15px;
-  float: left;
+  font-size: 17px;
+/*  float: left;*/
 /*  width: 200%;*/
 }
 
-#name:after {
-/*      border-top: 1px solid green;*/
+/*#name:after {
       content: '';
       display: table-cell;
       position: relative;
       top: 0.5em;
       width: 45%;
       left: 1.5%;
-}
+}*/
 
 hr {
-  height: 2%;
+  height: 1%;
   position: relative;
-  top: 20px;
+  top: 25px;
+  width: 55%;
 }
 
 .enter {
@@ -128,10 +128,18 @@ font-family: 'MaisonNeue-Book';
   color: #fff;
   text-align: center;
   background: black;
+  cursor: pointer;
 }
 
 #titlebutton:hover {
   background: white;
+}
+
+#name-container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 200%;
 }
 
 #titlewrapper2 {
@@ -141,7 +149,7 @@ font-family: 'MaisonNeue-Book';
 
 #name2 {
   color: black;
-  font-size: 15px;
+  font-size: 17px;
   float: left;
 }
 
@@ -157,14 +165,14 @@ font-family: 'MaisonNeue-Book';
   position: relative; 
   top: -10px;
   color: black;
-  content:'ENTER';
+  content:'RETURN';
 }
 
 .enter2:hover:after {
   position: relative;
   top: -10px;
   color: white;
-  content:'ENTER'; 
+  content:'RETURN'; 
 }
 
 #titlebutton2 {
@@ -181,6 +189,7 @@ font-family: 'MaisonNeue-Book';
   color: #fff;
   text-align: center;
   background: white;
+  cursor: pointer;
 }
 
 #titlebutton2:hover {
@@ -189,11 +198,10 @@ font-family: 'MaisonNeue-Book';
 
 
 .container {
-
   position: absolute;
   top: 6%;
   left: 95%;
-  transform:translate( -50%, -50%);
+/*  transform:translate( -50%, -50%);*/
 
 }
 
@@ -237,7 +245,7 @@ font-family: 'MaisonNeue-Book';
 
 /* TOGGLE BUTTON SWITCHING */
 
-.toggle-btn {
+/*.toggle-btn {
 
   width: 60px;
   height: 25px;
@@ -268,21 +276,10 @@ font-family: 'MaisonNeue-Book';
   cursor: pointer;
 }
 
-/*
-.toggle-btn.active {
-  background: white;
-  border:1px solid black;
-
-}
-
-.inner-circle.active {
-  background: black;
-}*/
-
 .toggle-btn.active > .inner-circle {
   margin-left: 32px;
 }
-
+*/
 
 p {
   margin: 25px 25px 20px 25px;
@@ -336,24 +333,6 @@ p {
   100% { word-spacing: 103px; }
 } 
 
-/*#c_one:hover {
-  -webkit-transition: all 5s ease;
-  -moz-transition: all 5s ease;
-  -o-transition: all 5s ease;
-  transition: all 5s ease; 
-  cursor: pointer
- animation-name: hover-animation;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: initial;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-}
-@keyframes hover-animation {
-    0% { word-spacing: 103px; }
-    100% { word-spacing: 0px; }
-}*/
-
 
 #c_two {
     word-spacing: 66px;
@@ -375,25 +354,6 @@ p {
   100% { word-spacing: 66px; }
 } 
 
-/*#c_two:hover {
- -webkit-transition: all 5s ease;
-  -moz-transition: all 5s ease;
-  -o-transition: all 5s ease;
-  transition: all 5s ease; 
-  cursor: pointer
- animation-name: hover-animationtwo;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: initial;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-}
-@keyframes hover-animationtwo {
-    0% { word-spacing: 66px; }
-    100% { word-spacing: 0px; }
-}*/
-
-
 #c_three {
   word-spacing: 315px;
   -webkit-animation: animc_three 40s;
@@ -412,26 +372,6 @@ p {
   50%   { word-spacing: 0px; }
   100% { word-spacing: 315px; }
 } 
-
-/*#c_three:hover {
--webkit-transition: all 5s ease;
-  -moz-transition: all 5s ease;
-  -o-transition: all 5s ease;
-  transition: all 5s ease; 
-  cursor: pointer
- animation-name: hover-animationthree;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: initial;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-}
-@keyframes hover-animationthree {
-    0% { word-spacing: 315px; }
-    100% { word-spacing: 0px; }
-}*/
-
-
 
 #c_four {
   word-spacing: 95px;
@@ -453,25 +393,6 @@ p {
   100% { word-spacing: 95px; }
 } 
 
- /*#c_four:hover {
--webkit-transition: all 5s ease;
-  -moz-transition: all 5s ease;
-  -o-transition: all 5s ease;
-  transition: all 5s ease; 
-  cursor: pointer
- animation-name: hover-animationfour;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: initial;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-}
-@keyframes hover-animationfour {
-    0% { word-spacing: 95px; }
-    100% { word-spacing: 0px; }
-}*/
-
-
 #c_five {
   word-spacing: 315px;
   -webkit-animation: animc_five 40s;
@@ -490,26 +411,6 @@ p {
   50%   { word-spacing: 0px; }
   100% { word-spacing: 315px; }
 } 
-
-/*#c_five:hover {
-  -webkit-transition: all 5s ease;
-  -moz-transition: all 5s ease;
-  -o-transition: all 5s ease;
-  transition: all 5s ease; 
-  cursor: pointer
- animation-name: hover-animationfive;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: initial;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-}
-@keyframes hover-animationfive {
-    0% { word-spacing: 315px; }
-    100% { word-spacing: 0px; }
-}*/
-
-
 
 #c_six {
   word-spacing: 164px;
@@ -530,26 +431,6 @@ p {
   100% { word-spacing: 164px; }
 } 
 
-
- /*#c_six:hover {
--webkit-transition: all 5s ease;
-  -moz-transition: all 5s ease;
-  -o-transition: all 5s ease;
-  transition: all 5s ease; 
-  cursor: pointer
- animation-name: hover-animationsix;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: initial;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-}
-@keyframes hover-animationsix {
-    0% { word-spacing: 164px; }
-    100% { word-spacing: 0px; }
-}*/
-
-
 #c_seven {
   word-spacing: 220px;
   -webkit-animation: animc_seven 40s;
@@ -569,26 +450,6 @@ p {
   100% { word-spacing: 220px; }
 } 
 
-
-/*#c_seven:hover {
--webkit-transition: all 5s ease;
-  -moz-transition: all 5s ease;
-  -o-transition: all 5s ease;
-  transition: all 5s ease; 
-  cursor: pointer
- animation-name: hover-animationseven;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: initial;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-}
-@keyframes hover-animationseven {
-    0% { word-spacing: 220px; }
-    100% { word-spacing: 0px; }
-}*/
-
-
 #c_eight {
   word-spacing: 93px;
   -webkit-animation: animc_eight 40s;
@@ -606,24 +467,6 @@ p {
   100% { word-spacing: 93px; }
 } 
 
-/*#c_eight:hover {
--webkit-transition: all 5s ease;
-  -moz-transition: all 5s ease;
-  -o-transition: all 5s ease;
-  transition: all 5s ease; 
-  cursor: pointer
- animation-name: hover-animationeight;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: initial;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-}
-@keyframes hover-animationseight {
-    0% { word-spacing: 93px; }
-    100% { word-spacing: 0px; }
-}
-*/
 
 /* LETTER SPACING ANIMATED WHEN PAGE IS LOADED */
 
@@ -663,6 +506,9 @@ body {
   display: none;
 }
 
+#name3 {
+  font-size: 45px;
+}
 
 #titlewrapper3 {
   display: flex;
@@ -675,6 +521,7 @@ width: 100%;
 }
 
 #name4 {
+  font-size: 45px;
   color: black;
 }
 
@@ -748,55 +595,6 @@ h1 {
 
 /* TOGGLE BUTTON SWITCHING */
 
-.toggle-btn3 {
-
-  margin-top: 10px;
-  width: 170px;
-  height: 60px;
-  background: black;
-  border-radius: 30px;
-  border:1px solid white;
-  padding: 2px;
-  transition:all 300ms ease-in-out;
-}
-
-.toggle-btn3 > .inner-circle3 {
-  width: 50px;
-  height: 50px;
-  background: white;
-  border-radius: 50%;
-  transition:all 300ms ease-in-out;
-}
-
-
-.inner-circle3 {
-  margin-top: 5px;
-  margin-left: 5px;
-  width: 50px;
-  height: 50px;
-  background: white;
-  border-radius: 50%;
-  transition:all 300ms ease-in-out;
-
-}
-
-
-/*.toggle-btn3.active3 {
-
-  background: white;
-  border:1px solid black;
-
-}
-
-.inner-circle3.active3 {
-
-  background: black;
-
-}*/
-
-.toggle-btn3.active3 > .inner-circle3 {
-  margin-left: 115px;
-}
 
 #slogan.pcontainer {
   margin-top: 5%;
@@ -808,6 +606,7 @@ h1 {
         margin-top: 10%;
         /*height: 100vh;*/
         width: 100vw;
+        color: black;
     
       }
 
@@ -839,17 +638,32 @@ h1 {
   width: 100%;
  }   
 
+#name-container3.active {
+  display: none !important;
+}
 
-  .menu-open2 #name-container3 { display:none; width: 100%; }
-  .menu-open2 #titlewrapper4 { display: flex; width: 100%; }
-  .menu-open2 #nav2 {  display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center; }
-  .menu-open2 #slogan { display:none; }
+#titlewrapper4.active {
+  display: flex !important; 
+  width: 100%;
+}
 
+#name-container4.active {
+  display: flex !important; 
+  width: 100%;
+}
+
+#nav2.active {
+  display: flex !important;
+  flex-direction: column !important;
+  text-align: center !important;
+  justify-content: center !important;
+  align-content: center !important;
+  align-items: center !important; 
+}
+
+#slogan.active {
+  display:none !important;  
+}
 
 p {
   margin: 25px 25px 20px 25px;

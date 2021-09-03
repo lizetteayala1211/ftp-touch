@@ -12,6 +12,22 @@ $(document).ready(function() {
   console.log("document loaded");
 });
 
+/*  pause audio when another is activated  */
+
+document.addEventListener('play', function(e){  
+    var audios = document.getElementsByTagName('audio');  
+    for(var i = 0, len = audios.length; i < len;i++){  
+        if(audios[i] != e.target){  
+            audios[i].pause();  
+        }  
+    }  
+}, true);
+
+/*  if audio is playing when video appears, pause audio  */
+
+var v = document.getElementsByTagName("video")[0];
+v.addEventListener("pause", function() { audio.trigger("play"); }, true);
+
 const isDesktop = window.matchMedia("only screen and (min-width:641px)").matches;
 
 const isMobile = window.matchMedia("only screen and (min-device-width: 320px) and (max-device-width: 480px)").matches;
